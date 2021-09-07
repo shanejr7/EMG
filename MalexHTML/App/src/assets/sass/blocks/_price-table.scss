@@ -1,0 +1,108 @@
+//=================================================
+// Price table
+//=================================================
+
+.price-table {
+	position: relative;
+	@extend .style-default;
+	background-color: $body_background_color;
+	box-shadow: 0 5px 83px 0 rgba($body_main_element_secondary_color, 0.12);
+	text-align: center;
+	overflow: hidden;
+	height: 100%;
+
+	.price-table-badge {
+		position: absolute;
+		top: 19px;
+		left: -55px;
+		width: 200px;
+		height: 2.842rem;
+		transform: rotate(-45deg);
+		background-color: $body_main_element_primary_color;
+
+		p {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			@include transform(translate(-50%, -50%));
+			font-size: $f_size_sm;
+			font-family: $font_primary_bold;
+			font-weight: 700;
+			color: $body_text_tertiary_color;
+		}
+	}
+
+	.price-table-header {
+		padding: $space_lg $space_xs + 0.368rem;
+		padding-bottom: 0;
+
+		.price-table-t-head {
+			color: $body_headline_color;
+		}
+	}
+
+	.price-table-price {
+		padding: $space_lg $space_xs + 0.368rem;
+
+		p {
+			color: $body_main_element_primary_color;
+			line-height: 0.8;
+
+			&:before, &:after {
+				display: none;
+			}
+
+			.currency {
+				vertical-align: top;
+				padding-right: 0.263rem;
+			}
+
+			.price {
+				font-family: $font_primary_bold;
+				font-weight: 700;
+				font-size: 4.211rem;
+				padding-right: 0.263rem;
+			}
+
+			.period {
+				font-size: $f_size_sm;
+				color: $body_main_element_secondary_color;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.price-table-list-group {
+		padding-left: 1.947rem;
+		padding-right: 1.947rem;
+		margin-bottom: 0 !important;
+
+		.list-group-item {
+			font-size: $f_size_df;
+			padding: 0.789rem 0;
+			text-align: left;
+			border-top: 0;
+			border-left: 0;
+			border-right: 0;
+
+			&:first-child {
+				margin-top: -0.415em;
+				padding-top: 0;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+				border-bottom: 0;
+				margin-bottom: -0.415em !important;
+			}
+		}
+	}
+
+	.price-table-footer {
+		padding: $space_lg $space_xs + 0.368rem;
+
+		.btn {
+			min-width: 11.526rem;
+		}
+	}
+}

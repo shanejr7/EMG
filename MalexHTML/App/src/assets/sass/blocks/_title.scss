@@ -1,0 +1,56 @@
+//=================================================
+// Title
+//=================================================
+
+.title-opacity {
+	position: relative;
+
+	.title-opacity-text {
+		position: absolute;
+		font-size: 21.053rem;
+		font-family: $font_primary_bold;
+		font-weight: 700;
+		margin-top: -5.526rem;
+		right: 0;
+		z-index: -1;
+		color: #f2f2f2;
+		line-height: 1;
+		@include lhCrop-b(1, 0.70);
+		@include lhCrop-a(1, 0.65);
+	}
+}
+
+// Page builder
+[class*='-edit-area-active'] {
+	[class*='-inline-editing'] {
+		&.title-opacity {
+			min-height: 1px !important;
+		}
+	}
+}
+
+[class*='bg-white'] {
+	.title-opacity {
+		.title-opacity-text {
+			color: #fbfbfb;
+		}
+	}
+}
+
+.title-opacity-true {
+	.site-header, .site-footer {
+		position: relative;
+		z-index: 1040;
+	}
+
+	#page-content {
+		position: relative;
+		z-index: 2;
+	}
+
+	@media #{$media_md} {
+		#page-title .wrapper {
+			position: static;
+		}
+	}
+}
