@@ -2,7 +2,8 @@
 
 require('../vendor/autoload.php');
 
-header(location: "MalexHTML/App/dist/index.html");
+header('location: MalexHTML/App/dist/index.html');
+
 
 // $app = new Silex\Application();
 // $app['debug'] = true;
