@@ -2,24 +2,28 @@
 
 require('../vendor/autoload.php');
 
-$app = new Silex\Application();
-$app['debug'] = true;
+header(location: "MalexHTML/App/dist/index.html");
 
-// Register the monolog logging service
-$app->register(new Silex\Provider\MonologServiceProvider(), array(
-  'monolog.logfile' => 'php://stderr',
-));
+// $app = new Silex\Application();
+// $app['debug'] = true;
 
-// Register view rendering
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => __DIR__.'/MalexHTML/App/dist/index.html',
-));
+// // Register the monolog logging service
+// $app->register(new Silex\Provider\MonologServiceProvider(), array(
+//   'monolog.logfile' => 'php://stderr',
+// ));
 
-// Our web handlers
+// // Register view rendering
+// $app->register(new Silex\Provider\TwigServiceProvider(), array(
+//     'twig.path' => __DIR__.'/MalexHTML/App/dist/index.html',
+// ));
 
-$app->get('/', function() use($app) {
-  $app['monolog']->addDebug('logging output.');
-  return $app['twig']->render('index.twig');
-});
+// // Our web handlers
 
-$app->run();
+// $app->get('/', function() use($app) {
+//   $app['monolog']->addDebug('logging output.');
+//   return $app['twig']->render('index.twig');
+// });
+
+// $app->run();
+
+?>
