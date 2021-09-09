@@ -2,8 +2,7 @@
 
 require('../vendor/autoload.php');
 
-//header('location: MalexHTML/App/dist/index.html');
-
+use Symfony\Component\HttpFoundation\Response;
 
 $app = new Silex\Application();
 $app['debug'] = true;
@@ -24,6 +23,17 @@ $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('index.twig');
 });
+
+// Error handling
+
+$app->error(function (\Exception $e, $code) { switch ($code) {
+case 404:
+$message = 'Page not found.';
+break;
+default:
+$message = 'Something went terribly wrong.';
+}
+return new Response($message); });
 
 $app->run();
 
