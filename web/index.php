@@ -36,7 +36,7 @@ $app->error(function (\Exception $e, $code) { switch ($code) {
     default:
     $message = 'Something went terribly wrong.';
   } 
-  return $app->redirect('/error',$code); 
+  return new RedirectResponse('/error'); //$app->redirect('/error',$code); 
 });
 
 $app->run();
