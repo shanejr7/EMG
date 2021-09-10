@@ -27,13 +27,25 @@ $app->get('/', function() use($app) {
 // Error handling
 
 $app->error(function (\Exception $e, $code) { switch ($code) {
-case 404:
-$message = 'Page not found.';
-break;
-default:
-$message = 'Something went terribly wrong.';
-}
-return new Response($message); });
+    case 404:
+    $message = 'Page not found.';
+    break;
+    default:
+    $message = 'Something went terribly wrong.';
+  }
+  return $app['twig']->render('error.twig');
+});
+
+
+// $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
+
+// $app->get('/foo', function() {
+//     return new Response('foo');
+// })->bind("foo"); // this is the route name
+
+// $app->get('/redirect', function() use ($app) {
+//     return $app->redirect($app["url_generator"]->generate("foo"));
+// });
 
 $app->run();
 
