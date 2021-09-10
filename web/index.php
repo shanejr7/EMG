@@ -18,35 +18,26 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 
 // Our web handlers
-
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('index.twig');
 });
 
-$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
-
-$app->get('/error', function() {
-    return new Response('error');
-})->bind("error"); // this is the route name
-
-$app->get('/redirect', function() use ($app) {
-    return $app->redirect($app["url_generator"]->generate("error"));
+$app->get('/error', function() use($app) {
+  $app['monolog']->addDebug('logging output.');
+  return $app['twig']->render('error.twig');
 });
-// // Error handling
 
-// $app->error(function (\Exception $e, $code) { switch ($code) {
-//     case 404:
-//     $message = 'Page not found.';
-//     break;
-//     default:
-//     $message = 'Something went terribly wrong.';
-//   }
-//   return $app['twig']->render('error.twig');
-// });
-
-
-
+// Error handling
+$app->error(function (\Exception $e, $code) { switch ($code) {
+    case 404:
+    $message = 'Page not found.';
+    break;
+    default:
+    $message = 'Something went terribly wrong.';
+  } 
+  return $app->redirect('/error',$code); 
+});
 
 $app->run();
 
