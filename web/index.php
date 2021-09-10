@@ -24,20 +24,28 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
-// Error handling
+$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 
-$app->error(function (\Exception $e, $code) { switch ($code) {
-    case 404:
-    $message = 'Page not found.';
-    break;
-    default:
-    $message = 'Something went terribly wrong.';
-  }
-  return $app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'error.path' => __DIR__.'/views/MalexHTML/App/dist/',
-    ));
+$app->get('/error', function() {
+    return new Response('error');
+})->bind("error"); // this is the route name
 
+$app->get('/redirect', function() use ($app) {
+    return $app->redirect($app["url_generator"]->generate("error"));
 });
+// // Error handling
+
+// $app->error(function (\Exception $e, $code) { switch ($code) {
+//     case 404:
+//     $message = 'Page not found.';
+//     break;
+//     default:
+//     $message = 'Something went terribly wrong.';
+//   }
+//   return $app['twig']->render('error.twig');
+// });
+
+
 
 
 $app->run();
