@@ -1,0 +1,76 @@
+//=================================================
+// Contact
+//=================================================
+
+.contacts-item {
+	box-shadow: 0 5px 83px 0 rgba($body_main_element_secondary_color, 0.12);
+	background-color: $white;
+	padding: $space_md;
+	height: 100%;
+	@extend .style-default;
+
+	.contacts-item-icon {
+		margin-bottom: $space_xs;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		> * {
+			font-size: 3.684rem;
+			color: $body_main_element_primary_color;
+		}
+	}
+
+	.contacts-item-t-head {
+		color: $body_headline_color;
+	}
+
+	.contacts-item-description {
+		a {
+			color: $body_text_primary_color;
+
+			&:hover {
+				color: $body_links_hover_color;
+			}
+		}
+	}
+}
+
+#contacts {
+	.width-img, &.width-img {
+		background-position: center 5.263rem;
+		background-repeat: no-repeat;
+	}
+}
+
+// Page builder
+[class*='-element'] {
+	&[class*='-contacts'] {
+		height: 100%;
+
+		> [class*='-widget-container'] {
+			height: 100%;
+		}
+	}
+}
+
+#contact-form {
+	max-width: 1250px;
+	padding-left: 5.263rem;
+	padding-right: 5.263rem;
+	margin: auto;
+
+	@media #{$media_md} {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.form-control {
+        border-color: transparent;
+
+        &:focus {
+            border-color: $input_border_focus_color;
+        }
+	}
+}

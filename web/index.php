@@ -26,7 +26,7 @@ $app->get('/', function() use($app) {
 $app->get('/error', function() use($app) {
   $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('error.twig');
-});
+})->bind('error');
 
 // Error handling
 $app->error(function (\Exception $e, $code) { switch ($code) {
@@ -36,7 +36,7 @@ $app->error(function (\Exception $e, $code) { switch ($code) {
     default:
     $message = 'Something went terribly wrong.';
   } 
-  return new RedirectResponse('/error'); //$app->redirect('/error',$code); 
+  return new Response($message); 
 });
 
 $app->run();

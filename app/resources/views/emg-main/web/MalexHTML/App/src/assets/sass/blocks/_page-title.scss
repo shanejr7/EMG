@@ -1,0 +1,116 @@
+//=================================================
+// Page title
+//=================================================
+
+#page-title {
+    .wrapper {
+        position: relative;
+        z-index: 1;
+    }
+
+    .description {
+        max-width: 39.842rem;
+    }
+
+    &.page-title-ml {
+        .title, .description {
+            margin-left: 8.7%;
+
+            @media #{$media_md} {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &.with-img {
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        height: calc(100vh + 3.526rem);
+        min-height: 600px;
+        max-height: 1000px;
+
+        .wrapper {
+            height: 100%;
+        }
+
+        // Color
+        color: $body_text_tertiary_color;
+
+        [class*='widget-text-editor'] {
+            color: $body_text_tertiary_color;
+        }
+
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code,
+        del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd,
+        ol, ul, li, fieldset, legend, label, span, caption, figcaption, details, hgroup, summary, mark, audio, video {
+            &:not(.btn) {
+                color: inherit;
+            }
+        }
+
+        a {
+            &:not(.transform-scale-h):not(.btn) {
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    .title-opacity {
+        .title-opacity-text {
+            margin-top: -7.632rem;
+        }
+    }
+}
+
+.page-title-bg-color {
+    background-color: $body_main_element_secondary_color;
+    position: absolute;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.page-title-body {
+    position: relative;
+    z-index: 1;
+
+    &.page-title-body-space-left {
+        padding-left: 8%;
+
+        @media #{$media_md} {
+            padding-left: 2.632rem;
+        }
+    }
+
+    padding-bottom: 3.421rem;
+}
+
+.page-title-footer {
+    position: absolute !important;
+    bottom: $space_lg;
+
+    &.full-width {
+        left: $wrapper_p_l;
+        right: $wrapper_p_r;
+
+        @media #{$media_xxl} {
+            left: $wrapper_p_l_xxl;
+            right: $wrapper_p_r_xxl;
+        }
+
+        @media #{$media_xl} {
+            left: $wrapper_p_l_xl;
+            right: $wrapper_p_r_xl;
+        }
+
+        @media #{$media_sm} {
+            left: $wrapper_p_l_sm;
+            right: $wrapper_p_r_sm;
+        }
+    }
+}
