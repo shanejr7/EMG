@@ -1,0 +1,14 @@
+//=================================================
+// Flex
+//=================================================
+
+// Page builder
+[class*='-element'] {
+	&.justify-content-between {
+		> [class*='r-container'] {
+			> [class*='-row'] {
+				@extend .justify-content-between;
+			}
+		}
+	}
+}
