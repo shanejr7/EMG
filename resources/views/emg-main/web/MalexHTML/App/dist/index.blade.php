@@ -66,11 +66,11 @@
                                 <nav class="menu-primary">
                                     <ul class="nav">
                                         <li class="nav-item">
-                                            <a title="Services" href="#services">Services</a>
+                                            <a title="Services" href="#services">What We Do</a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a title="About Us" href="#about-us">About Us</a>
+                                            <a title="About Us" href="#about-us">Who We Are</a>
                                         </li>
 
                                         <!-- <li class="nav-item">
@@ -208,7 +208,7 @@
                                             <i class="malex-icon-chart-5"></i>
                                         </div>
 
-                                        <h4 class="service-t-head">Financial</h4>
+                                        <h4 class="service-t-head">Business Operations</h4>
 
                                         <!-- <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
 
@@ -227,7 +227,7 @@
                     <section id="about-us" class="block spacer p-top-xl">
                         <div class="wrapper">
                             <div class="title">
-                                <h6 class="text-primary text-uppercase">About Us</h6>
+                                <h6 class="text-primary text-uppercase">Who We Are</h6>
                             </div>
 
                             <div class="row gutter-width-md with-pb-md">
@@ -1060,11 +1060,11 @@
                                         <nav class="menu-primary">
                                             <ul class="nav">
                                                 <li class="nav-item">
-                                                    <a title="Services" href="#services">Services</a>
+                                                    <a title="Services" href="#services">What We Do</a>
                                                 </li>
 
                                                 <li class="nav-item">
-                                                    <a title="About Us" href="#about-us">About Us</a>
+                                                    <a title="About Us" href="#about-us">Who We Are</a>
                                                 </li>
 
                                               <!--   <li class="nav-item">
