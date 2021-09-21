@@ -50,7 +50,7 @@
                         <div class="header-logo ">
                              
                             <a class="logo logo-primary adv-dark transform-scale-h" title="Logo" href="/">
-                                <img src="assets/img/logo/IMG_1326.svg" alt="Logo">
+                                <img style="width:150px;" src="assets/img/logo/IMG_1324.jpg" alt="Logo">
                             </a>
 
                             <a class="logo logo-secondary adv-light transform-scale-h" title="Logo" href="/">
@@ -988,7 +988,7 @@
                     <div class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row justify-content-between">
                         <div class="align-self-center">
                             <div class="logo logo-secondary">
-                                <img style="width:300px;" src="assets/img/logo/IMG_1325.svg" alt="Logo">
+                                 <img style="width:200px;" src="assets/img/logo/IMG_1324.jpg" alt="Logo">
                             </div>
                         </div>
 
@@ -1026,7 +1026,7 @@
                                     <div class="header-left align-self-center">
                                         <div class="header-logo">
                                             <a class="logo logo-secondary transform-scale-h" title="Logo" href="/">
-                                                <img style="width: 200px;" src="assets/img/logo/IMG_1325.svg" alt="Logo">
+                                                 <img style="width:200px;" src="assets/img/logo/IMG_1324.jpg" alt="Logo">
                                             </a>
                                         </div>
                                     </div>
@@ -1125,7 +1125,7 @@
                                     <div class="header-left align-self-center">
                                         <div class="header-logo">
                                             <a class="logo logo-secondary transform-scale-h" title="Logo" href="/">
-                                                <img style="width:200px; height:200px" src="assets/img/logo/IMG_1325.svg" alt="Logo">
+                                                <img style="width:200px;" src="assets/img/logo/IMG_1324.jpg" alt="Logo">
                                             </a>
                                         </div>
                                     </div>
