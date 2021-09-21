@@ -173,7 +173,8 @@
                                     <div class="header-left align-self-center">
                                         <div class="header-logo">
                                             <a class="logo logo-secondary transform-scale-h" title="Logo" href="/">
-                                                <img src="assets/img/logo/logo-light.svg" alt="Logo">
+                                                 <img style="width:200px;" src="assets/img/logo/IMG_1324.jpg" alt="Logo">
+                                            </a>
                                             </a>
                                         </div>
                                     </div>
@@ -267,8 +268,9 @@
                                 <div class="header-content d-flex justify-content-between w-100">
                                     <div class="header-left align-self-center">
                                         <div class="header-logo">
-                                            <a class="logo logo-secondary transform-scale-h" title="Logo" href="/">
-                                                <img style="width:200px; height:200px" src="assets/img/logo/IMG_1325.svg" alt="Logo">
+                                          <a class="logo logo-secondary transform-scale-h" title="Logo" href="/">
+                                                 <img style="width:200px;" src="assets/img/logo/IMG_1324.jpg" alt="Logo">
+                                            </a>
                                             </a>
                                         </div>
                                     </div>
