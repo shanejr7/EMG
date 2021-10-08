@@ -907,7 +907,7 @@
 
                             <div class="spacer p-top-lg">
                                 <div class="row gutter-width-md with-pb-md">
-                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                  <!--   <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                         <div class="contacts-item">
                                             <div class="contacts-item-icon">
                                                 <i class="malex-icon-location"></i>
@@ -917,7 +917,7 @@
 
                                             <p class="contacts-item-description">Location: 1900 Knightsbridge rd<br>Farmers Branch, TX 75234</p>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                         <div class="contacts-item">
@@ -928,8 +928,7 @@
                                             <h5 class="contacts-item-t-head">Phone no.</h5>
 
                                             <p class="contacts-item-description">
-                                                Mobile: <a href="tel:+43253312523">+972 533 12 523</a><br>
-                                                Fax: <a href="tel:+53222212523">+532 222 12 523</a>
+                                                Mobile: <a href="tel:+214 892 9129">+214 892 9129</a><br>
                                             </p>
                                         </div>
                                     </div>
@@ -943,7 +942,7 @@
                                             <h5 class="contacts-item-t-head">E-mail</h5>
 
                                             <p class="contacts-item-description">
-                                                Contact: <a href="mailto:ceo@domain.com">emgconsulting@emg.com</a>
+                                                Contact: <a href="mailto:emg823@gmail.">emg823@gmail.com</a>
                                             </p>
                                         </div>
                                     </div>
@@ -960,7 +959,7 @@
 
                                     <div class="description-lg spacer p-top-lg">
                                         <p>
-                                            <button type="submit" class="btn btn-outline-secondary">emgconsulting@emg.com</button>
+                                            <button type="submit" class="btn btn-outline-secondary">emg823@gmail.com</button>
                                         </p>
                                     </div>
 
@@ -1014,14 +1013,14 @@
                         <div class="align-self-center">
                             <nav class="menu-secondary">
                                 <ul class="nav">
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a title="LinkedIn" href="https://www.linkedin.com/company/18135051/"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
-
-                                    <li class="nav-item">
+ -->
+                                   <!--  <li class="nav-item">
                                         <a title="Facebook" href="https://www.facebook.com/adveits/"><i class="fab fa-facebook-f"></i></a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </nav>
                         </div>
                     </div>
@@ -1061,11 +1060,11 @@
                             <div class="modal-body modal-body-centered">
                                 <div class="d-flex flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row justify-content-between align-items-sm-center align-items-md-center align-items-lg-center align-items-xl-center w-100">
                                     <div class="modal-text order-1 order-sm-0 order-md-0 order-lg-0 order-xl-0">
-                                        <p>1900 Knightsbridge Rd <br>TX 75234 <br>United States</p>
+                                     <!--    <p>1900 Knightsbridge Rd <br>TX 75234 <br>United States</p> -->
 
                                         <p>
-                                            <a href="tel:+43253312523">+972 533 12 523</a><br>
-                                            <a href="mailto:info@domain.com">emgconsulting@emg.com</a>
+                                            <a href="tel:+214 892 9129">+214 892 9129</a><br>
+                                            <a href="mailto:emg823@gmail.com">emg823@gmail.com</a>
                                         </p>
                                     </div>
 
