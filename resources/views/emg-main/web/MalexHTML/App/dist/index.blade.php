@@ -170,7 +170,13 @@
                                             <i class="malex-icon-strategy"></i>
                                         </div>
 
-                                        <h4 class="service-t-head">Strategic Planning</h4>
+                                        <h4 class="service-t-head">Restructuring Improvement</h4>
+                                        <ul>
+                                            <li>Advisory</li>
+                                            <li>Management and Planning</li>      
+                                            <li>Business Planning</li>           
+                                            <li>Marketing Strategy</li>
+                                        </ul>
 
                                         <!-- <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
 
@@ -189,7 +195,13 @@
                                             <i class="malex-icon-choice"></i>
                                         </div>
 
-                                        <h4 class="service-t-head">Consulting & Marketing</h4>
+                                        <h4 class="service-t-head">Performance</h4>
+
+                                        <ul>
+                                            <li>Leadership</li>
+                                            <li>Process Improvement</li>
+                                            <li>Cost Optimization</li>
+                                        </ul>
 
                                         <!-- <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
 
@@ -233,7 +245,8 @@
                             <div class="row gutter-width-md with-pb-md">
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                     <div class="description-2">
-                                        <h2>Keep Your Business Safe & Ensure High Availability</h2>
+                                        <h2>Business Consultants</h2>
+                                        <p>Skilled and proficient business consultants helping to meet your profit goals (making sure you meet your profit goals)</p>
                                     </div>
 
                                    <!--  <div class="signature spacer m-top-lg">
@@ -250,15 +263,15 @@
 
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                     <div class="description-2">
-                                        <p>A business consulting agency is involved in the planning, implementation, and education of businesses. We work directly with business owners on developing a business plan, identifying marketing needs and developing the necessary skills for business ownership.</p>
+                                        <p>Our professionals will stand at the heart of the matter, and provide the proper support to our clients, as they accomplish the desired objectives, by leveraging the company’s talent, techniques and technology.</p>
                                     </div>
 
                                     <div class="description-2 spacer p-top-lg">
-                                        <p>Marketing consultant is an advisor who works with companies to create and implement marketing strategies.</p>
+                                        <p>Upon meeting with our clients, it is our job to implement an appropriate proposal within a reasonable timeframe, as we coach them through to each desired milestone.</p>
                                     </div>
                                 </div>
                             </div>
-
+<!-- 
                             <div class="icon-list">
                                 <div class="icon-list-items">
                                     <div class="icon-list-item">
@@ -277,7 +290,7 @@
                                         <p><span class="d-flex"><i class="fas fa-check"></i><span>30 Days Money Back Warranty</span></span></p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </section><!-- #about-us -->
 
