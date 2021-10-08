@@ -263,10 +263,10 @@
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                     
                                     <div class="description-2">
-                                    <p>Skilled and proficient business consultants helping to meet your profit goals (making sure you meet your profit goals)</p>
+                                        <p>Skilled and proficient business consultants helping to meet your profit goals (making sure you meet your profit goals)</p>
                                     </div>
 
-                                    <div class="description-2 spacer">
+                                    <div class="description-2 spacer p-top-lg">
                                         <p>Our professionals will stand at the heart of the matter, and provide the proper support to our clients, as they accomplish the desired objectives, by leveraging the company’s talent, techniques and technology.</p>
                                     </div>
 
