@@ -248,7 +248,7 @@
                                         <h2>Business Consultants</h2>
                                     </div>
 
-                                   <!--  <div class="signature spacer m-top-lg">
+                                    <div class="signature spacer m-top-lg">
                                         <div class="signature-img">
                                             <img src="assets/img/demo/23_img.png" alt="Signature">
                                         </div>
@@ -257,7 +257,7 @@
                                             <h5 class="signature-name"></h5>
                                             <p class="signature-position"></p>
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
 
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
