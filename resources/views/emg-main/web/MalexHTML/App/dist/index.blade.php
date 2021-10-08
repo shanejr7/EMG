@@ -214,13 +214,13 @@
                                     </div>
                                 </div>
 
-                                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                              <!--   <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                     <div class="service">
                                         <div class="service-icon">
                                             <i class="malex-icon-chart-5"></i>
-                                        </div>
+                                        </div> -->
 
-                                        <h4 class="service-t-head">Business Operations</h4>
+                                       <!--  <h4 class="service-t-head">Business Operations</h4> -->
 
                                         <!-- <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
 
@@ -230,8 +230,8 @@
                                                 <span class="btn-text">Read more</span>
                                             </a>
                                         </div> -->
-                                    </div>
-                                </div>
+                                <!--     </div>
+                                </div> -->
                             </div>
                         </div>
                     </div><!-- #services -->
@@ -953,16 +953,16 @@
                         <div class="width-img spacer p-top-xl p-bottom-xl">
                             <div class="wrapper">
                                 <div id="contact-form">
-                                    <div class="title">
+                                   <!--  <div class="title">
                                         <h3 class="pb-0">You Can Email Us At</h3>
                                     </div>
-
-                                    <div class="description-lg spacer p-top-lg">
+ -->
+                                   <!--  <div class="description-lg spacer p-top-lg">
                                         <p>
                                             <button type="submit" class="btn btn-outline-secondary">emg823@gmail.com</button>
                                         </p>
                                     </div>
-
+ -->
                                     <div class="spacer p-top-lg">
                                     <!--     <form method="post" action="form.php" id="cf-1" class="contact-form">
                                             <div class="form-group form-group-xs">
