@@ -137,6 +137,10 @@
     line-height: 1;
 }
 
+#color {
+    color: #642c8c;
+}
+
 .fa-lg {
     font-size: 1.33333em;
     line-height: 0.75em;
@@ -15983,11 +15987,11 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-    color: #0f4c81 !important;
+    color: #642c8c !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-    color: #07243c !important;
+    color: #642c8c  !important;
 }
 
 .text-secondary, .accordion .btn-link [class*='fa-'], .accordion [class*='-block-search'] [class*='-block-search__button'] [class*='fa-'], [class*='-block-search'] .accordion [class*='-block-search__button'] [class*='fa-'], .accordion [class*='-password-form'] input[type="submit"] [class*='fa-'], [class*='-password-form'] .accordion input[type="submit"] [class*='fa-'] {
@@ -17163,7 +17167,7 @@ h1.after:after, h1.modal-title:after, .card h1.card-header:after, .h1.after:afte
 }
 
 h1 a, .h1 a, h1.card-title a, h2 a, .h2 a, h2.card-title a, h3 a, .h3 a, h3.card-title a, h4 a, .h4 a, h4.card-title a, h5 a, .h5 a, h5.card-title a, h6 a, .h6 a, h6.card-title a {
-    color: #060606;
+    color: black;
 }
 
 h1,
@@ -25691,12 +25695,12 @@ main.content-no-spacing #page-content {
     background-size: cover;
     height: calc(100vh + 3.526rem);
     min-height: 200px;
-    max-height: 500px;
+    max-height: 300px;
     color: #ffffff;
 }
 
 #page-title.with-img .wrapper, #page-title.with-img #swipebox-container {
-    height: 30%;
+    height: 100%;
 }
 
 #page-title.with-img [class*='widget-text-editor'] {

@@ -20,7 +20,7 @@
         <!-- Style -->
         <style>
             #page-title {
-                background-image: url('assets/img/logo/IMG_1326.svg');
+                background-image: url('assets/img/logo/IMG_1326.jpg');
             }
 
             #contacts .width-img {
@@ -50,7 +50,7 @@
                         <div class="header-logo ">
                              
                             <a class="logo logo-primary adv-dark transform-scale-h" title="Logo" href="/">
-                                <img style="width:150px;" src="assets/img/logo/IMG_1324.jpg" alt="Logo">
+                                <h3 >EMG</h3>
                             </a>
 
                             <a class="logo logo-secondary adv-light transform-scale-h" title="Logo" href="/">
@@ -239,7 +239,7 @@
                     <section id="about-us" class="block spacer p-top-xl">
                         <div class="wrapper">
                             <div class="title">
-                                <h6 class="text-primary text-uppercase">Who We Are</h6>
+                                <h6 class="text-primary text-uppercase" style="color: black;">Who We Are</h6>
                             </div>
 
                             <div class="row gutter-width-md with-pb-md">
@@ -1002,15 +1002,14 @@
 
                 <div class="footer">
                     <div class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row justify-content-between">
+
                         <div class="align-self-center">
-                            <div class="logo logo-secondary">
-                                 <img style="width:200px;" src="assets/img/logo/IMG_1324.jpg" alt="Logo">
-                            </div>
+                           
                         </div>
 
                         <div class="align-self-center">
                             <div class="copyright">
-                                <p>© <script>document.write( new Date().getFullYear() );</script> Business Consulting Agency</p>
+                                <p>© <script>document.write( new Date().getFullYear() );</script> EMG Business Consulting LLC</p>
                             </div>
                         </div>
 
@@ -1111,7 +1110,7 @@
                             <div class="modal-footer">
                                 <div class="d-flex flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row justify-content-between w-100">
                                     <div class="modal-text">
-                                        <p>© <script>document.write( new Date().getFullYear() );</script> Business Consulting Agency</p>
+                                        <p>© <script>document.write( new Date().getFullYear() );</script> EMG Business Consulting LLC</p>
                                     </div>
 
                                     <nav class="languages">
@@ -1171,7 +1170,7 @@
                             <div class="modal-footer">
                                 <div class="d-flex flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row justify-content-between w-100">
                                     <div class="modal-text">
-                                        <p>© <script>document.write( new Date().getFullYear() );</script> Business Consulting Agency</p>
+                                        <p>© <script>document.write( new Date().getFullYear() );</script> EMG Business Consulting LLC</p>
                                     </div>
 
                                     <nav class="languages">
