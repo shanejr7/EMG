@@ -167,7 +167,7 @@
                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                     <div class="service">
                                         <div class="service-icon">
-                                            <i class="malex-icon-strategy"></i>
+                                            <i class="malex-icon-strategy-1" id="color"></i>
                                         </div>
 
                                         <h4 class="service-t-head">Strategic Marketing</h4>
@@ -192,10 +192,10 @@
                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                     <div class="service">
                                         <div class="service-icon">
-                                            <i class="malex-icon-choice"></i>
+                                            <i class="malex-icon-workflow" id="color"></i>
                                         </div>
 
-                                        <h4 class="service-t-head">Performance</h4>
+                                        <h4 class="service-t-head">Tax Form Assistance</h4>
 
                                       <!--   <ul>
                                             <li>Leadership</li>
@@ -217,7 +217,7 @@
                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                     <div class="service">
                                         <div class="service-icon">
-                                            <i class="malex-icon-chart-5"></i>
+                                            <i class="malex-icon-network" id="color"></i>
                                         </div>
 
                                         <h4 class="service-t-head">Business Operations</h4>
@@ -239,7 +239,7 @@
                     <section id="about-us" class="block spacer p-top-xl">
                         <div class="wrapper">
                             <div class="title">
-                                <h6 class="text-primary text-uppercase" style="color: black;">Who We Are</h6>
+                                <h6 class="text-primary text-uppercase" >Who We Are</h6>
                             </div>
 
                             <div class="row gutter-width-md with-pb-md">
@@ -926,7 +926,7 @@
                                     <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                         <div class="contacts-item">
                                             <div class="contacts-item-icon">
-                                                <i class="malex-icon-phone"></i>
+                                                <i class="malex-icon-phone" id="color"></i>
                                             </div>
 
                                             <h5 class="contacts-item-t-head">Phone no.</h5>
@@ -940,7 +940,7 @@
                                     <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                         <div class="contacts-item">
                                             <div class="contacts-item-icon">
-                                                <i class="malex-icon-email"></i>
+                                                <i class="malex-icon-email" id="color"></i>
                                             </div>
 
                                             <h5 class="contacts-item-t-head">E-mail</h5>
