@@ -16,23 +16,29 @@ shared_examples "A basic PHP application" do |series|
 		
 		it "picks a version from the desired series" do
 			expect(@app.output).to match(/- php \(#{Regexp.escape(series)}\./)
-			expect(@app.run('php -v')).to match(/#{Regexp.escape(series)}\./)
+			retry_until retry: 3, sleep: 5 do
+				expect(@app.run('php -v')).to match(/#{Regexp.escape(series)}\./)
+			end
 		end
 		
 		it "has Heroku php.ini defaults" do
-			ini_output = @app.run('php -i')
-			expect(ini_output).to match(/date.timezone => UTC/)
-			                 .and match(/error_reporting => 30719/)
-			                 .and match(/expose_php => Off/)
-			                 .and match(/user_ini.cache_ttl => 86400/)
-			                 .and match(/variables_order => EGPCS/)
+			retry_until retry: 3, sleep: 5 do
+				ini_output = @app.run('php -i')
+				expect(ini_output).to match(/date.timezone => UTC/)
+				                 .and match(/error_reporting => 30719/)
+				                 .and match(/expose_php => Off/)
+				                 .and match(/user_ini.cache_ttl => 86400/)
+				                 .and match(/variables_order => EGPCS/)
+			end
 		end
 		
-		it "uses all available RAM as PHP CLI memory_limit", :if => series.between?("7.2","8.0") do
-			expect(@app.run("php -i | grep memory_limit")).to match "memory_limit => 536870912 => 536870912"
+		it "uses all available RAM as PHP CLI memory_limit", :if => series.between?("7.2","8.1") do
+			retry_until retry: 3, sleep: 5 do
+				expect(@app.run("php -i | grep memory_limit")).to match "memory_limit => 536870912 => 536870912"
+			end
 		end
 		
-		it "is running a PHP build that links against libc-client, libonig, libsqlite3 and libzip from the stack", :if => series.between?("7.2","8.0") do
+		it "is running a PHP build that links against libc-client, libonig, libsqlite3 and libzip from the stack", :if => series.between?("7.2","8.1") do
 			ldd_output = @app.run("ldd .heroku/php/bin/php .heroku/php/lib/php/extensions/no-debug-non-zts-*/{imap,mbstring,pdo_sqlite,sqlite3}.so | grep -E ' => (/usr)?/lib/' | grep -e 'libc-client.so' -e 'libonig.so' -e 'libsqlite3.so' -e 'libzip.so' | wc -l")
 			# 1x libc-client.so for extensions/…/imap.so
 			# 1x libonig for extensions/…/mbstring.so

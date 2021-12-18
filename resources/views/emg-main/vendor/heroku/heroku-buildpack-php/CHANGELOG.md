@@ -1,5 +1,93 @@
 # heroku-buildpack-php CHANGELOG
 
+## v203 (2021-12-17)
+
+## ADD
+
+- PHP/7.4.27 [David Zuelke]
+- PHP/8.0.14 [David Zuelke]
+- PHP/8.1.1 [David Zuelke]
+- ext-blackfire/1.72.0 [David Zuelke]
+- ext-mongodb/1.12.0 [David Zuelke]
+- ext-psr/1.1.0 (for PHP 7.2) [David Zuelke]
+- ext-psr/1.2.0 (for PHP 7.3+) [David Zuelke]
+
+## v202 (2012-12-10)
+
+### ADD
+
+- ext-amqp/1.11.0 [David Zuelke]
+- ext-blackfire/1.71.0 [David Zuelke]
+- ext-imagick/3.6.0 [David Zuelke]
+- ext-mongodb/1.11.1 [David Zuelke]
+- ext-pcov/1.0.10 [David Zuelke]
+- ext-rdkafka/5.0.2 [David Zuelke]
+- Nginx/1.20.2 [David Zuelke]
+- PHP/8.1.0 [David Zuelke]
+
+### CHG
+
+- blackfire/2.5.2 [David Zuelke]
+- Composer/2.1.14 [David Zuelke]
+- Composer/1.10.24 [David Zuelke]
+
+## v201 (2021-11-18)
+
+### ADD
+
+- PHP/7.3.33 [Ed Morley]
+- PHP/7.4.26 [Ed Morley]
+- PHP/8.0.13 [Ed Morley]
+
+## v200 (2021-10-28)
+
+### ADD
+
+- PHP/7.3.32 [David Zuelke]
+- PHP/7.4.25 [David Zuelke]
+- PHP/8.0.12 [David Zuelke]
+- ext-apcu/5.1.21 [David Zuelke]
+- ext-blackfire/1.69.0 [David Zuelke]
+
+### CHG
+
+- blackfire/2.5.1 [David Zuelke]
+- librdkafka/1.8.2 [David Zuelke]
+
+### FIX
+
+- Malformed `$COMPOSER_AUTH` causes app startup failure (#513) [David Zuelke]
+
+## v199 (2021-10-08)
+
+### ADD
+
+- Apache/2.4.51 [David Zuelke]
+
+### CHG
+
+- Composer/2.1.9 [David Zuelke]
+- Composer/1.10.23 [David Zuelke]
+
+## v198 (2021-09-28)
+
+### ADD
+
+- PHP/7.3.31 [David Zuelke]
+- PHP/7.4.24 [David Zuelke]
+- PHP/8.0.11 [David Zuelke]
+- ext-blackfire/1.67.0 [David Zuelke]
+- ext-ev/1.1.5 [David Zuelke]
+- ext-event/3.0.6 [David Zuelke]
+- ext-pq/2.2.0 [David Zuelke]
+- Apache/2.4.49 [David Zuelke]
+- blackfire/2.5.0 [David Zuelke]
+
+### CHG
+
+- Composer/2.1.8 [David Zuelke]
+- librdkafka/1.8.0 [David Zuelke]
+
 ## v197 (2021-08-26)
 
 ### ADD

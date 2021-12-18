@@ -55,16 +55,16 @@ def expected_default_php(stack)
 		when "heroku-18"
 			"7.4"
 		else
-			"8.0"
+			"8.1"
 	end
 end
 
 def php_on_stack?(series)
 	case ENV["STACK"]
 		when "heroku-18"
-			available = ["7.1", "7.2", "7.3", "7.4", "8.0"]
+			available = ["7.1", "7.2", "7.3", "7.4", "8.0", "8.1"]
 		else
-			available = ["7.3", "7.4", "8.0"]
+			available = ["7.3", "7.4", "8.0", "8.1"]
 	end
 	available.include?(series)
 end
@@ -85,4 +85,26 @@ def run!(cmd)
 	out = `#{cmd}`
 	raise "Command #{cmd} failed: #{out}" unless $?.success?
 	out
+end
+
+def retry_until(options = {})
+	options = {
+		retry: 1,
+		sleep: 1,
+		rescue: RSpec::Expectations::ExpectationNotMetError
+	}.merge(options)
+
+	options[:rescue] = Array(options[:rescue])
+
+	tries = 0
+	begin
+		tries += 1
+		yield
+	rescue *options[:rescue] => e
+		can_retry = tries < options[:retry]
+		raise e unless can_retry
+
+		sleep options[:sleep]
+		retry
+	end
 end
