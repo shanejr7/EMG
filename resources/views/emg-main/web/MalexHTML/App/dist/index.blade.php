@@ -283,7 +283,7 @@
                                 </div>
                             </div>
 
-                            <!-- 
+<!-- 
                             <div class="icon-list">
                                 <div class="icon-list-items">
                                     <div class="icon-list-item">
@@ -399,17 +399,17 @@
                                         <div class="team-member-top">
                                             <div class="img object-fit">
                                                 <div class="object-fit-cover">
-                                                    <img src="assets/img/logo/IMG_0018.jpg" alt="Gwen Green">
+                                                    <img src="assets/img/logo/IMG_0018.jpg" alt="Ewendapha Green">
                                                 </div>
                                             </div>
 
                                             <div class="team-member-position">
-                                                <p>CEO</p>
+                                                <p>Operations Manager</p>
                                             </div>
                                         </div>
 
                                         <div class="team-member-content">
-                                            <h4 class="team-member-t-head">Gwen Green</h4>
+                                            <h4 class="team-member-t-head">Ewendapha Green</h4>
 
                                           <!--   <div class="team-member-description">
                                                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
@@ -423,7 +423,7 @@
                                                 </li> -->
 
                                                 <li class="nav-item">
-                                                    <a title="LinkedIn" href="https://www.linkedin.com/company/18135051/"><i class="fab fa-linkedin-in"></i></a>
+                                                    <a title="LinkedIn" href="https://www.linkedin.com/in/ewendapha-green-a9508715"><i class="fab fa-linkedin-in"></i></a>
                                                 </li>
 
                                              <!--    <li class="nav-item">
@@ -446,7 +446,7 @@
                                             </div>
 
                                             <div class="team-member-position">
-                                                <p>Business Tech</p>
+                                                <p>Software Developer</p>
                                             </div>
                                         </div>
 
@@ -672,8 +672,7 @@
                                 </div>
                             </div>
                         </div>
-                    </section> -->
-                    <!-- #price-plans -->
+                    </section> --><!-- #price-plans
 
                     <!-- <div id="clients" class="block bg-white spacer m-top-xl">
                         <div class="wrapper">
@@ -717,8 +716,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
-                    <!-- #clients -->
+                    </div> --><!-- #clients -->
 
                    <!--  <div id="video" class="block">
                         <div class="embed">
@@ -742,8 +740,7 @@
                                 <div class="embed-bg"></div>
                             </div>
                         </div>
-                    </div> -->
-                    <!-- #video -->
+                    </div> --><!-- #video -->
 
                     <!-- <section id="testimonials" class="block bg-dark spacer p-top-xl p-bottom-xl">
                         <div class="wrapper">
@@ -806,8 +803,7 @@
                                 </div>
                             </div>
                         </div>
-                    </section> -->
-                    <!-- #testimonials -->
+                    </section> --><!-- #testimonials -->
 
                   <!--   <section id="news" class="block spacer p-top-xl p-bottom-xl">
                         <div class="wrapper">
@@ -918,7 +914,7 @@
                                 <a title="View all news" class="btn btn-outline-secondary" href="news.html">View All Posts</a>
                             </div>
                         </div>
-                    </section> --><!-- #news
+                    </section> --><!-- #news -->
 
                     <section id="contacts" class="block bg-white-before spacer p-top-xl">
                         <div class="wrapper">
@@ -935,7 +931,7 @@
                             </div>
 
                             <div class="spacer p-top-lg">
-                                <div class="row gutter-width-md with-pb-md"> -->
+                                <div class="row gutter-width-md with-pb-md">
                                   <!--   <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                         <div class="contacts-item">
                                             <div class="contacts-item-icon">
