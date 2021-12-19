@@ -125,15 +125,15 @@
                     <section id="page-title" class="block with-img with-service-items" >
                         <div class="wrapper d-flex flex-column justify-content-center">
                             <div class="page-title-body page-title-body-space-left">
-                               <!--  <div class="title">
+                              <!--   <div class="title">
                                     <h1 class="large">Business <br>Consulting Agency</h1>
-                                </div> -->
-
-                               <!--  <div class="description spacer p-top-lg">
-                                    <p>We are digital business consulting agency that helps companies increase better incomes and help with branding for faster business growing.</p>
                                 </div>
  -->
-                               <!--  <div class="spacer p-top-lg">
+                              <!--   <div class="description spacer p-top-lg">
+                                    <p>We are digital business consulting agency that helps companies increase better incomes and help with branding for faster business growing.</p>
+                                </div> -->
+
+                             <!--    <div class="spacer p-top-lg">
                                     <a href="about-us.html" class="btn btn-outline-tertiary">Learn More</a>
                                 </div> -->
                             </div>
@@ -177,12 +177,13 @@
                                         </div>
 
                                         <h4 class="service-t-head">Strategic Marketing</h4>
-                                      <!--   <ul>
+                                        <ul>
                                             <li>Advisory</li>
-                                            <li>Management and Planning</li>      
+                                          <!--   <li>Management and Planning</li>   -->    
                                             <li>Business Planning</li>           
-                                            <li>Marketing Strategy</li>
-                                        </ul> -->
+                                          <!--   <li>Marketing Strategy </li> -->
+                                            <li>Finances</li>
+                                        </ul>
 
                                         <!-- <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
 
@@ -202,7 +203,13 @@
                                         </div>
 
                                         <h4 class="service-t-head">Tax Form Assistance</h4>
-
+                                            
+                                            <ul>
+                                                <li>Income Tax</li>
+                                                <li>Property Tax</li>
+                                                <li>Sales Tax</li>
+                                            </ul>
+                                      
                                       <!--   <ul>
                                             <li>Leadership</li>
                                             <li>Process Improvement</li>
@@ -228,9 +235,12 @@
 
                                         <h4 class="service-t-head">Business Operations</h4>
 
-                                       <!--  <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
-
-                                      <!--   <div class="service-btn">
+                                      <!--   <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
+                                        <ul>
+                                            <li>Operational Processes</li>
+                                            <li>Web Design & Development</li>
+                                         </ul>
+                                  <!--       <div class="service-btn">
                                             <a title="Read more" class="btn btn-sm btn-link btn-icon-hover p-0 border-0 min-w-auto link-no-space text-uppercase" href="service-inside.html">
                                                 <i class="malex-icon-arrow-right i-large"></i>
                                                 <span class="btn-text">Read more</span>
@@ -249,25 +259,15 @@
                             </div>
 
                             <div class="row gutter-width-md with-pb-md">
-                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6">
                                     <div class="description-2">
                                         <h2>Business Consultants</h2>
+                                        <img style="width:500px" src="assets/img/logo/IMG_0017.jpg" alt="team">
                                     </div>
 
-                                    <div class="signature spacer m-top-lg">
-                                       <!--  <div class="signature-img">
-                                            <img src="assets/img/demo/23_img.png" alt="Signature">
-                                        </div> -->
-
-                                        <div class="signature-content">
-                                             <img style="width:350px" src="assets/img/logo/IMG_0018.jpg" alt="Signature">
-                                            <h5 class="signature-name"></h5>
-                                            <p class="signature-position"></p>
-                                        </div>
-                                    </div>
                                 </div>
 
-                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <div class="col-sm-12 col-md-4 col-lg-6 col-xl-6">
                                     
                                     <div class="description-2">
                                         <p>Skilled and proficient business consultants helping to meet your profit goals (making sure you meet your profit goals)</p>
@@ -282,8 +282,8 @@
                                     </div>
                                 </div>
                             </div>
-                            
-<!-- 
+
+                            <!-- 
                             <div class="icon-list">
                                 <div class="icon-list-items">
                                     <div class="icon-list-item">
@@ -306,19 +306,21 @@
                         </div>
                     </section><!-- #about-us -->
 
-                  <!--   <div id="img" class="block spacer p-top-lg wrapper-normal">
+               <!--      <div id="img" class="block spacer p-top-lg wrapper-normal">
                         <div class="wrapper">
                             <div class="img-size-1">
                                 <div class="img object-fit">
                                     <div class="object-fit-cover">
-                                        <img src="assets/img/logo/IMG_1326.JPG" alt="Team">
+                                        <img src="assets/img/logo/IMG_0016.jpg" alt="Team">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>< --><!-- #img -->
+                    </div>  -->
 
-                  <!--   <section id="how-it-works" class="block bg-white before-block">
+                    <!-- #img -->
+
+                    <section id="how-it-works" class="block spacer p-top-lg bg-white before-block">
                         <div class="wrapper">
                             <div class="row no-gutters process-height">
                                 <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
@@ -337,7 +339,7 @@
                                     <div class="process process-color-1">
                                         <div class="process-content">
                                             <h4 class="process-t-head">Business Analysis</h4>
-                                            <p class="process-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                                           <!--  <p class="process-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
                                         </div>
 
                                         <div class="process-number">01</div>
@@ -348,7 +350,7 @@
                                     <div class="process process-color-2">
                                         <div class="process-content">
                                             <h4 class="process-t-head">Business Planning</h4>
-                                            <p class="process-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                                        <!--     <p class="process-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
                                         </div>
 
                                         <div class="process-number">02</div>
@@ -359,7 +361,7 @@
                                     <div class="process process-color-3">
                                         <div class="process-content">
                                             <h4 class="process-t-head">Business Growth</h4>
-                                            <p class="process-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                                            <!-- <p class="process-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
                                         </div>
 
                                         <div class="process-number">03</div>
@@ -367,9 +369,11 @@
                                 </div>
                             </div>
                         </div>
-                    </section> --><!-- #how-it-works -->
+                    </section>
 
-                  <!--   <section id="team-members" class="block bg-white-before spacer p-top-xl p-bottom-xl">
+                    <!-- #how-it-works -->
+
+                    <section id="team-members" class="block bg-white-before spacer p-top-xl p-bottom-xl">
                         <div class="wrapper">
                             <div class="title">
                                 <h6 class="text-primary text-uppercase">Meet our team</h6>
@@ -379,17 +383,23 @@
                                 <div class="title-opacity-text">Team</div>
                             </div>
 
-                            <div class="description">
+                            <div class="text-center description-2">
                                 <h2>We are Business Consulting Professionals</h2>
                             </div>
 
                             <div class="row gutter-width-md with-pb-md spacer p-top-lg">
+
+                                  <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2">
+                                    <div class="team-member">
+                                    </div>
+                                </div>
+
                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                     <div class="team-member">
                                         <div class="team-member-top">
                                             <div class="img object-fit">
                                                 <div class="object-fit-cover">
-                                                    <img src="assets/img/placeholder/500x550.jpg" alt="Tom Henders">
+                                                    <img src="assets/img/logo/IMG_0018.jpg" alt="Gwen Green">
                                                 </div>
                                             </div>
 
@@ -399,72 +409,74 @@
                                         </div>
 
                                         <div class="team-member-content">
-                                            <h4 class="team-member-t-head">Tom Henders</h4>
+                                            <h4 class="team-member-t-head">Gwen Green</h4>
 
-                                            <div class="team-member-description">
+                                          <!--   <div class="team-member-description">
                                                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
-                                            </div>
+                                            </div> -->
                                         </div>
 
                                         <nav class="team-member-nav-items">
                                             <ul class="nav">
-                                                <li class="nav-item">
+                                                <!-- <li class="nav-item">
                                                     <a title="Facebook" href="https://www.facebook.com/adveits/"><i class="fab fa-facebook-f"></i></a>
-                                                </li>
+                                                </li> -->
 
                                                 <li class="nav-item">
                                                     <a title="LinkedIn" href="https://www.linkedin.com/company/18135051/"><i class="fab fa-linkedin-in"></i></a>
                                                 </li>
 
-                                                <li class="nav-item">
+                                             <!--    <li class="nav-item">
                                                     <a title="Instagram" href="https://www.instagram.com/adveits/"><i class="fab fa-instagram"></i></a>
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </nav>
                                     </div>
                                 </div>
+
+                                
 
                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                     <div class="team-member">
                                         <div class="team-member-top">
                                             <div class="img object-fit">
                                                 <div class="object-fit-cover">
-                                                    <img src="assets/img/placeholder/500x550.jpg" alt="Andrew Mike">
+                                                    <img src="assets/img/logo/IMG_0029.jpg" alt="Shane Johnson">
                                                 </div>
                                             </div>
 
                                             <div class="team-member-position">
-                                                <p>Business Analytic</p>
+                                                <p>Business Tech</p>
                                             </div>
                                         </div>
 
                                         <div class="team-member-content">
-                                            <h4 class="team-member-t-head">Andrew Mike</h4>
+                                            <h4 class="team-member-t-head">Shane Johnson</h4>
 
-                                            <div class="team-member-description">
+                                           <!--  <div class="team-member-description">
                                                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
-                                            </div>
+                                            </div> -->
                                         </div>
 
                                         <nav class="team-member-nav-items">
                                             <ul class="nav">
-                                                <li class="nav-item">
+                                            <!--     <li class="nav-item">
                                                     <a title="Facebook" href="https://www.facebook.com/adveits/"><i class="fab fa-facebook-f"></i></a>
-                                                </li>
+                                                </li> -->
 
                                                 <li class="nav-item">
-                                                    <a title="LinkedIn" href="https://www.linkedin.com/company/18135051/"><i class="fab fa-linkedin-in"></i></a>
+                                                    <a title="LinkedIn" href="https://www.linkedin.com/in/shane-johnson-jr-506990115/?challengeId=AQHkvHTqJ_hOcAAAAX3UIsP4ASJA33HkGIN171iFcQUwbUnmCLpmm-yN-XoMTPnT_RluWU5EQCJqS8FMIUUeWsoRMcX_rr-RtQ&submissionId=cbe4296a-2f3e-c216-3e18-10ea0596dd72"><i class="fab fa-linkedin-in"></i></a>
                                                 </li>
 
-                                                <li class="nav-item">
+                                             <!--    <li class="nav-item">
                                                     <a title="Instagram" href="https://www.instagram.com/adveits/"><i class="fab fa-instagram"></i></a>
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </nav>
                                     </div>
                                 </div>
 
-                                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                           <!--      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                     <div class="team-member">
                                         <div class="team-member-top">
                                             <div class="img object-fit">
@@ -502,10 +514,11 @@
                                             </ul>
                                         </nav>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
-                    </section> --><!-- #team-members -->
+                    </section>
+                    <!-- #team-members -->
 
                  <!--    <section id="price-plans" class="block spacer p-top-xl">
                         <div class="wrapper">
@@ -659,7 +672,8 @@
                                 </div>
                             </div>
                         </div>
-                    </section> --><!-- #price-plans -->
+                    </section> -->
+                    <!-- #price-plans -->
 
                     <!-- <div id="clients" class="block bg-white spacer m-top-xl">
                         <div class="wrapper">
@@ -703,7 +717,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div> --><!-- #clients -->
+                    </div> -->
+                    <!-- #clients -->
 
                    <!--  <div id="video" class="block">
                         <div class="embed">
@@ -727,7 +742,8 @@
                                 <div class="embed-bg"></div>
                             </div>
                         </div>
-                    </div> --><!-- #video -->
+                    </div> -->
+                    <!-- #video -->
 
                     <!-- <section id="testimonials" class="block bg-dark spacer p-top-xl p-bottom-xl">
                         <div class="wrapper">
@@ -790,7 +806,8 @@
                                 </div>
                             </div>
                         </div>
-                    </section> --><!-- #testimonials -->
+                    </section> -->
+                    <!-- #testimonials -->
 
                   <!--   <section id="news" class="block spacer p-top-xl p-bottom-xl">
                         <div class="wrapper">
@@ -901,7 +918,7 @@
                                 <a title="View all news" class="btn btn-outline-secondary" href="news.html">View All Posts</a>
                             </div>
                         </div>
-                    </section> --><!-- #news -->
+                    </section> --><!-- #news
 
                     <section id="contacts" class="block bg-white-before spacer p-top-xl">
                         <div class="wrapper">
@@ -918,7 +935,7 @@
                             </div>
 
                             <div class="spacer p-top-lg">
-                                <div class="row gutter-width-md with-pb-md">
+                                <div class="row gutter-width-md with-pb-md"> -->
                                   <!--   <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                         <div class="contacts-item">
                                             <div class="contacts-item-icon">
