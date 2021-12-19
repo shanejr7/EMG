@@ -2,7 +2,7 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="assets/css/style.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <title>Home | EMG - Business Consulting Agency</title>
        <!--  <link rel="shortcut icon" href="assets/img/favicon/favicon-16x16.ico" type="image/x-icon">
         <link rel="icon" href="assets/img/favicon/favicon-16x16.ico" type="image/x-icon"> -->
@@ -20,12 +20,18 @@
         <!-- Style -->
         <style>
             #page-title {
+
                 background-image: url('assets/img/logo/IMG_1326.jpg');
             }
 
             #contacts .width-img {
                 background-image: url('assets/img/demo/18_img.png');
             }
+            
+            /*marble template #marble .width-img
+            background-image: url('assets/img/demo/*.png');
+            */
+
         </style>
     </head>
     <body class="home header-absolute-true header-fixed-true">
@@ -249,11 +255,12 @@
                                     </div>
 
                                     <div class="signature spacer m-top-lg">
-                                        <div class="signature-img">
+                                       <!--  <div class="signature-img">
                                             <img src="assets/img/demo/23_img.png" alt="Signature">
-                                        </div>
+                                        </div> -->
 
                                         <div class="signature-content">
+                                             <img style="width:350px" src="assets/img/logo/IMG_0018.jpg" alt="Signature">
                                             <h5 class="signature-name"></h5>
                                             <p class="signature-position"></p>
                                         </div>
@@ -275,6 +282,7 @@
                                     </div>
                                 </div>
                             </div>
+                            
 <!-- 
                             <div class="icon-list">
                                 <div class="icon-list-items">
