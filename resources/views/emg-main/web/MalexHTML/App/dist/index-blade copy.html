@@ -177,11 +177,9 @@
                                         </div>
 
                                         <h4 class="service-t-head">Strategic Marketing</h4>
-                                        <ul>
-                                            <li>Advisory</li>
-                                          <!--   <li>Management and Planning</li>   -->    
+                                        <ul>   
+                                            <li>Management</li>   
                                             <li>Business Planning</li>           
-                                          <!--   <li>Marketing Strategy </li> -->
                                             <li>Finances</li>
                                         </ul>
 
