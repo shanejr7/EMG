@@ -670,7 +670,8 @@
                                 </div>
                             </div>
                         </div>
-                    </section> --><!-- #price-plans
+                    </section> -->
+                    <!-- #price-plans -->
 
                     <!-- <div id="clients" class="block bg-white spacer m-top-xl">
                         <div class="wrapper">
@@ -714,7 +715,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div> --><!-- #clients -->
+                    </div> -->
+                    <!-- #clients -->
 
                    <!--  <div id="video" class="block">
                         <div class="embed">
@@ -738,7 +740,8 @@
                                 <div class="embed-bg"></div>
                             </div>
                         </div>
-                    </div> --><!-- #video -->
+                    </div> -->
+                    <!-- #video -->
 
                     <!-- <section id="testimonials" class="block bg-dark spacer p-top-xl p-bottom-xl">
                         <div class="wrapper">
@@ -801,7 +804,8 @@
                                 </div>
                             </div>
                         </div>
-                    </section> --><!-- #testimonials -->
+                    </section> -->
+                    <!-- #testimonials -->
 
                   <!--   <section id="news" class="block spacer p-top-xl p-bottom-xl">
                         <div class="wrapper">
@@ -912,7 +916,7 @@
                                 <a title="View all news" class="btn btn-outline-secondary" href="news.html">View All Posts</a>
                             </div>
                         </div>
-                    </section> --><!-- #news -->
+                    </section> --><!-- #news
 
                     <section id="contacts" class="block bg-white-before spacer p-top-xl">
                         <div class="wrapper">
@@ -929,7 +933,7 @@
                             </div>
 
                             <div class="spacer p-top-lg">
-                                <div class="row gutter-width-md with-pb-md">
+                                <div class="row gutter-width-md with-pb-md"> -->
                                   <!--   <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                         <div class="contacts-item">
                                             <div class="contacts-item-icon">
@@ -965,7 +969,7 @@
                                             <h5 class="contacts-item-t-head">E-mail</h5>
 
                                             <p class="contacts-item-description">
-                                                Contact: <a href="mailto:emg823@gmail.">emg823@gmail.com</a>
+                                                Contact: <a href="mailto:egreen@emgbusinessconsulting.com">egreen@emgbusinessconsulting.com</a>
                                             </p>
                                         </div>
                                     </div>
@@ -1086,7 +1090,7 @@
 
                                         <p>
                                             <a href="tel:+214 892 9129">+214 892 9129</a><br>
-                                            <a href="mailto:emg823@gmail.com">emg823@gmail.com</a>
+                                            <a href="mailto:egreen@emgbusinessconsulting.com">egreen@emgbusinessconsulting.com</a>
                                         </p>
                                     </div>
 
