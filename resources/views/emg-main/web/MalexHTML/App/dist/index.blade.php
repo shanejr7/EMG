@@ -956,7 +956,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                         <div class="contacts-item">
                                             <div class="contacts-item-icon">
                                                 <i class="malex-icon-email" id="color"></i>
@@ -965,7 +965,7 @@
                                             <h5 class="contacts-item-t-head">E-mail</h5>
 
                                             <p class="contacts-item-description">
-                                                Contact:<a href="mailto:egreen@emgbusinessconsulting.com">egreen@emgbusinessconsulting.com</a>
+                                                Contact: <a href="mailto:egreen@emgbusinessconsulting.com">egreen@emgbusinessconsulting.com</a>
                                             </p>
                                         </div>
                                     </div>
