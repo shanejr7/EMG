@@ -16,6 +16,7 @@
         <meta name="googlebot" content="index, follow">
         <meta name="google" content="notranslate">
         <meta name="format-detection" content="telephone=no">
+        <meta name="google-site-verification" content="AhLorQj9erjHGTQK5A9Sd8z6a7fsKqvZ66h31RjNE1c" />
 
         <!-- Style -->
         <style>
