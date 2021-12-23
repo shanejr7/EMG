@@ -172,9 +172,9 @@
                             <div class="row gutter-width-md with-pb-md service-items">
                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                     <div class="service">
-                                        <div class="service-icon">
+                                        <!-- <div class="service-icon">
                                             <i class="malex-icon-strategy-1" id="color"></i>
-                                        </div>
+                                        </div> -->
 
                                         <h4 class="service-t-head">Strategic Marketing</h4>
                                         <ul>   
@@ -196,9 +196,9 @@
 
                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                     <div class="service">
-                                        <div class="service-icon">
+                                        <!-- <div class="service-icon">
                                             <i class="malex-icon-workflow" id="color"></i>
-                                        </div>
+                                        </div> -->
 
                                         <h4 class="service-t-head">Tax Form Assistance</h4>
                                             
@@ -225,11 +225,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                    <div class="service">
-                                        <div class="service-icon">
+                                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" >
+                                    <div class="service" >
+                                      <!--   <div class="service-icon">
                                             <i class="malex-icon-network" id="color"></i>
-                                        </div>
+                                        </div> -->
 
                                         <h4 class="service-t-head">Business Operations</h4>
 
