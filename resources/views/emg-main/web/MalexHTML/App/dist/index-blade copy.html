@@ -171,7 +171,7 @@
                         <div class="wrapper">
                             <div class="row gutter-width-md with-pb-md service-items">
                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                    <div class="service">
+                                    <div class="service" style="border:solid; border-color: black; border-width: 1px;">
                                         <!-- <div class="service-icon">
                                             <i class="malex-icon-strategy-1" id="color"></i>
                                         </div> -->
@@ -195,7 +195,7 @@
                                 </div>
 
                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                    <div class="service">
+                                    <div class="service" style="border:solid; border-color: black; border-width: 1px;">
                                         <!-- <div class="service-icon">
                                             <i class="malex-icon-workflow" id="color"></i>
                                         </div> -->
@@ -226,12 +226,12 @@
                                 </div>
 
                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" >
-                                    <div class="service" >
+                                    <div class="service" style="border:solid; border-color: black; border-width: 1px;">
                                       <!--   <div class="service-icon">
                                             <i class="malex-icon-network" id="color"></i>
                                         </div> -->
 
-                                        <h4 class="service-t-head">Business Operations</h4>
+                                        <h4 class="service-t-head" >Business Operations</h4>
 
                                       <!--   <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
                                         <ul>
