@@ -2,7 +2,7 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style.min.css">
         <title>Home | EMG - Business Consulting Agency</title>
        <!--  <link rel="shortcut icon" href="assets/img/favicon/favicon-16x16.ico" type="image/x-icon">
         <link rel="icon" href="assets/img/favicon/favicon-16x16.ico" type="image/x-icon"> -->
@@ -417,7 +417,7 @@
                                                 <p style="font-weight: bold; color: orange;">Experienced Businesss Consultant.
                                                  <a id="color" title="LinkedIn" href="https://www.linkedin.com/in/ewendapha-green-a9508715">(<i class="fab fa-linkedin-in"></i>)</a>
                                                 </p>
-                                                <p>Business coaching professional in speciliazing business techniques for improvements in techniques & technology. Implementing talent to reach desired milestones.
+                                                <p>Business coaching professional in specializing business techniques for improvements in techniques & technology. Implementing talent to reach desired milestones.
                                                 </p>
                                                 <ul>
                                                     <li id="color">Business startups</li>
