@@ -151,8 +151,8 @@
                                                     <a title="En" href="/">En</a>
                                                 </li>
 
-                                               <!--  <li class="lang-item">
-                                                    <a title="Ru" href="index.html">Ru</a>
+                                            <!--     <li class="lang-item">
+                                                    <a title="Ru" href="https://wwww.google.com">Ru</a>
                                                 </li> -->
                                             </ul>
                                         </nav>
@@ -236,6 +236,7 @@
                                       <!--   <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
                                         <ul>
                                             <li>Operational Processes</li>
+
                                             <li>Web Design & Development</li>
                                          </ul>
                                   <!--       <div class="service-btn">
@@ -1028,7 +1029,8 @@
 
                         <div class="align-self-center">
                             <div class="copyright">
-                                <p>© <script>document.write( new Date().getFullYear() );</script> EMG Business Consulting LLC</p>
+                                <p>© <script>document.write( new Date().getFullYear() );</script> EMG Business Consulting LLC | Developed by <a href="https://www.aeravi.io" id="color">Aeravi Technologies LLC</a></p>
+                               <!--  <p>website designed by <a href="https://www.aeravi.io">Aeravi Technologies LLC</a></p> -->
                             </div>
                         </div>
 
