@@ -415,7 +415,7 @@
                                             <div class="team-member-description">
                                                  <h4 class="team-member-t-head">Ewendapha Green, MBA</h4>
                                                 <p style="font-weight: bold; color: orange;">Experienced Businesss Consultant.
-                                                 <a id="color" title="LinkedIn" href="https://www.linkedin.com/in/ewendapha-green-a9508715">(<i class="fab fa-linkedin-in"></i>)</a>
+                                                 <a id="color" target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/ewendapha-green-a9508715">(<i class="fab fa-linkedin-in"></i>)</a>
                                                 </p>
                                                 <p>Business coaching professional in specializing business techniques for improvements in techniques & technology. Implementing talent to reach desired milestones.
                                                 </p>
@@ -452,7 +452,7 @@
                                   <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
                                             <div class="team-member-description">
                                                 <h4 class="team-member-t-head">Shane Johnson, BSCS </h4>
-                                                <p style="font-weight: bold; color: orange;">Experienced Developer & Designer. <a id="color" title="LinkedIn" href="https://www.linkedin.com/in/shane-johnson-jr-506990115/?challengeId=AQHkvHTqJ_hOcAAAAX3UIsP4ASJA33HkGIN171iFcQUwbUnmCLpmm-yN-XoMTPnT_RluWU5EQCJqS8FMIUUeWsoRMcX_rr-RtQ&submissionId=cbe4296a-2f3e-c216-3e18-10ea0596dd72">(<i class="fab fa-linkedin-in"></i>)</a>
+                                                <p style="font-weight: bold; color: orange;">Experienced Developer & Designer. <a id="color" target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/shane-johnson-jr-506990115/?challengeId=AQHkvHTqJ_hOcAAAAX3UIsP4ASJA33HkGIN171iFcQUwbUnmCLpmm-yN-XoMTPnT_RluWU5EQCJqS8FMIUUeWsoRMcX_rr-RtQ&submissionId=cbe4296a-2f3e-c216-3e18-10ea0596dd72">(<i class="fab fa-linkedin-in"></i>)</a>
                                                 </p>
                                                 <p>Highly energetic in user experience design, systems architecture, interfaces and software development.</p>
                                                 <ul>
