@@ -262,7 +262,7 @@
                                 <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6">
                                     <div class="description-2">
                                         <h2>Business Consultants</h2>
-                                        <img style="width:500px" src="assets/img/logo/IMG_0017.jpg" alt="team">
+                                        <img style="width:100%" src="assets/img/logo/IMG_0017.jpg" alt="team">
                                     </div>
 
                                 </div>
