@@ -416,7 +416,7 @@
                                             <div class="team-member-description">
                                                  <h4 class="team-member-t-head">Ewendapha Green, MBA</h4>
                                                 <p style="font-weight: bold; color: orange;">Experienced Businesss Consultant.
-                                                 <a id="color" target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/ewendapha-green-a9508715">(<i class="fab fa-linkedin-in"></i>)</a>
+                                                 <a id="color" target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/ewendapha-green-mba-a9508715">(<i class="fab fa-linkedin-in"></i>)</a>
                                                 </p>
                                                 <p>Business coaching professional in specializing business techniques for improvements in techniques & technology. Implementing talent to reach desired milestones.
                                                 </p>
