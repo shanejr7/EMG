@@ -411,7 +411,7 @@
                                                 <ul>
                                                     <li id="color">Business startups</li>
                                                     <li id="color">Process improvement</li>
-                                                    <li id="color">Management & planning</li>
+                                                    <li id="color">Management & Planning</li>
                                                     <li id="color">Cost optimization</li>
 
                                                 </ul>
@@ -445,11 +445,11 @@
                                                 </p>
                                                 <p>Highly energetic in user experience design, interfaces and software development.</p>
                                                 <ul>
-                                                    <li id="color">Web design</li>
-                                                    <li id="color">Web development </li>
-                                                    <li id="color">Cloud platforms</li>
-                                                    <li id="color">API software services</li>
-                                                    <li id="color">Web search engine optimization</li>
+                                                    <li id="color">Web Design</li>
+                                                    <li id="color">Web Development </li>
+                                                    <li id="color">Cloud Platforms</li>
+                                                    <li id="color">API Software services</li>
+                                                    <li id="color">Web search Engine Optimization</li>
 
                                                 </ul>
                                              
