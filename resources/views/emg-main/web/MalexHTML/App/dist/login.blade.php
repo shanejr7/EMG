@@ -39,8 +39,8 @@
                 <div class="clearfix">
                     <section id="page-title" class="page-title text-center">
                         <div class="wrapper">
-                            <div class="title login-register-title-spacing">
-                                <h1 class="large" id="color">Login</h1>
+                            <div class="title" style="margin-bottom: 2em">
+                                <h1 class="large" id="color" >Login</h1>
                             </div>
 
                             <div class="title-opacity">

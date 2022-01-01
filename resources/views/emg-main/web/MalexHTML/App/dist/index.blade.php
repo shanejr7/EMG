@@ -240,7 +240,7 @@
                         <div class="wrapper">
 
                              <div class="text-center" style="margin-top:4em; margin-bottom: 8em;">
-                                        <h3 class="font-italic">"Skilled and proficient business consultants helping to meet your profit goals making sure you meet your profit goals"</h3>
+                                        <h3 class="font-italic">"Skilled and proficient business consultants helping to meet your profit and business goals"</h3>
                                     </div>
 
 
