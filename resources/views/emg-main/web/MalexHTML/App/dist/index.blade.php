@@ -406,7 +406,7 @@
                                                 <p style="font-weight: bold; color: orange;">Experienced Businesss Consultant.
                                                  <a id="color" target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/ewendapha-green-mba-a9508715">(<i class="fab fa-linkedin-in"></i>)</a>
                                                 </p>
-                                                <p>Business coaching professional specializing in business techniques for improvements in growth. Implementing talent to reach desired milestones.
+                                                <p>Business coaching professional specializing in business techniques for improvements in growth. Implementing talent & experience to reach your desired milestones.
                                                 </p>
                                                 <ul>
                                                     <li id="color">Business startups</li>
