@@ -413,7 +413,7 @@
                                                     <li id="color">Process improvement</li>
                                                     <li id="color">Management & Planning</li>
                                                     <li id="color">Cost optimization</li>
-
+                                                     <li id="color">Business services (Tax Preperation Payroll and Notary services, etc.)</li>
                                                 </ul>
                                             </div>
                                     </div>
@@ -445,11 +445,12 @@
                                                 </p>
                                                 <p>Highly energetic in user experience design, interfaces and software development.</p>
                                                 <ul>
+                                                    <li id="color">Web SEO</li>
                                                     <li id="color">Web Design</li>
                                                     <li id="color">Web Development </li>
                                                     <li id="color">Cloud Platforms</li>
                                                     <li id="color">API Software services</li>
-                                                    <li id="color">Web search Engine Optimization</li>
+                                                 
 
                                                 </ul>
                                              
