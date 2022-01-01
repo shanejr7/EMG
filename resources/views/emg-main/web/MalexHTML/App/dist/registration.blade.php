@@ -34,12 +34,12 @@
         <!-- .site-header -->
         @include('/emg-main/web/MalexHTML/App/dist/components/header-login-register') 
 
-        <main id="main" class="site-main content-no-spacing login-register-body-spacing">
+        <main id="main" class="site-main content-no-spacing" style="margin-bottom:10em;">
             <div class="content">
                 <div class="clearfix">
                     <section id="page-title" class="page-title text-center">
                         <div class="wrapper">
-                            <div class="title login-register-title-spacing">
+                            <div class="title"  style="margin-bottom: 4em;margin-top:2;">
                                 <h1 class="large" id="color">Register</h1>
                                 {{ $errors->login->first('email') }}
                             </div>
@@ -47,11 +47,11 @@
                             <div class="title-opacity">
                                 <div class="title-opacity-text">EMG</div>
                             </div>
-<!-- 
-                            <div class="description spacer p-top-lg">
-                                <p>A business consulting agency is involved in the planning, implementation, and education of businesses. We work directly with business owners on developing a business plan, identifying marketing needs and developing the necessary skills for business ownership.</p>
-                            </div> -->
 
+                          <!--   <div class="description spacer p-top-lg text-center">
+                                <p>A business consulting agency is involved in the planning, implementation, and education of businesses. We work directly with business owners on developing a business plan, identifying marketing needs and developing the necessary skills for business ownership.</p>
+                            </div>
+ -->
                             <div class="row">
                                 <div class="col-lg-4">
                                 </div>
@@ -95,6 +95,18 @@
                         </div>
                     </section><!-- #page-title -->
 
+                    <section id="price-plans" class="block spacer p-top-xl">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>   
+                                                <div class="col-lg-4">
+                                                    <div class="description spacer p-top-lg text-center" style="font-weight:bold; color: black;">
+                                                        <p>"A business consulting agency is involved in the planning, implementation, and education of businesses. We work directly with business owners on developing a business plan, identifying marketing needs and developing the necessary skills for business ownership."</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    </section>
+
 
                   <!--   <div id="video" class="block spacer p-top-xl">
                         <div class="wrapper">
@@ -122,6 +134,7 @@
                         </div>
                     </div> -->
                     <!-- #video -->
+
 
                
 
@@ -277,7 +290,7 @@
                                 </div>
                             </div>
                         </div>
-                    </section> --><!-- #price-plans -->
+                    </section> --><!-- #price-plans
 
                   <!--   <div class="block bg-white spacer  m-top-xl">
                         <div>
