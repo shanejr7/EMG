@@ -443,7 +443,7 @@
                                                 <h4 class="team-member-t-head">Shane Johnson, BSCS </h4>
                                                 <p style="font-weight: bold; color: orange;">Experienced Developer & Designer. <a id="color" target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/shane-johnson-jr-506990115/?challengeId=AQHkvHTqJ_hOcAAAAX3UIsP4ASJA33HkGIN171iFcQUwbUnmCLpmm-yN-XoMTPnT_RluWU5EQCJqS8FMIUUeWsoRMcX_rr-RtQ&submissionId=cbe4296a-2f3e-c216-3e18-10ea0596dd72">(<i class="fab fa-linkedin-in"></i>)</a>
                                                 </p>
-                                                <p>Highly energetic in user experience design, systems architecture, interfaces and software development.</p>
+                                                <p>Highly energetic in user experience design, interfaces and software development.</p>
                                                 <ul>
                                                     <li id="color">Web design</li>
                                                     <li id="color">Web development </li>
