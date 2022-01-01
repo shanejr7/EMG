@@ -97,9 +97,9 @@
 
                     <section id="price-plans" class="block spacer p-top-xl">
                                             <div class="row">
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-3">
                                                 </div>   
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
                                                     <div class="description spacer p-top-lg text-center" style="font-weight:bold; color: black;">
                                                         <p>"A business consulting agency is involved in the planning, implementation, and education of businesses. We work directly with business owners on developing a business plan, identifying marketing needs and developing the necessary skills for business ownership."</p>
                                                     </div>
