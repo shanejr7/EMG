@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="assets/css/style.min.css">
-        <title>News single post | Malex - Business Consulting Agency HTML Template</title>
+        <title>Dashboard | EMG - Business Consulting Agency</title>
 
         <!-- Useful meta tags -->
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -16,10 +16,11 @@
         <meta name="format-detection" content="telephone=no">
 
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.ico" sizes="16x16">
+        <!-- <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.ico" sizes="16x16"> -->
+   
     </head>
-    <body class="single-post title-opacity-true">
-        <div class="loading">
+    <body class="single-post title-opacity-true header-absolute-true header-fixed-true">
+       <!--  <div class="loading">
             <div class="wrapper h-100">
                 <div class="d-flex justify-content-center align-items-center h-100">
                     <div class="loading-content">
@@ -29,61 +30,56 @@
                     </div>
                 </div>
             </div>
-        </div><!-- .loading -->
+        </div> --><!-- .loading -->
 
-        <header id="header" class="site-header">
+        <header id="header-custom-true" class="site-header " >
             <div class="wrapper">
                 <div class="header-content d-flex justify-content-between">
                     <div class="header-left align-self-center">
-                        <div class="header-logo">
-                            <a class="logo logo-primary transform-scale-h" title="Logo" href="index.html">
-                                <img src="assets/img/logo/logo-dark.svg" alt="Logo">
-                            </a>
+                     <div class="header-logo">
+                           <!--  <a class="logo logo-primary" title="Logo" href="#"> -->
+                                <h3 class="large title">EMG Business Consulting</h3>
+                                <!-- <img src="assets/img/logo/IMG_1326.jpg" style="transform: scale(5);" alt="Logo"> -->
+                           <!--  </a> -->
                         </div>
                     </div>
 
-                    <div class="header-right d-flex justify-content-end">
+                <div class="header-right d-flex justify-content-end">
                         <div class="d-flex align-items-center">
                             <div class="menu">
                                 <nav class="menu-primary">
                                     <ul class="nav">
                                         <li class="nav-item">
-                                            <a title="Services" href="index.html#services">Services</a>
+                                            <h3 id="color">Dashboard</h3>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a title="About Us" href="index.html#about-us">About Us</a>
+                                            <form method="POST" action="/logout">
+                                                @csrf
+                                                <button style="border:none; background: transparent;"  type="submit">Logout</button>
+
+                                            </form>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a title="Teams" href="index.html#team-members">Team</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a title="Pricing" href="index.html#price-plans">Pricing</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a title="Testimonials" href="index.html#testimonials">Testimonials</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a title="News" href="news.html">News</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a title="Contacts" href="index.html#contacts">Contacts</a>
+                                            <div style="margin-top: 2px;">
+                                            <a style="color: black;" href="/#contacts">Settings</a>
+                                        </div>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
 
-                            <div class="search-toggle">
-                                <button type="button" class="btn btn-lg btn-outline-secondary btn-round p-0 min-w-auto" data-toggle="modal" data-target="#search-modal"><i class="fas fa-search"></i></button>
+                         <!--    <div class="search-toggle adv-light">
+                                <button type="button" class="btn btn-lg btn-outline-tertiary btn-round p-0 min-w-auto" data-toggle="modal" data-target="#search-modal"><i class="fas fa-search"></i></button>
+                            </div> -->
+
+                           <div class="menu-toggle adv-light mr-0">
+                                <button type="button" class="btn btn-lg btn-outline-custom btn-round p-0 min-w-auto" data-toggle="modal" data-target="#menu-modal"><i class="fas fa-bars"></i></button>
                             </div>
 
-                            <div class="menu-toggle">
-                                <button type="button" class="btn btn-lg btn-outline-secondary btn-round p-0 min-w-auto" data-toggle="modal" data-target="#menu-modal"><i class="fas fa-bars"></i></button>
+                            <div class="menu-toggle adv-dark">
+                                <button type="button" class="btn btn-lg btn-secondary btn-hover-main-secondary btn-round p-0 min-w-auto" data-toggle="modal" data-target="#menu-modal"><i class="fas fa-bars"></i></button>
                             </div>
                         </div>
                     </div>
@@ -91,20 +87,26 @@
             </div>
         </header><!-- .site-header -->
 
-        <main id="main" class="site-main">
-            <div id="page-title" class="page-title-ml">
+        <main id="main" class="site-main ">
+            <div id="page-title" class="page-title-ml" style="margin-bottom:1em;">
                 <div class="wrapper">
-                    <div class="title">
-                        <h1 class="large">Our News</h1>
-                    </div>
+                   <!--  <div class="title">
+                        
+                        <h4 class="large"> @auth
+                        <h4 class="large">Welcome, {{auth()->user()->email}}</h4>
+                        @endauth</h4>
+                    
+                     
+                    </div> -->
 
                     <div class="title-opacity">
-                        <div class="title-opacity-text">News</div>
+                        <div class="title-opacity-text">EMG</div>
                     </div>
                 </div>
-            </div><!-- #page-title -->
+            </div>
+            <!-- #page-title -->
 
-            <div id="page-content" class="spacer p-top-xl">
+            <div id="page-content" class="spacer ">
                 <div class="wrapper">
                     <div class="content">
                         <div id="single">
@@ -235,7 +237,7 @@
 
                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                                     <aside id="aside" class="widget-area">
-                                        <div class="widget widget_search">
+                                        <!-- <div class="widget widget_search">
                                             <form class="search-form" role="search" method="get" action="search-results.html">
                                                 <div class="search input-group">
                                                     <input class="form-control form-control-lg" type="text" placeholder="Search" name="s">
@@ -245,7 +247,7 @@
                                                     </div>
                                                 </div>
                                             </form>
-                                        </div>
+                                        </div> -->
 
                                         <div class="widget widget_categories">
                                             <h6 class="widget-title">Categories</h6>
@@ -387,43 +389,8 @@
             </div><!-- #page-content -->
         </main><!-- .site-main -->
 
-        <footer id="footer" class="site-footer">
-            <div class="wrapper">
-                <div id="back-to-top">
-                    <a class="scroll-to-id" href="#"><i class="malex-icon-arrow-up"></i></a>
-                </div><!-- #back-to-top -->
-
-                <div class="footer">
-                    <div class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row justify-content-between">
-                        <div class="align-self-center">
-                            <div class="logo logo-secondary">
-                                <img src="assets/img/logo/logo-light.svg" alt="Logo">
-                            </div>
-                        </div>
-
-                        <div class="align-self-center">
-                            <div class="copyright">
-                                <p>© <script>document.write( new Date().getFullYear() );</script> Business Consulting Agency HTML Template By <a href="https://www.adveits.com">Adveits</a></p>
-                            </div>
-                        </div>
-
-                        <div class="align-self-center">
-                            <nav class="menu-secondary">
-                                <ul class="nav">
-                                    <li class="nav-item">
-                                        <a title="LinkedIn" href="https://www.linkedin.com/company/18135051/"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a title="Facebook" href="https://www.facebook.com/adveits/"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer><!-- .site-footer -->
+        <!-- .site-footer -->
+        @include('/emg-main/web/MalexHTML/App/dist/components/footer')
 
         <div id="modals">
             <div class="modal fade" id="menu-modal" tabindex="-1" role="dialog" aria-labelledby="menu-modal" aria-hidden="true">
@@ -468,7 +435,20 @@
                                     <div class="animated fadeinright d-flex justify-content-end w-100 order-0 order-sm-1 order-md-1 order-lg-1 order-xl-1">
                                         <nav class="menu-primary">
                                             <ul class="nav">
+
                                                 <li class="nav-item">
+                                                     <form method="POST" action="/logout">
+                                                        @csrf
+                                                        <button class="text-white" style="border:none; background: transparent;font-size: 25px;"  type="submit">Logout</button>
+
+                                                    </form>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a style="margin-top: 2px; font-size: 25px;" href="#">Settings</a>
+                                                </li>
+
+                                              <!--   <li class="nav-item">
                                                     <a title="Services" href="index.html#services">Services</a>
                                                 </li>
 
@@ -490,11 +470,11 @@
 
                                                 <li class="nav-item">
                                                     <a title="News" href="news.html">News</a>
-                                                </li>
+                                                </li> -->
 
-                                                <li class="nav-item">
+                                               <!--  <li class="nav-item">
                                                     <a title="Contacts" href="index.html#contacts">Contacts</a>
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </nav>
                                     </div>

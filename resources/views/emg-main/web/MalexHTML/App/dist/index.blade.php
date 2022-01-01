@@ -28,10 +28,6 @@
             #contacts .width-img {
                 background-image: url('assets/img/demo/18_img.png');
             }
-            
-            /*marble template #marble .width-img
-            background-image: url('assets/img/demo/*.png');
-            */
 
         </style>
     </head>
@@ -79,22 +75,6 @@
                                         <li class="nav-item">
                                             <a title="About Us" href="#about-us">Who We Are</a>
                                         </li>
-
-                                        <!-- <li class="nav-item">
-                                            <a title="Teams" href="#team-members">Team</a>
-                                        </li> -->
-
-                                       <!--  <li class="nav-item">
-                                            <a title="Pricing" href="#price-plans">Pricing</a>
-                                        </li> -->
-
-                                        <!-- <li class="nav-item">
-                                            <a title="Testimonials" href="#testimonials">Testimonials</a>
-                                        </li> -->
-
-                                       <!--  <li class="nav-item">
-                                            <a title="News" href="#news">News</a>
-                                        </li> -->
 
                                         <li class="nav-item">
                                             <a title="Contacts" href="#contacts">Contacts</a>
@@ -171,8 +151,8 @@
                     <div id="services" class="block">
                         <div class="wrapper">
                             <div class="row gutter-width-md with-pb-md service-items">
-                                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                    <div class="service">
+                                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" >
+                                    <div class="service" style="border:solid; border-color: orange; border-width: 10px; border-right: 0; border-top: 0;">
                                         <!-- <div class="service-icon">
                                             <i class="malex-icon-strategy-1" id="color"></i>
                                         </div> -->
@@ -196,18 +176,22 @@
                                 </div>
 
                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                    <div class="service">
+                                    <div class="service" style="border:solid; border-color: orange; border-width: 10px; border-right: 0; border-top: 0;">
                                         <!-- <div class="service-icon">
                                             <i class="malex-icon-workflow" id="color"></i>
                                         </div> -->
 
-                                        <h4 class="service-t-head">Tax Form Assistance</h4>
+                                        <h4 class="service-t-head">Tax Assistance</h4>
                                             
                                             <ul>
-                                                <li>Income Tax</li>
-                                                <li>Property Tax</li>
-                                                <li>Sales Tax</li>
+                                                <li>Individual Taxes</li>
+                                                <li>Business Taxes</li>
+                                                <li>Tax Planning</li>
                                             </ul>
+
+                                            <!-- <button type="button" class="btn btn-outline-info">
+                                                <a href="/login">Online Tax Submission</a>
+                                            </button> -->
                                       
                                       <!--   <ul>
                                             <li>Leadership</li>
@@ -227,7 +211,7 @@
                                 </div>
 
                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" >
-                                    <div class="service">
+                                    <div class="service" style="border:solid; border-color: orange; border-width: 10px; border-right: 0; border-top: 0;">
                                       <!--   <div class="service-icon">
                                             <i class="malex-icon-network" id="color"></i>
                                         </div> -->
@@ -252,8 +236,14 @@
                         </div>
                     </div><!-- #services -->
 
-                    <section id="about-us" class="block spacer p-top-xl">
+                    <section id="about-us" class="block  p-top-xl">
                         <div class="wrapper">
+
+                             <div class="text-center" style="margin-top:4em; margin-bottom: 8em;">
+                                        <h3 class="font-italic">"Skilled and proficient business consultants helping to meet your profit goals making sure you meet your profit goals"</h3>
+                                    </div>
+
+
                             <div class="title">
                                 <h4 class="text-primary text-uppercase" >Who We Are</h4>
                             </div>
@@ -269,15 +259,13 @@
 
                                 <div class="col-sm-12 col-md-4 col-lg-6 col-xl-6">
                                     
-                                    <div class="description-2">
-                                        <p>Skilled and proficient business consultants helping to meet your profit goals (making sure you meet your profit goals)</p>
-                                    </div>
+                                   
 
-                                    <div class="description-2 spacer p-top-lg">
+                                    <div class=" spacer p-top-lg" style="color: black; font-size: 15px; font-weight: bold;">
                                         <p>Our professionals will stand at the heart of the matter, and provide the proper support to our clients, as they accomplish the desired objectives, by leveraging the company’s talent, techniques and technology.</p>
                                     </div>
 
-                                    <div class="description-2 spacer p-top-lg">
+                                    <div class="description-2 spacer p-top-lg" style="color: black; font-size: 15px; font-weight: bold;">
                                         <p>Upon meeting with our clients, it is our job to implement an appropriate proposal within a reasonable timeframe, as we coach them through to each desired milestone.</p>
                                     </div>
                                 </div>
@@ -326,10 +314,10 @@
                                 <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
                                     <div class="process pl-0">
                                         <div class="process-content">
-                                            <h6 class="process-small-t-head">How it Works?</h6>
+                                           <!--  <h6 class="process-small-t-head">How it Works?</h6> -->
 
                                             <div class="process-description">
-                                                <h2>We Guarantee a Stable Work Process</h2>
+                                                <h2>We Guarantee a Stable & Steady Work Process</h2>
                                             </div>
                                         </div>
                                     </div>
@@ -352,9 +340,8 @@
                                     <div class="process process-color-2">
                                         <div class="process-content">
                                             <h4 class="process-t-head">Performance</h4>
-                                            <p class="process-description">process improvement</p>
-                                            <p>team efficiency</p>
-                                            <p>cost optimazation</p>
+                                            <p class="process-description">Process improvement</p>
+                                            <p>Team efficiency</p>
                                         </div>
 
                                         <div class="process-number">02</div>
@@ -365,8 +352,9 @@
                                     <div class="process process-color-3">
                                         <div class="process-content">
                                             <h4 class="process-t-head">Business Growth</h4>
-                                            <p class="process-description">research & evaluation</p>
-                                              <p class="process-description">marketing strategy</p>
+                                            <p class="process-description">Research & evaluation</p>
+                                              <p class="process-description">Marketing strategy</p>
+                                            <p>Cost optimazation</p>
                                         </div>
 
                                         <div class="process-number">03</div>
@@ -418,7 +406,7 @@
                                                 <p style="font-weight: bold; color: orange;">Experienced Businesss Consultant.
                                                  <a id="color" target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/ewendapha-green-mba-a9508715">(<i class="fab fa-linkedin-in"></i>)</a>
                                                 </p>
-                                                <p>Business coaching professional in specializing business techniques for improvements in techniques & technology. Implementing talent to reach desired milestones.
+                                                <p>Business coaching professional specializing in business techniques for improvements in growth. Implementing talent to reach desired milestones.
                                                 </p>
                                                 <ul>
                                                     <li id="color">Business startups</li>
@@ -969,269 +957,11 @@
             </div>
         </main><!-- .site-main -->
 
-        <footer id="footer" class="site-footer">
-            <div class="wrapper">
-                <div id="back-to-top">
-                    <a class="scroll-to-id" href="#"><i class="malex-icon-arrow-up"></i></a>
-                </div><!-- #back-to-top -->
+        <!-- .site-footer -->
+        @include('/emg-main/web/MalexHTML/App/dist/components/footer') 
 
-                <div class="footer">
-                    <div class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row justify-content-between">
-
-                        <div class="align-self-center">
-                           
-                        </div>
-
-                        <div class="align-self-center">
-                            <div class="copyright">
-                                <p>© <script>document.write( new Date().getFullYear() );</script> EMG Business Consulting LLC | Developed by <a target="_blank" href="https://www.aeravi.io" id="color">Aeravi Technologies LLC</a></p>
-                            </div>
-                        </div>
-
-                        <div class="align-self-center">
-                            <nav class="menu-secondary">
-                                <ul class="nav">
-                                    <!-- <li class="nav-item">
-                                        <a title="LinkedIn" href="https://www.linkedin.com/company/18135051/"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
- -->
-                                   <!--  <li class="nav-item">
-                                        <a title="Facebook" href="https://www.facebook.com/adveits/"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                </ul> -->
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer><!-- .site-footer -->
-
-        <div id="modals">
-            <div class="modal fade" id="menu-modal" tabindex="-1" role="dialog" aria-labelledby="menu-modal" aria-hidden="true">
-                <div class="modal-dialog modal-full" role="document">
-                    <div class="wrapper">
-                        <div class="modal-content">
-                            <div class="modal-header modal-header-top">
-                                <div class="header-content d-flex justify-content-between w-100">
-                                    <div class="header-left align-self-center">
-                                        <div class="header-logo">
-                                            <a class="logo logo-secondary transform-scale-h" title="Logo" href="/">
-                                                 <img style="width:200px;" src="assets/img/logo/IMG_1324.jpg" alt="Logo">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="header-right d-flex justify-content-end">
-                                        <div class="d-flex align-items-center">
-                                          <!--   <div class="search-toggle">
-                                                <button type="button" class="btn btn-lg btn-outline-tertiary btn-round p-0 min-w-auto" data-toggle="modal" data-target="#search-modal"><i class="fas fa-search"></i></button>
-                                            </div> -->
-
-                                            <div class="menu-close-toggle">
-                                                <button type="button" class="btn btn-lg btn-outline-tertiary btn-round p-0 min-w-auto" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="modal-body modal-body-centered">
-                                <div class="d-flex flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row justify-content-between align-items-sm-center align-items-md-center align-items-lg-center align-items-xl-center w-100">
-                                    <div class="modal-text order-1 order-sm-0 order-md-0 order-lg-0 order-xl-0">
-                                     <!--    <p>1900 Knightsbridge Rd <br>TX 75234 <br>United States</p> -->
-
-                                        <p>
-                                            <a href="tel:+214 892 9129">+214 892 9129</a><br>
-                                            <a href="mailto:egreen@emgbusinessconsulting.com">egreen@emgbusinessconsulting.com</a>
-                                        </p>
-                                    </div>
-
-                                    <div class="animated fadeinright d-flex justify-content-end w-100 order-0 order-sm-1 order-md-1 order-lg-1 order-xl-1">
-                                        <nav class="menu-primary">
-                                            <ul class="nav">
-                                                <li class="nav-item">
-                                                    <a title="Services" href="#services">What We Do</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a title="About Us" href="#about-us">Who We Are</a>
-                                                </li>
-
-                                              <!--   <li class="nav-item">
-                                                    <a title="Teams" href="#team-members">Team</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a title="Pricing" href="#price-plans">Pricing</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a title="Testimonials" href="#testimonials">Testimonials</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a title="News" href="#news">News</a>
-                                                </li> -->
-
-                                                <li class="nav-item">
-                                                    <a title="Contacts" href="#contacts">Contacts</a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="modal-footer">
-                                <div class="d-flex flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row justify-content-between w-100">
-                                    <div class="modal-text">
-                                        <p>© <script>document.write( new Date().getFullYear() );</script> EMG Business Consulting LLC</p>
-                                    </div>
-
-                                    <nav class="languages">
-                                        <ul class="nav">
-                                            <li class="lang-item current-lang">
-                                                <a title="En" href="/">En</a>
-                                            </li>
-
-                                          <!--   <li class="lang-item">
-                                                <a title="Ru" href="index.html">Ru</a>
-                                            </li> -->
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- #menu-modal -->
-
-            <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal" aria-hidden="true">
-                <div class="modal-dialog modal-full" role="document">
-                    <div class="wrapper">
-                        <div class="modal-content">
-                            <div class="modal-header modal-header-top">
-                                <div class="header-content d-flex justify-content-between w-100">
-                                    <div class="header-left align-self-center">
-                                        <div class="header-logo">
-                                            <a class="logo logo-secondary transform-scale-h" title="Logo" href="/">
-                                                <img style="width:200px;" src="assets/img/logo/IMG_1324.jpg" alt="Logo">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="header-right d-flex justify-content-end">
-                                        <div class="d-flex align-items-center">
-                                            <div class="search-close-toggle">
-                                                <button type="button" class="btn btn-lg btn-outline-tertiary btn-round p-0 min-w-auto" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="modal-body modal-body-centered">
-                                <form class="search-form" role="search" method="get" action="search-results.html">
-                                    <div class="search input-group">
-                                        <input class="form-control form-control-lg" type="text" placeholder="Search" name="s">
-
-                                        <div class="input-group-append">
-                                            <button type="submit" class="btn btn-link border-0 p-0 min-w-auto"><i class="fas fa-search"></i></button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div class="modal-footer">
-                                <div class="d-flex flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row justify-content-between w-100">
-                                    <div class="modal-text">
-                                        <p>© <script>document.write( new Date().getFullYear() );</script> EMG Business Consulting LLC</p>
-                                    </div>
-
-                                    <nav class="languages">
-                                        <ul class="nav">
-                                            <li class="lang-item current-lang">
-                                                <a title="En" href="/">En</a>
-                                            </li>
-
-                                           <!--  <li class="lang-item">
-                                                <a title="Ru" href="index.html">Ru</a>
-                                            </li> -->
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- #search-modal -->
-
-            <div class="modal fade" id="plans-modal" tabindex="-1" role="dialog" aria-labelledby="plans-modal" aria-hidden="true">
-                <div class="modal-dialog modal-full" role="document">
-                    <div class="wrapper">
-                        <div class="modal-content">
-                            <div class="modal-header modal-header-top">
-                                <div class="header-content d-flex justify-content-between w-100">
-                                    <div class="header-left align-self-center">
-                                        <div class="header-logo">
-                                            <a class="logo logo-secondary transform-scale-h" title="Logo" href="/">
-                                                <img src="assets/img/logo/logo-light.svg" alt="Logo">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="header-right d-flex justify-content-end">
-                                        <div class="d-flex align-items-center">
-                                            <div class="plans-close-toggle">
-                                                <button type="button" class="btn btn-lg btn-outline-tertiary btn-round p-0 min-w-auto" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="modal-body modal-body-centered">
-                                <div class="plans-modal-content">
-                                    <h3 class="modal-t-head after">Order
-                                        <span class="modal-title-result"></span>
-                                    </h3>
-
-                                    <form method="post" action="form.php" id="cf-2" class="contact-form">
-                                        <div class="form-group form-group-xs">
-                                            <input name="cf-2-first-name" type="text" class="form-control form-control-lg" id="cf-2-first-name" placeholder="First name *" required="required">
-                                        </div>
-
-                                        <div class="form-group form-group-xs">
-                                            <input name="cf-2-last-name" type="text" class="form-control form-control-lg" id="cf-2-last-name" placeholder="Last name *" required="required">
-                                        </div>
-
-                                        <div class="form-group form-group-xs">
-                                            <input name="cf-2-email" type="email" class="form-control form-control-lg" id="cf-2-email" placeholder="Email *" required="required">
-                                        </div>
-
-                                        <div class="form-group form-group-xs">
-                                            <input name="cf-2-company" type="text" class="form-control form-control-lg" id="cf-2-company" placeholder="Company *" required="required">
-                                        </div>
-
-                                        <div class="form-group form-group-xs">
-                                            <input name="cf-2-phone-no" type="text" class="form-control form-control-lg" id="cf-2-phone-no" placeholder="Phone no. *" required="required">
-                                        </div>
-
-                                        <div class="form-group form-group-sm">
-                                            <textarea name="cf-2-message" class="form-control form-control-lg" id="cf-2-message" placeholder="Message *" required="required"></textarea>
-                                        </div>
-
-                                        <div class="form-group form-group-xs">
-                                            <button type="submit" class="btn btn-outline-tertiary">Submit</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- #plans-modal -->
-        </div><!-- #modals -->
+        <!-- #modals -->
+        @include('/emg-main/web/MalexHTML/App/dist/components/modal-index') 
 
         <!-- JS -->
         <script src="assets/js/main.min.js"></script>
