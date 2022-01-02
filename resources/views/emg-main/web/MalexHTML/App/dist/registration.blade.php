@@ -290,7 +290,7 @@
                                 </div>
                             </div>
                         </div>
-                    </section> --><!-- #price-plans
+                    </section> --><!-- #price-plans-->
 
                   <!--   <div class="block bg-white spacer  m-top-xl">
                         <div>
@@ -307,7 +307,7 @@
         @include('/emg-main/web/MalexHTML/App/dist/components/footer') 
 
         <!-- #modals -->
-        @include('/emg-main/web/MalexHTML/App/dist/components/modal-index') 
+        @include('/emg-main/web/MalexHTML/App/dist/components/modal-register-login') 
 
         <!-- JS -->
         <script src="assets/js/main.min.js"></script>

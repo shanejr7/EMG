@@ -69,6 +69,14 @@
                                 <nav class="menu-primary">
                                     <ul class="nav">
                                         <li class="nav-item">
+                                            <a style="font-size: 19px;" href="/registration">Register</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a style="font-size: 19px;" href="/login">Login</a>
+                                        </li>
+                                        
+                                        <li class="nav-item">
                                             <a title="Services" href="#services">What We Do</a>
                                         </li>
 
@@ -180,6 +188,9 @@
                                         <!-- <div class="service-icon">
                                             <i class="malex-icon-workflow" id="color"></i>
                                         </div> -->
+                                         <!-- <button type="button" class="btn btn-outline-info">
+                                                <a href="/login">Online Tax Submission</a>
+                                            </button> -->
 
                                         <h4 class="service-t-head">Tax Assistance</h4>
                                             
@@ -189,9 +200,6 @@
                                                 <li>Tax Planning</li>
                                             </ul>
 
-                                            <!-- <button type="button" class="btn btn-outline-info">
-                                                <a href="/login">Online Tax Submission</a>
-                                            </button> -->
                                       
                                       <!--   <ul>
                                             <li>Leadership</li>
@@ -245,27 +253,27 @@
 
 
                             <div class="title">
-                                <h4 class="text-primary text-uppercase" >Who We Are</h4>
+                                <h1 class="text-primary text-center text-uppercase" >Who We Are</h1>
+
                             </div>
+                              <h2 class="text-center">Business Consultants</h2>
 
                             <div class="row gutter-width-md with-pb-md">
                                 <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6">
                                     <div class="description-2">
-                                        <h2>Business Consultants</h2>
-                                        <img style="width:100%" src="assets/img/logo/IMG_0017.jpg" alt="team">
+                                    <!--     <h2>Business Consultants</h2> -->
+                                        <img class="text-center" style="width:100%" src="assets/img/logo/IMG_0017.jpg" alt="team">
                                     </div>
 
                                 </div>
 
-                                <div class="col-sm-12 col-md-4 col-lg-6 col-xl-6">
+                                <div class="col-sm-12 col-md-4 col-lg-6 col-xl-6" style="border-style: dotted; border-color:orange; border-top:0; border-bottom: 0;">
                                     
-                                   
-
                                     <div class=" spacer p-top-lg" style="color: black; font-size: 15px; font-weight: bold;">
                                         <p>Our professionals will stand at the heart of the matter, and provide the proper support to our clients, as they accomplish the desired objectives, by leveraging the company’s talent, techniques and technology.</p>
                                     </div>
 
-                                    <div class="description-2 spacer p-top-lg" style="color: black; font-size: 15px; font-weight: bold;">
+                                    <div class="spacer p-top-lg" style="color: black; font-size: 15px; font-weight: bold;">
                                         <p>Upon meeting with our clients, it is our job to implement an appropriate proposal within a reasonable timeframe, as we coach them through to each desired milestone.</p>
                                     </div>
                                 </div>

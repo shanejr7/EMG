@@ -352,7 +352,7 @@
         @include('/emg-main/web/MalexHTML/App/dist/components/footer') 
 
         <!-- #modals -->
-        @include('/emg-main/web/MalexHTML/App/dist/components/modal-index') 
+        @include('/emg-main/web/MalexHTML/App/dist/components/modal-register-login') 
 
         <!-- JS -->
         <script src="assets/js/main.min.js"></script>

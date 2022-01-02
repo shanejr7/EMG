@@ -41,14 +41,6 @@
                                     <div class="animated fadeinright d-flex justify-content-end w-100 order-0 order-sm-1 order-md-1 order-lg-1 order-xl-1">
                                         <nav class="menu-primary">
                                             <ul class="nav">
-                                                 <li class="nav-item">
-                                                    <a href="/login">Login</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="/registration">Register</a>
-                                                </li>
-
                                                 <li class="nav-item">
                                                     <a title="Services" href="#services">What We Do</a>
                                                 </li>
@@ -75,7 +67,7 @@
                                     <nav class="languages">
                                         <ul class="nav">
                                             <li class="lang-item current-lang">
-                                                <a title="En" href="#">En</a>
+                                                <a title="En" href="/">En</a>
                                             </li>
 
                                           <!--   <li class="lang-item">
@@ -135,7 +127,7 @@
                                     <nav class="languages">
                                         <ul class="nav">
                                             <li class="lang-item current-lang">
-                                                <a title="En" href="/">En</a>
+                                                <a title="En" href="#">En</a>
                                             </li>
 
                                            <!--  <li class="lang-item">

@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Http\Route;
-use Illuminate\Support\Facades\Auth;
 use App\Providers\AppServiceProvider;
+use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
 
@@ -19,7 +19,7 @@ class LoginController extends Controller
      */
 
     public function __construct(){
-        $this->middleware('guest');
+        $this->middleware('auth.basic');
     }
 
     /**
@@ -41,19 +41,21 @@ class LoginController extends Controller
     public function authenticate(Request $request)
     {
 
-        $credentials = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required'],
+        $attributes =  $request->validate([
+            'email'=> 'required|email',
+            'password' => 'required'
         ]);
 
-        if (Auth::attempt($credentials)) {
+
+        if (auth()->attempt($attributes)) {
 
             $request->session()->regenerate();
+            
             return redirect('/dashboard');
         }
 
         return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',]);
+            'email' => 'The provided credentials do not match our records.']);
     }
 
 }

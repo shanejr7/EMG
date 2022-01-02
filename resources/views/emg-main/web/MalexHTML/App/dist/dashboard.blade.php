@@ -112,49 +112,63 @@
                         <div id="single">
                             <div class="row gutter-width-md">
                                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 single-content">
-                                    <div class="img object-fit">
-                                        <div class="object-fit-cover">
-                                            <img src="assets/img/placeholder/1050x600.jpg" alt="Assessing the Maturity of Your Data Management in Industry">
-                                        </div>
-                                    </div>
+   <div class="row">
+  <div class="col-3">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <!-- <a style="font-size: 25px;" class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Profile</a> -->
+     <!--  <a style="font-size: 25px;" class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">New client information</a> -->
+     <!--  <a style="font-size: 25px;" class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a> -->
+      <!-- <a style="font-size: 25px;" class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a> -->
+    </div>
+  </div>
+  <div class="col-9">
+    <div class="tab-content" id="v-pills-tabContent">
 
-                                    <div class="meta">
-                                        <p>
-                                            <span><a href="news.html">By admin</a></span>
-                                            <span>-</span>
-                                            <span>Comments (1)</span>
-                                            <span>-</span>
-                                            <span class="category"><a title="Business" href="news.html">Business</a></span>
-                                        </p>
-                                    </div>
+      <!-- <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div> -->
 
-                                    <div class="title">
-                                        <h2>Assessing the Maturity of Your Data Management in Industry</h2>
-                                    </div>
+      <div class="tab-pane fade " id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"><form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form></div>
 
-                                    <div class="description clearfix">
-                                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
-
-                                        <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
-
-                                        <blockquote>
-                                            <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?</p>
-                                        </blockquote>
-
-                                        <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. </p>
-                                    </div>
-
-                                    <div class="tags">
-                                        <p>
-                                            <a title="Strategy" href="news.html">Strategy</a>
-                                            <a title="Sales" href="news.html">Sales</a>
-                                            <a title="Business" href="news.html">Business</a>
-                                        </p>
-                                    </div>
-
-                                    <div id="comments" class="comments-area spacer m-top-xl">
+   <!--    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+        <div id="comments" class="comments-area m-top-xl">
                                         <div class="comment-title">
-                                            <h3>1 Comment</h3>
+                                            <h3 style="color:green;">1 Comment</h3>
                                         </div>
 
                                         <ul class="comment-list list-unstyled style-default">
@@ -170,7 +184,7 @@
 
                                                             <div class="comment-content-right">
                                                                 <h5 class="comment-author after">
-                                                                    <a title="Rosie Ford" href="news-single-post.html">Rosie Ford</a>
+                                                                    <a style="color:blue" title="Rosie Ford" href="news-single-post.html">Rosie Ford</a>
                                                                 </h5>
 
                                                                 <div class="comment-time">
@@ -178,7 +192,7 @@
                                                                 </div>
 
                                                                 <div class="comment-description">
-                                                                    <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally.</p>
+                                                                    <p style="color: black;">No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally.</p>
                                                                 </div>
 
                                                                 <div class="comment-reply">
@@ -191,7 +205,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </li><!-- #comment-1 -->
+                                            </li>
                                         </ul>
 
                                         <div class="block spacer m-top-xl">
@@ -232,7 +246,93 @@
                                                 </form>
                                             </div>
                                         </div>
+                                    </div></div> -->
+     <!--  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div> -->
+    </div>
+  </div>
+</div>
+<!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+New Client Information <span class="badge badge-light">1</span>
+</button>
+
+
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+  <div class="block  m-top-xl">
+                                            <div id="respond" class="comment-respond">
+                                                <h3 id="reply-title" class="comment-reply-title">Leave a Reply <a rel="nofollow" id="cancel-comment-reply-link" class="btn btn-link border-0 p-0 min-w-auto link-no-space" href="news-single-post.html" style="display:none">Cancel Reply</a></h3>
+
+                                                <form action="form.php" method="post" id="commentform" class="comment-form">
+                                                    <div class="form-group form-group-sm">
+                                                        <p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>
+                                                    </div>
+
+                                                    <div class="form-group form-group-xs">
+                                                        <textarea id="comment" class="form-control form-control-lg" name="comment" cols="45" rows="6" placeholder="Comment *" required="required"></textarea>
+                                                    </div>
+
+                                                    <div class="form-group form-group-xs">
+                                                        <input id="comment-author" class="form-control form-control-lg" name="comment-author" type="text" placeholder="Name *" required="required">
+                                                    </div>
+
+                                                    <div class="form-group form-group-xs">
+                                                        <input id="comment-email" class="form-control form-control-lg" name="comment-email" type="email" placeholder="Email *" required="required">
+                                                    </div>
+
+                                                    <div class="form-group form-group-sm">
+                                                        <input id="comment-url" class="form-control form-control-lg" name="comment-url" placeholder="Website" type="url">
+                                                    </div>
+
+                                                    <div class="form-group form-group-sm">
+                                                        <p class="comment-form-cookies-consent custom-control custom-checkbox">
+                                                            <input id="wp-comment-cookies-consent" class="custom-control-input" name="wp-comment-cookies-consent" type="checkbox" value="yes">
+                                                            <label class="custom-control-label" for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label>
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="form-submit">
+                                                        <input name="submit" type="submit" class="btn btn-outline-secondary" value="Post Comment">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+  </div>
+</div> -->
+                                   <!--  <div class="meta">
+                                        <p>
+                                            <span><a href="news.html">By admin</a></span>
+                                            <span>-</span>
+                                            <span>Comments (1)</span>
+                                            <span>-</span>
+                                            <span class="category"><a title="Business" href="news.html">Business</a></span>
+                                        </p>
+                                    </div> -->
+<!-- 
+                                    <div class="title">
+                                        <h2>Assessing the Maturity of Your Data Management in Industry</h2>
                                     </div>
+
+                                    <div class="description clearfix">
+                                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+
+                                        <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+
+                                        <blockquote>
+                                            <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?</p>
+                                        </blockquote>
+
+                                        <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. </p>
+                                    </div> -->
+
+                                   <!--  <div class="tags">
+                                        <p>
+                                            <a title="Strategy" href="news.html">Strategy</a>
+                                            <a title="Sales" href="news.html">Sales</a>
+                                            <a title="Business" href="news.html">Business</a>
+                                        </p>
+                                    </div> -->
+
                                 </div>
 
                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
@@ -250,9 +350,11 @@
                                         </div> -->
 
                                         <div class="widget widget_categories">
-                                            <h6 class="widget-title">Categories</h6>
+                                            <h6 class="widget-title"><button type="button" class="btn btn-primary">
+  Notifications <span class="badge badge-light">1</span>
+</button></h6>
 
-                                            <ul>
+                                         <!--    <ul>
                                                 <li class="cat-item">
                                                     <a title="Strategy" href="news.html">Strategy</a>
                                                 </li>
@@ -268,10 +370,10 @@
                                                 <li class="cat-item">
                                                     <a title="Business" href="news.html">Business</a>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </div>
 
-                                        <div class="widget widget_recent_entries">
+                                       <!--  <div class="widget widget_recent_entries">
                                             <h6 class="widget-title">Recent posts</h6>
 
                                             <ul class="list-unstyled items">
@@ -347,8 +449,8 @@
                                                     </div>
                                                 </li>
                                             </ul>
-                                        </div>
-
+                                        </div> -->
+<!-- 
                                         <div class="widget widget_recent_comments">
                                             <h6 class="widget-title">Recent Comments</h6>
 
@@ -368,7 +470,7 @@
                                                     <a title="Arthur Hopin" href="news-single-post.html#comments">Lorem ipsum dolor sit amet, consectetur adipiscing elit…</a>
                                                 </li>
                                             </ul>
-                                        </div>
+                                        </div> -->
 
                                         <div class="widget widget_tag_cloud">
                                             <h6 class="widget-title">Tags</h6>
@@ -376,7 +478,6 @@
                                             <div class="tagcloud">
                                                 <a title="Strategy" href="news.html" class="tag-cloud-link">Strategy</a>
                                                 <a title="Marketing" href="news.html" class="tag-cloud-link">Marketing</a>
-                                                <a title="Sales" href="news.html" class="tag-cloud-link">Sales</a>
                                                 <a title="Business" href="news.html" class="tag-cloud-link">Business</a>
                                             </div>
                                         </div>

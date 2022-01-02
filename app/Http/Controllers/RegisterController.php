@@ -20,7 +20,7 @@ class RegisterController extends Controller
      */
 
     public function __construct(){
-        $this->middleware('guest');
+        $this->middleware('auth.basic');
     }
 
     /**
@@ -44,10 +44,8 @@ class RegisterController extends Controller
     public function authenticate(Request $request)
     {
 
-        // return $request->all();
-
         $attributes =  $request->validate([
-            'email'=> 'required|email|max:255',
+            'email'=> 'required|email|max:255|unique:users',
             'password' => 'required|min:7|max:255'
         ]);
 
@@ -55,7 +53,7 @@ class RegisterController extends Controller
 
         auth()->login($user);
 
-        // $request->session()->regenerate();
+        $request->session()->regenerate();
 
         return redirect('/dashboard');
 
