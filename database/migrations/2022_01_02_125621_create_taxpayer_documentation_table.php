@@ -15,11 +15,6 @@ class CreateTaxpayerDocumentationTable extends Migration
     {
         Schema::create('taxpayer_documentation', function (Blueprint $table) {
             $table->id();
-
-            // ask which attributtes have multiple documents or input
-            // if so possibly tokenize data or create new table
-            // for multiple input related to id
-
             $table->string('salary_wages_w2')->nullable();
             $table->string('rental_property_income')->nullable();
             $table->string('self_employment_expenses')->nullable(); 
@@ -45,9 +40,9 @@ class CreateTaxpayerDocumentationTable extends Migration
             $table->string('student_loan_interest_1098_e')->nullable();
             $table->string('state_return')->nullable();
             $table->boolean('direct_deposit');
-            $table->boolean('direct_deposit_information_change');
-            $table->string('bank_routing_number')->nullable();
-            $table->string('bank_account_number')->nullable();
+            $table->boolean('direct_deposit_information_change')->nullable();
+            $table->string('bank_routing_number');
+            $table->string('bank_account_number');
             $table->string('paper_file_or_E-file');
             $table->string('reason_for_paper_filing');
             $table->string('receive_your_completed_return');

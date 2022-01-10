@@ -16374,11 +16374,11 @@ mark,
     background-color: transparent;
     border-color: transparent;
 }
-
+/*FIND CHANGES*/
 .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #642c8c;
-    background-color: #ffffff;
+    background-color: #642c8c; /*ffffff*/
     border-color: #dee2e6 #dee2e6 #ffffff;
 }
 
@@ -16391,10 +16391,10 @@ mark,
 .nav-pills .nav-link {
     border-radius: 0;
 }
-
+/*FIND CHANGES*/
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-    color: #ffffff;
+    color: #ffffff; /*ffffff*/
     background-color: #642c8c;
 }
 
@@ -21820,13 +21820,13 @@ select.form-control {
     font-family: "Poppins-Bold", sans-serif;
     font-weight: 700;
 }
-
+/*FIND CHANGES*/
 .nav .nav-item > a:not(.disabled):not(.active) {
-    color: #060606;
+    color: white; /*#060606*/
 }
-
+/*FIND CHANGES*/
 .nav .nav-item:hover > a:not(.disabled):not(.active) {
-    color: #642c8c;
+    color: white; /*#642c8c*/
 }
 
 .nav .nav-item.nav-item-has-children > a:not(.disabled) {
@@ -21851,11 +21851,11 @@ select.form-control {
 .nav:not(.nav-pills) .nav-link:not(.disabled):hover {
     color: #642c8c;
 }
-
+/*FIND ANSWER black*/
 .nav:not(.nav-pills) .nav-link:not(.disabled).active {
     font-family: "Poppins-Bold", sans-serif;
     font-weight: 700;
-    color: #642c8c;
+    color: orange;
 }
 
 .nav.nav-pills .nav-link:not(.disabled):not(.active) {

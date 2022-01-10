@@ -21,6 +21,7 @@ class CreateTaxpayerDependentsTable extends Migration
             $table->string('suffix')->nullable();
             $table->string('ssn');
             $table->timestamp('date_of_birth');
+            $table->string('relationship');
             $table->boolean('child_care');
             $table->boolean('college_tuition');
             $table->boolean('health_insurance');

@@ -27,7 +27,7 @@ Route::get('/', function () {
 
 
 // TAX DASHBOARD REQUEST ROUTE
-Route::get('/dashboard', [TaxController::class,'createDashboard'])->middleware('auth.basic');
+Route::get('/dashboard', [TaxController::class,'createDashboard'])->middleware('auth');
 
 
 // AUTHENTICATE USER LOG REQUEST & DASHBOARD ROUTE

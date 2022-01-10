@@ -21,14 +21,14 @@ class CreateClientInformationTable extends Migration
             $table->string('suffix')->nullable();
             $table->string('website_url')->nullable();
             $table->string('business_type');
-            $table->string('services');
             $table->string('business_activity');
+            $table->string('business_services');
             $table->string('business_solutions');
-            $table->string('ideal_clients');
+            $table->string('business_ideal_clients');
             $table->string('business_environment');
             $table->string('business_issues');
             $table->string('business_goal_and_timeframe');
-            $table->string('services_desired');
+            $table->string('business_services_desired');
             $table->timestamps();
         });
     }

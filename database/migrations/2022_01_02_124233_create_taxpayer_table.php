@@ -34,7 +34,7 @@ class CreateTaxpayerTable extends Migration
             $table->string('zip');
             $table->string('spouse_first_name')->nullable();
             $table->string('spouse_middle_name')->nullable();
-            $table->string('lspouse_ast_name')->nullable();
+            $table->string('spouse_last_name')->nullable();
             $table->string('spouse_suffix')->nullable();
             $table->string('spouse_ssn')->nullable();
             $table->timestamp('spouse_date_of_birth')->nullable();

@@ -17,7 +17,7 @@ class CreateTaxpayerQuestionnaireTable extends Migration
             $table->id();
             $table->boolean('someone_claim_you_or_your_spouse_as_dependent');
             $table->boolean('received_correspondence_irs_prior_year_tax_returns');
-            $table->string('refer_name')->nullable();
+            $table->string('refer_name');
             $table->boolean('purchase_motor_vehicle');
             $table->boolean('attend_school_fulltime_student');
             $table->boolean('purchase_supplies_used_as_educator');
