@@ -177,7 +177,7 @@
                                                     <div class="card">
                                                         <div class="card-body">
                                                             <h5 class="card-title">Tax Season Is Approaching</h5>
-                                                            <p class="card-text">Would you like to get started on your tax preperation.</p>
+                                                            <p class="card-text">Would you like to get started on your tax preparation.</p>
                                                             <a href="#" class="btn btn-primary">Remove</a>
                                                         </div>
                                                     </div>
