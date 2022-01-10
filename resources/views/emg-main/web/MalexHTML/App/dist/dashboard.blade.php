@@ -146,11 +146,13 @@
             </div>
  
         </div>
+
  
             <div id="page-content" class="spacer " style="margin-top:1em;">
                 <div class="wrapper">
                     <div class="content">
                         <div id="single">
+                            <h4 style="color:red">(Attention)PLEASE READ THIS NOTICE REGARDING THIS SOFTWARE AND APPLICATION. THIS IS A LIVE DEMO TEST AND ANY DATA THAT IS SUBMITTED MAY BE LOST OR NOT PROCCESSED. BY LOGIN AND REGISTER YOU AGREE TO THESE TERMS DURING LIVE BETA TESTING(Attention)</h4>
                             <div class="row gutter-width-md">
 
                                 <div class="tab-content" id="myTabContent">
@@ -1171,7 +1173,7 @@
                                             </fieldset>
 
 
-                                                <div class="row form-group" id="newBanikingInfo">
+                                                <div class="row form-group" id="newBankingInfo">
 
                                                     <div class="form-check form-check-inline">
 
