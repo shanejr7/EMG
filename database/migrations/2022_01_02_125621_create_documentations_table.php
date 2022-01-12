@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTaxpayerDocumentationTable extends Migration
+class CreateDocumentationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateTaxpayerDocumentationTable extends Migration
      */
     public function up()
     {
-        Schema::create('taxpayer_documentation', function (Blueprint $table) {
-            $table->id();
+        Schema::create('documentations', function (Blueprint $table) {
+            $table->id('user_id');
+            $table->string('filenames')->nullable();
             $table->string('salary_wages_w2')->nullable();
             $table->string('rental_property_income')->nullable();
             $table->string('self_employment_expenses')->nullable(); 
@@ -39,13 +40,6 @@ class CreateTaxpayerDocumentationTable extends Migration
             $table->string('lottery_gambling_winnings ')->nullable();
             $table->string('student_loan_interest_1098_e')->nullable();
             $table->string('state_return')->nullable();
-            $table->boolean('direct_deposit');
-            $table->boolean('direct_deposit_information_change')->nullable();
-            $table->string('bank_routing_number');
-            $table->string('bank_account_number');
-            $table->string('paper_file_or_E-file');
-            $table->string('reason_for_paper_filing');
-            $table->string('receive_your_completed_return');
             $table->timestamps();
         });
     }
@@ -57,6 +51,6 @@ class CreateTaxpayerDocumentationTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('taxpayer_documentation');
+        Schema::dropIfExists('documentations');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTaxpayerTable extends Migration
+class CreateTaxpayersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class CreateTaxpayerTable extends Migration
      */
     public function up()
     {
-        Schema::create('taxpayer', function (Blueprint $table) {
-            $table->id()->unique();
+        Schema::create('taxpayers', function (Blueprint $table) {
+            $table->id('user_id')->unique();
             $table->timestamp('tax_year');
             $table->timestamp('date');
             $table->string('first_name');
@@ -25,7 +25,6 @@ class CreateTaxpayerTable extends Migration
             $table->timestamp('date_of_birth');
             $table->string('occupation');
             $table->string('email_address');
-            $table->string('home_phone')->nullable();
             $table->string('work_phone')->nullable();
             $table->string('mobile_phone')->nullable();
             $table->string('address');
@@ -40,10 +39,16 @@ class CreateTaxpayerTable extends Migration
             $table->timestamp('spouse_date_of_birth')->nullable();
             $table->string('spouse_occupation')->nullable();
             $table->string('spouse_email_address')->nullable();
-            $table->string('spouse_home_phone')->nullable();
             $table->string('spouse_work_phone')->nullable();
             $table->string('spouse_mobile_phone')->nullable();
             $table->string('filing_status');
+            $table->boolean('direct_deposit');
+            $table->boolean('direct_deposit_information_change')->nullable();
+            $table->string('bank_routing_number');
+            $table->string('bank_account_number');
+            $table->string('paper_file_or_E-file');
+            $table->string('reason_for_paper_filing');
+            $table->string('receive_your_completed_return');
             $table->timestamps();
         });
     }
@@ -55,6 +60,6 @@ class CreateTaxpayerTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('taxpayer');
+        Schema::dropIfExists('taxpayers');
     }
 }

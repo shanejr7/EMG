@@ -69,7 +69,7 @@
                                 <nav class="menu-primary">
                                     <ul class="nav">
                                         <li class="nav-item">
-                                            <a style="font-size: 19px;" href="/registration">Register</a>
+                                            <a style="font-size: 19px;" href="/registration">Create New Account</a>
                                         </li>
 
                                         <li class="nav-item">

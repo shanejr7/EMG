@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTaxpayerQuestionnaireTable extends Migration
+class createQuestionnairesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class CreateTaxpayerQuestionnaireTable extends Migration
      */
     public function up()
     {
-        Schema::create('taxpayer_questionnaire', function (Blueprint $table) {
-            $table->id();
+        Schema::create('questionnaires', function (Blueprint $table) {
+            $table->id('user_id')->unique();
             $table->boolean('someone_claim_you_or_your_spouse_as_dependent');
             $table->boolean('received_correspondence_irs_prior_year_tax_returns');
             $table->string('refer_name');
@@ -35,6 +35,6 @@ class CreateTaxpayerQuestionnaireTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('taxpayer_questionnaire');
+        Schema::dropIfExists('questionnaires');
     }
 }

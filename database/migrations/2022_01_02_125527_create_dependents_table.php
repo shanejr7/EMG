@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTaxpayerDependentsTable extends Migration
+class CreateDependentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateTaxpayerDependentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('taxpayer_dependents', function (Blueprint $table) {
-            $table->id();
+        Schema::create('dependents', function (Blueprint $table) {
+            $table->id('dependent_id');
+            $table->integer('user_id');
             $table->string('first_name');
             $table->string('middle_name')->nullable();
             $table->string('last_name');
@@ -37,6 +38,6 @@ class CreateTaxpayerDependentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('taxpayer_dependents');
+        Schema::dropIfExists('dependents');
     }
 }

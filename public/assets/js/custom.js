@@ -17,9 +17,6 @@
 
     $('#bankingInfo').hide();
 
-
-
-
     $("#addTaxPayment").on("click", function(){
 
 
@@ -30,7 +27,7 @@
         dynamicString1 = 'tag-input'+index;
         dynamicString2 = 'tag-date'+index;
 
-        $('#paidEstimatedTaxes').append('<p class="input-group gutter-width-30 " id="taxPaymentID_'+index+'" style="margin-top:1em;"> <span class="gutter-width col-lg-4 form-group"> <label style="margin-top:4px" for="'+dynamicString1+'" style="margin-top:4px;">Paid tax estimate ('+index+') </label> <input id="'+dynamicString1+'" type="text" name="estimated_taxes_paid_and_date_'+index+'"> </span> <span class="gutter-width col-lg-4 form-group"> <label for="'+dynamicString2+'">Date</label> <input id="'+dynamicString2+'" type="date" name="paid_taxes_date_'+index+'"> </span> </p>');
+        $('#paidEstimatedTaxes').append('<p class="input-group gutter-width-30 " id="taxPaymentID_'+index+'" style="margin-top:1em;"> <span class="gutter-width col-lg-4 form-group"> <label style="margin-top:4px" for="'+dynamicString1+'" style="margin-top:4px;">Paid tax estimate ('+index+') </label> <input id="'+dynamicString1+'" type="text" name="estimated_taxes_paid[]"> </span> <span class="gutter-width col-lg-4 form-group"> <label for="'+dynamicString2+'">Date</label> <input id="'+dynamicString2+'" type="date" name="estimated_taxes_paid_date[]"> </span> </p>');
               
 
         if (index>=2) {
@@ -94,7 +91,7 @@
                        $('#paidEstimatedTaxes').empty();
 
                         index = 1;
-                        $('#paidEstimatedTaxes').append('<p class="input-group gutter-width-30" id="taxPaymentID_'+index+'" style="margin-top:1em;"> <span class="gutter-width col-lg-4 form-group"> <label style="margin-top:4px" for="'+dynamicString1+'" style="margin-top:4px;">Paid tax estimate ('+index+') </label> <input id="'+dynamicString1+'" type="text" name="estimated_taxes_paid_and_date_'+index+'"> </span> <span class="gutter-width col-lg-4 form-group"> <label for="'+dynamicString2+'">Date</label> <input id="'+dynamicString2+'" type="date" name="paid_taxes_date_'+index+'"> </span> </p>');
+                        $('#paidEstimatedTaxes').append('<p class="input-group gutter-width-30" id="taxPaymentID_'+index+'" style="margin-top:1em;"> <span class="gutter-width col-lg-4 form-group"> <label style="margin-top:4px" for="'+dynamicString1+'" style="margin-top:4px;">Paid tax estimate ('+index+') </label> <input id="'+dynamicString1+'" type="text" name="estimated_taxes_paid[]"> </span> <span class="gutter-width col-lg-4 form-group"> <label for="'+dynamicString2+'">Date</label> <input id="'+dynamicString2+'" type="date" name="estimated_taxes_paid_date[]"> </span> </p>');
                         $('#paidEstimatedTaxes').hide();
                         $('#paidEstimatedTaxesButton').hide();
                         $('#removeEstimatedTaxesButton').hide();

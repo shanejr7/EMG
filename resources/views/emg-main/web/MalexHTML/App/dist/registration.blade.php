@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="assets/css/style.min.css">
-        <title>Registration | EMG - Business Consulting Agency</title>
+        <title>Create new account | EMG - Business Consulting Agency</title>
 
         <!-- Useful meta tags -->
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -40,7 +40,7 @@
                     <section id="page-title" class="page-title text-center">
                         <div class="wrapper">
                             <div class="title"  style="margin-bottom: 4em;margin-top:2;">
-                                <h1 class="large" id="color">Register</h1>
+                                <h1 class="large" id="color">Create new account</h1>
                                 {{ $errors->login->first('email') }}
                             </div>
 

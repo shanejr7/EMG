@@ -32,7 +32,7 @@ class LoginController extends Controller
     {
         return view('/emg-main/web/MalexHTML/App/dist/login');
     }
-        /**
+    /**
      * log validated user to dashboard.
      *
      * @param  \Illuminate\Http\Request  $request

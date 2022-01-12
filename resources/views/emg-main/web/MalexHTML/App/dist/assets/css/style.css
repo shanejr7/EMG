@@ -22270,6 +22270,12 @@ select.form-control {
     color: #ffffff;
 }
 
+.navBtn:target{
+     background-color: #060606;
+
+}
+
+ 
 /*=============================
 // #7.11 Alert
 =============================*/

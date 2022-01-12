@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TaxController;
+use App\Http\Controllers\PortalController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SessionController;
@@ -27,7 +27,18 @@ Route::get('/', function () {
 
 
 // TAX DASHBOARD REQUEST ROUTE
-Route::get('/dashboard', [TaxController::class,'createDashboard'])->middleware('auth');
+Route::get('/dashboard', [PortalController::class,'createDashboard'])->middleware('auth');
+Route::get('/account', [PortalController::class,'createAccount'])->middleware('auth');
+Route::get('/ClientPortal', [PortalController::class,'createClientPortal'])->middleware('auth');
+Route::get('/TaxPortal', [PortalController::class,'createTaxPortal'])->middleware('auth');
+
+
+// TAX DASHBOARD RESPONSE ROUTE
+Route::delete('/remove-notification/{notification}', [PortalController::class,'removeUserNotification'])->middleware('auth');
+Route::post('/account-update/{attribute}', [PortalController::class,'accountUpdateSubmission'])->middleware('auth');
+Route::post('/client-business-information', [PortalController::class,'clientFormSubmission'])->middleware('auth');
+Route::post('/tax-submission', [PortalController::class,'taxFormSubmission'])->middleware('auth');
+
 
 
 // AUTHENTICATE USER LOG REQUEST & DASHBOARD ROUTE

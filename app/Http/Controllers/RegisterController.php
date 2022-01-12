@@ -8,6 +8,7 @@ use Illuminate\Http\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Providers\AppServiceProvider;
 use App\Models\User;
+use App\Models\Notification;
 
 
 class RegisterController extends Controller
@@ -49,9 +50,24 @@ class RegisterController extends Controller
             'password' => 'required|min:7|max:255'
         ]);
 
+
         $user = User::create($attributes);
 
         auth()->login($user);
+
+        $notification1 = [
+            'user_id' =>Auth::id(),
+            'title' => 'New Client Information Document',
+            'body' =>'View our business portal for more information.'];
+
+        $notification2 = [
+            'user_id' =>Auth::id(),
+            'title' => 'Tax Season Is Approaching',
+            'body' =>'Would you like to get started on your tax preparation'];
+
+        Notification::create($notification1);
+        Notification::create($notification2);
+
 
         $request->session()->regenerate();
 
