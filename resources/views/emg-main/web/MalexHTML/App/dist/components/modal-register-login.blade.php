@@ -41,16 +41,25 @@
                                     <div class="animated fadeinright d-flex justify-content-end w-100 order-0 order-sm-1 order-md-1 order-lg-1 order-xl-1">
                                         <nav class="menu-primary">
                                             <ul class="nav">
+
                                                 <li class="nav-item">
-                                                    <a title="Services" href="#services">What We Do</a>
+                                                    <a title="Login"  href="/login">Login</a>
                                                 </li>
 
                                                 <li class="nav-item">
-                                                    <a title="About Us" href="#about-us">Who We Are</a>
+                                                    <a title="Create New Account"   href="/registration">Create New Account</a>
                                                 </li>
 
                                                 <li class="nav-item">
-                                                    <a title="Contacts" href="#contacts">Contacts</a>
+                                                    <a title="Services" href="/#services">What We Do</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a title="About Us" href="/#about-us">Who We Are</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a title="Contacts" href="/#contacts">Contacts</a>
                                                 </li>
                                             </ul>
                                         </nav>
