@@ -54,6 +54,5 @@ class Dependents extends Model
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];
-    protected $primaryKey = null;
 
 }

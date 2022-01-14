@@ -14,7 +14,7 @@ class CreateTaxpayersTable extends Migration
     public function up()
     {
         Schema::create('taxpayers', function (Blueprint $table) {
-            $table->id('user_id')->unique();
+            $table->id('user_id');
             $table->timestamp('tax_year');
             $table->timestamp('date');
             $table->string('first_name');
@@ -28,6 +28,7 @@ class CreateTaxpayersTable extends Migration
             $table->string('work_phone')->nullable();
             $table->string('mobile_phone')->nullable();
             $table->string('address');
+            $table->string('address_2');
             $table->string('city');
             $table->string('state');
             $table->string('zip');
@@ -46,7 +47,7 @@ class CreateTaxpayersTable extends Migration
             $table->boolean('direct_deposit_information_change')->nullable();
             $table->string('bank_routing_number');
             $table->string('bank_account_number');
-            $table->string('paper_file_or_E-file');
+            $table->string('paper_file_or_E_file');
             $table->string('reason_for_paper_filing');
             $table->string('receive_your_completed_return');
             $table->timestamps();

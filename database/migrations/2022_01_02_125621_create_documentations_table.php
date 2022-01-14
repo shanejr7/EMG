@@ -14,7 +14,8 @@ class CreateDocumentationsTable extends Migration
     public function up()
     {
         Schema::create('documentations', function (Blueprint $table) {
-            $table->id('user_id');
+            $table->id('id');
+            $table->integer('user_id');
             $table->string('filenames')->nullable();
             $table->string('salary_wages_w2')->nullable();
             $table->string('rental_property_income')->nullable();

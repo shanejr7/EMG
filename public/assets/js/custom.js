@@ -372,7 +372,7 @@ function pageSeven() {
 }
 
  $(document).ready(function() {
-      $(".btn-primary").click(function(){ 
+      $(".addBtn").click(function(){ 
           var btnControl = $(".clone").html();
           $(".increment").after(btnControl);
           if(btnControl.length<103){

@@ -9,6 +9,7 @@ class Documentations extends Model
 {
     use HasFactory;
 
+
      /**
      * The attributes that are mass assignable.
      *
@@ -29,7 +30,6 @@ class Documentations extends Model
      */
     protected $hidden = [
         'user_id',
-        'filenames',
     ];
 
 
@@ -44,8 +44,5 @@ class Documentations extends Model
         'updated_at' => 'datetime',
     ];
 
-    public $incrementing = false;
-
-    protected $primaryKey = null;
 
 }

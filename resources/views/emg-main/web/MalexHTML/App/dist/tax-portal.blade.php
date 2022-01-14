@@ -289,31 +289,31 @@
 
 
                                                 @error('spouse_first_name')
-                                                    <p class="alert" style="color: red;">error{{$message}}</p>
+                                                    <p class="alert" style="color: red;">{{$message}}</p>
                                                 @enderror
                                                 @error('spouse_middle_name')
-                                                    <p class="alert" style="color: red;">error{{$message}}</p>
+                                                    <p class="alert" style="color: red;">{{$message}}</p>
                                                 @enderror
                                                 @error('spouse_last_name')
-                                                    <p class="alert" style="color: red;">error{{$message}}</p>
+                                                    <p class="alert" style="color: red;">{{$message}}</p>
                                                 @enderror
                                                 @error('spouse_suffix')
-                                                    <p class="alert" style="color: red;">error{{$message}}</p>
+                                                    <p class="alert" style="color: red;">{{$message}}</p>
                                                 @enderror
                                                 @error('spouse_work_phone')
-                                                    <p class="alert" style="color: red;">error{{$message}}</p>
+                                                    <p class="alert" style="color: red;">{{$message}}</p>
                                                 @enderror
                                                 @error('spouse_mobile_phone')
-                                                    <p class="alert" style="color: red;">error{{$message}}</p>
+                                                    <p class="alert" style="color: red;">{{$message}}</p>
                                                 @enderror
                                                 @error('spouse_ssn')
-                                                    <p class="alert" style="color: red;">error{{$message}}</p>
+                                                    <p class="alert" style="color: red;">{{$message}}</p>
                                                 @enderror
                                                 @error('spouse_date_of_birth')
-                                                    <p class="alert" style="color: red;">error{{$message}}</p>
+                                                    <p class="alert" style="color: red;">{{$message}}</p>
                                                 @enderror
                                                 @error('spouse_occupation')
-                                                    <p class="alert" style="color: red;">error{{$message}}</p>
+                                                    <p class="alert" style="color: red;">{{$message}}</p>
                                                 @enderror
 
                                                 <div class="row form-group">
@@ -441,8 +441,8 @@
 
                                             <div class="form-group">
                                             <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Dependent(s)</label>
-                                            <select class="form-control my-1 mr-sm-2" id="dependentsNum">
-                                                <option value="0">0</option>
+                                            <select class="form-control my-1 mr-sm-2" name="dependents_num" id="dependentsNum">
+                                                <option value="0" selected>0</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -579,7 +579,9 @@
                                              @error('estimated_taxes_paid_date.*')
                                                 <p class="alert" style="color: red;">{{$message}}</p>
                                             @enderror
-
+                                              @error('filenames.*')
+                                                <p class="alert" style="color: red;">{{$message}}</p>
+                                            @enderror
 
                                          
                                             <div class="row form-group"> 
@@ -827,7 +829,7 @@
                                                 <div class="input-group removeButton control-group lst increment" >
                                                     <input type="file" name="filenames[]" class="myfrm form-control">
                                                     <div class="input-group-btn"> 
-                                                        <button class="btn btn-primary" type="button">Add</button>
+                                                        <button class="addBtn btn btn-primary" type="button">Add</button>
                                                     </div>
                                                 </div>
                                                 <div class="clone hide">

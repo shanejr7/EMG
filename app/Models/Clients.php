@@ -56,8 +56,4 @@ class Clients extends Model
         'updated_at' => 'datetime',
     ];
 
-    protected $primaryKey = null;
-
-    public $incrementing = false;
-
 }
