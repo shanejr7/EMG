@@ -15,16 +15,16 @@ class CreateTaxpayersTable extends Migration
     {
         Schema::create('taxpayers', function (Blueprint $table) {
             $table->id('user_id');
-            $table->timestamp('tax_year');
-            $table->timestamp('date');
+            $table->integer('tax_year');
+            $table->string('date');
             $table->string('first_name');
             $table->string('middle_name')->nullable();
             $table->string('last_name');
             $table->string('suffix')->nullable();
             $table->string('ssn');
-            $table->timestamp('date_of_birth');
+            $table->string('date_of_birth');
             $table->string('occupation');
-            $table->string('email_address');
+            $table->string('email_address')->nullable();
             $table->string('work_phone')->nullable();
             $table->string('mobile_phone')->nullable();
             $table->string('address');
@@ -37,7 +37,7 @@ class CreateTaxpayersTable extends Migration
             $table->string('spouse_last_name')->nullable();
             $table->string('spouse_suffix')->nullable();
             $table->string('spouse_ssn')->nullable();
-            $table->timestamp('spouse_date_of_birth')->nullable();
+            $table->string('spouse_date_of_birth')->nullable();
             $table->string('spouse_occupation')->nullable();
             $table->string('spouse_email_address')->nullable();
             $table->string('spouse_work_phone')->nullable();
@@ -48,7 +48,7 @@ class CreateTaxpayersTable extends Migration
             $table->string('bank_routing_number');
             $table->string('bank_account_number');
             $table->string('paper_file_or_E_file');
-            $table->string('reason_for_paper_filing');
+            $table->string('reason_for_paper_filing')->nullable();
             $table->string('receive_your_completed_return');
             $table->timestamps();
         });

@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Notifications\Notifiable;
 
 class Dependents extends Model
 {
-    use HasFactory;
+      use HasApiTokens, HasFactory, Notifiable;
 
      /**
      * The attributes that are mass assignable.
@@ -15,7 +17,6 @@ class Dependents extends Model
      * @var string[]
      */
     protected $fillable = [
-        'dependent_id',
         'user_id',
         'first_name',
         'middle_name',
@@ -38,7 +39,6 @@ class Dependents extends Model
      * @var array
      */
     protected $hidden = [
-        'dependent_id',
         'user_id',
         'ssn',
     ];

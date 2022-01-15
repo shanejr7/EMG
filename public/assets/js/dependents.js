@@ -11,6 +11,7 @@ $(function() {
           var index = 0;
 
 
+
           for (let i = 0; i < $(this).val(); i++) {
 
             $(".dependents").
@@ -20,9 +21,9 @@ $(function() {
             $(".dependents").append('<div class="row form-group"><p class="input-group gutter-width-30"><span class="gutter-width col-lg-4 form-group" ><label style="margin-top:4px" for="inputSSN'+i+'">SSN</label> <input type="text" id="inputSSN'+i+'"  placeholder="***-**-****" maxlength="12" name="dependents_ssn[]"></span><span class="gutter-width col-lg-4 form-group"><label for="inputDateOfBirth'+i+'">Date of Birth</label> <input type="date" id="inputDateOfBirth'+i+'" name="dependents_date_of_birth[]"></span><span class="gutter-width col-lg-4 form-group"><label style="margin-top:4px"  for="inputRelationship'+i+'">Relationship</label> <input type="text" id="inputRelationship'+i+'" placeholder="Relationship" name="dependents_relationship[]"></span></p></div>');
 
             
-            $(".childCare").append('<fieldset class="form-group"><div class="row"><legend class="col-form-label col-sm-2 pt-0">Child Care</legend><div class="col-sm-10"><div class="form-check"><input class="form-check-input" type="radio" name="dependents_child_care[]" id="childCareTrue'+i+'" value="true"><label class="form-check-label" for="childCareTrue'+i+'">Yes</label></div><div class="form-check"><input class="form-check-input" type="radio" name="dependents_child_care[]" id="childCareFalse'+i+'" value="false"><label class="form-check-label" for="childCareFalse'+i+'">No</label></div></div></div></fieldset>');
+            $(".childCare").append('<fieldset class="form-group"><div class="row"><legend class="col-form-label col-sm-2 pt-0">Child Care</legend><div class="col-sm-10"><div class="form-check"><input class="form-check-input" type="radio" name="dependents_child_care['+i+']" id="childCareTrue'+i+'" value="true"><label class="form-check-label" for="childCareTrue'+i+'">Yes</label></div><div class="form-check"><input class="form-check-input" type="radio" name="dependents_child_care[]" id="childCareFalse'+i+'" value="false"><label class="form-check-label" for="childCareFalse'+i+'">No</label></div></div></div></fieldset>');
 
-            $('.collegeTuition').append('<fieldset class="form-group" ><div class="row"><legend class="col-form-label col-sm-2 pt-0">College Tuition</legend><div class="col-sm-10"><div class="form-check"><input class="form-check-input" type="radio" name="dependents_college_tuition[]"  id="collegeTuitionTrue'+i+'" value="true"><label class="form-check-label" for="collegeTuitionTrue'+i+'">Yes</label></div><div class="form-check"><input class="form-check-input" type="radio" name="dependents_college_tuition[]"  id="collegeTuitionFalse'+i+'" value="false"><label class="form-check-label" for="collegeTuitionFalse'+i+'">No</label></div></div></div></fieldset>');
+            $('.collegeTuition').append('<fieldset class="form-group" ><div class="row"><legend class="col-form-label col-sm-2 pt-0">College Tuition</legend><div class="col-sm-10"><div class="form-check"><input class="form-check-input" type="radio" name="dependents_college_tuition['+i+']"  id="collegeTuitionTrue'+i+'" value="true"><label class="form-check-label" for="collegeTuitionTrue'+i+'">Yes</label></div><div class="form-check"><input class="form-check-input" type="radio" name="dependents_college_tuition[]"  id="collegeTuitionFalse'+i+'" value="false"><label class="form-check-label" for="collegeTuitionFalse'+i+'">No</label></div></div></div></fieldset>');
 
 
           }
@@ -54,8 +55,6 @@ $(function() {
 
           $('#inputFirstName'+x).change(function() {
 
-
-            console.log( $('#inputFirstName'+x).val());
 
             $('#selectInsuredDependents').empty();
 

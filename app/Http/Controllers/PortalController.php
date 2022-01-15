@@ -325,17 +325,18 @@ class PortalController extends Controller
         // upload new migration
 
  
+
         $attributes =  $request->validate([
             'tax_year' => 'required',
             'date' => '',
-            'first_name'=> 'required|email',
+            'first_name'=> 'required',
             'last_name' => 'required',
             'middle_name' => '',
             'suffix' => '',
-            'ssn'  => 'required|numeric',
+            'ssn'  => 'required',
             'date_of_birth'  => 'required',
             'occupation'  => 'required',
-            'email_address'  => 'required',
+            'email_address'  => '',
             'work_phone'  => '',
             'mobile_phone'  => '',
             'address'  => 'required',
@@ -380,28 +381,33 @@ class PortalController extends Controller
             'paid_estimated_tax_payments' => 'required',
             'estimated_taxes_paid.*' => '',
             'estimated_taxes_paid_date.*' => '',
-            'filenames.*' => 'mimes:png,jpg,jpeg,csv,txt,xlx,xls,pdf',
+            'filenames.*' => 'mimes:png,jpg,jpeg,csv,txt,xlx,xls,pdf,doc,docx',
             'direct_deposit' => 'required',
             'direct_deposit_information_change' => '',
             'bank_routing_number' =>'',
             'bank_account_number' => '',
             'paper_file_or_E-file' => 'required',
-            'reason_for_paper_filing' => 'required',
+            'reason_for_paper_filing' => '',
             'receive_your_completed_return' => 'required',
 
         ]);
 
 
-    
-
-        if (auth()->attempt($attributes)) {
 
 
+        if ($attributes) {
 
-        // taxpayer
+
+
+            // taxpayer
+   
             $taxpayer = new Taxpayer();
 
+      
+
             $taxpayer->user_id = Auth::id();
+
+            $taxpayer->email_address = Auth::user()->email;
 
             $taxpayer->tax_year = $request->input('tax_year');
             $taxpayer->date = date('d-m-Y');
@@ -419,10 +425,9 @@ class PortalController extends Controller
             }
 
       
-            $taxpayer->ssn = $request->input('ssn');
+            $taxpayer->ssn = md5($request->input('ssn'));
             $taxpayer->date_of_birth = $request->input('date_of_birth');
             $taxpayer->occupation = $request->input('occupation');
-            $taxpayer->email_address = $request->input('email_address');
 
              if ($request->input('work_phone') != null) {
                  $taxpayer->work_phone = $request->input('work_phone');
@@ -464,10 +469,9 @@ class PortalController extends Controller
                     $taxpayer->spouse_suffix = $request->input('spouse_suffix');
             }
 
-            $taxpayer->spouse_ssn = $request->input('spouse_ssn');
+            $taxpayer->spouse_ssn = md5($request->input('spouse_ssn'));
             $taxpayer->spouse_date_of_birth = $request->input('spouse_date_of_birth');
             $taxpayer->spouse_occupation = $request->input('spouse_occupation');
-            $taxpayer->spouse_email_address = $request->input('spouse_email_address');
 
             if ($request->input('spouse_work_phone') != null) {
                 $taxpayer->spouse_work_phone = $request->input('spouse_work_phone');
@@ -493,11 +497,24 @@ class PortalController extends Controller
                
            }
            
-           $taxpayer->bank_routing_number = $request->input('bank_routing_number');
-           $taxpayer->bank_account_number = $request->input('bank_account_number');
+
+           if ($request->input('bank_routing_number') != null) {
+               $taxpayer->bank_routing_number = md5($request->input('bank_routing_number'));
+           }
+           
+
+           if ($request->input('bank_account_number') != null) {
+                   $taxpayer->bank_account_number = md5($request->input('bank_account_number'));
+           }
+       
            $taxpayer->paper_file_or_E_file = $request->input('paper_file_or_E-file');
-           $taxpayer->reason_for_paper_filing = $request->input('reason_for_paper_filing');
            $taxpayer->receive_your_completed_return = $request->input('receive_your_completed_return');
+
+
+
+           $taxpayer->save();
+
+
 
 
         // dependents
@@ -519,7 +536,7 @@ class PortalController extends Controller
             $dependents_college_tuition = $request->input('dependents_college_tuition');
             $dependents_health_insurance = $request->input('dependents_health_insurance');
 
-
+    
 
 
             if ($dependents_health_insurance == "false") {
@@ -733,7 +750,7 @@ class PortalController extends Controller
                     $dependents->relationship =  $dependents_relationship[$i];
                     $dependents->child_care = $dependents_child_care[$i];
                     $dependents->college_tuition = $dependents_college_tuition[$i];
-                    $dependents->health_insurance = $dependents_health_insurance[$i];
+                    $dependents->health_insurance = $dependents_health_insurance;
 
                     if (isset($dependents_months_insured[$i])) {
                           $dependents->months_insured = $dependents_months_insured[$i];
@@ -752,7 +769,7 @@ class PortalController extends Controller
 
 
 
-                for ($i=0; $i <sizeof($dependents_num); $i++) { 
+                for ($i=0; $i <$dependents_num; $i++) { 
                     
                     $dependents = new Dependents();
 
@@ -775,7 +792,7 @@ class PortalController extends Controller
                     $dependents->relationship =  $dependents_relationship[$i];
                     $dependents->child_care = $dependents_child_care[$i];
                     $dependents->college_tuition = $dependents_college_tuition[$i];
-                    $dependents->health_insurance = $dependents_health_insurance[$i];
+                    $dependents->health_insurance = $dependents_health_insurance;
 
 
                     $dependents->save();
@@ -789,23 +806,6 @@ class PortalController extends Controller
 
         // questionnaires 
 
-
-            $estimated_taxes_paid = $request->input('estimated_taxes_paid');
-            $estimated_taxes_paid_date= $request->input('estimated_taxes_paid_date');
-            $estimated_taxes_paid_and_date = "";
-   
-            if (isset($estimated_taxes_paid)) {
-
-                $estimated_taxes_paid_and_date = "";
-                
-                for ($i=0; $i <sizeof($estimated_taxes_paid) ; $i++) { 
-                    
-                    if (isset($estimated_taxes_paid_date)) {
-                        
-                         $estimated_taxes_paid_and_date = $estimated_taxes_paid_and_date .",".$estimated_taxes_paid[$i] .",". $estimated_taxes_paid_date[$i];
-                    }
-                }
-            }
 
             $questionnaires = new Questionnaires();
 
@@ -827,13 +827,32 @@ class PortalController extends Controller
             $questionnaires->purchase_install_energy_efficient_home_item = $request->input('purchase_install_energy_efficient_home_item');
           
             $questionnaires->paid_estimated_tax_payments = $request->input('paid_estimated_tax_payments');
+
+            $estimated_taxes_paid = $request->input('estimated_taxes_paid');
+            $estimated_taxes_paid_date= $request->input('estimated_taxes_paid_date');
+            $estimated_taxes_paid_and_date = null;
+
+
+   
+            if ($questionnaires->paid_estimated_tax_payments =="true") {
+
+                $estimated_taxes_paid_and_date = "";
+                
+                for ($i=0; $i <sizeof($estimated_taxes_paid) ; $i++) { 
+                    
+                    if (isset($estimated_taxes_paid_date)) {
+                        
+                         $estimated_taxes_paid_and_date = $estimated_taxes_paid_and_date .",".$estimated_taxes_paid[$i] .",". $estimated_taxes_paid_date[$i];
+                    }
+                }
+            }
   
-            $questionnaires->estimated_taxes_paid_and_date = $estimated_taxes_paid_and_date;
+            if ($questionnaires->paid_estimated_tax_payments == "true") {
+                  $questionnaires->estimated_taxes_paid_and_date = $estimated_taxes_paid_and_date;          
+            }
+           
 
             $questionnaires->save();
-
-
-
 
 
             // file upload

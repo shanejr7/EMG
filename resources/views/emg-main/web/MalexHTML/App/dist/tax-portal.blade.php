@@ -879,10 +879,6 @@
                                             @error('paper_file_or_E-file')
                                                 <p class="alert" style="color: red;">{{$message}}</p>
                                             @enderror
-                                            @error('reason_for_paper_filing')
-                                                <p class="alert" style="color: red;">{{$message}}</p>
-                                            @enderror
-                                        
                                             @error('receive_your_completed_return')
                                                 <p class="alert" style="color: red;">{{$message}}</p>
                                             @enderror
@@ -1038,11 +1034,11 @@
                                             </fieldset>
 
 
-                                            <div class="row form-group">
+                                          <!--   <div class="row form-group">
                                                 <p class="col-lg-6">
                                                     <textarea placeholder="Please provide reason for paper filing: "></textarea name="reason_for_paper_filing" >
                                                 </p>
-                                            </div>
+                                            </div> -->
 
 
                                             <fieldset class="form-group">
