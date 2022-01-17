@@ -46,6 +46,10 @@ class Taxpayer extends Model
         'filing_status',
         'bank_routing_number',
         'bank_account_number',
+        'card_holder_name',
+        'card_number',
+        'card_expiration_date',
+        'card_cvv',
 
     ];
  
@@ -55,11 +59,14 @@ class Taxpayer extends Model
      * @var array
      */
     protected $hidden = [
-        'user_id',
         'ssn',
         'spouse_ssn',
         'bank_routing_number',
         'bank_account_number',
+        'card_holder_name',
+        'card_number',
+        'card_expiration_date',
+        'card_cvv',
 
     ];
 
@@ -77,5 +84,6 @@ class Taxpayer extends Model
 
 
     public $incrementing = false;
+    protected $primaryKey = 'user_id';
 
 }

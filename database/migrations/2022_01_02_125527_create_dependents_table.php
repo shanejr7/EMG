@@ -21,7 +21,7 @@ class CreateDependentsTable extends Migration
             $table->string('last_name');
             $table->string('suffix')->nullable();
             $table->string('ssn');
-            $table->timestamp('date_of_birth');
+            $table->string('date_of_birth');
             $table->string('relationship');
             $table->boolean('child_care');
             $table->boolean('college_tuition');

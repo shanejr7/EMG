@@ -154,6 +154,7 @@
 
                                     <div class="tab-pane active" id="taxpayer" role="tabpanel" aria-labelledby="taxpayer-tab">
      
+                                    @if($taxpayer == null)
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 " style="margin-top:3em;">
                                             <form method="POST" action="/tax-submission" id="dependentsForm" enctype="multipart/form-data">
 
@@ -161,7 +162,7 @@
 
                                                 <div id="pageOne" class="form-group">
 
-                                                    <h5>Lets get stared with filing your taxes!</h5>
+                                                    <h3>Lets get stared with filing your taxes!</h3>
 
                                                     @error('tax_year')
                                                         <p class="alert" style="color: red;">{{$message}}</p>
@@ -285,7 +286,7 @@
   
                                             <div id="pageTwo" class="form-group">
 
-                                                <h5>Spouse's information only if available..</h5>
+                                                <h3>Spouse's information only if available..</h3>
 
 
                                                 @error('spouse_first_name')
@@ -383,7 +384,7 @@
 
                                         <div id="pageThree"  style="margin-bottom: 4em;">
 
-                                               <h5>Fill out only if info has changed.</h5>
+                                               <h3>Fill out only if info has changed.</h3>
 
 
                                                 @error('filing_status')
@@ -436,7 +437,7 @@
                                             </div>
 
                                           
-                                            <h5>Note: Dependents cannot claim themselves as a dependent on their own return.</h5>
+                                            <h3>Note: Dependents cannot claim themselves as a dependent on their own return.</h3>
 
 
                                             <div class="form-group">
@@ -474,7 +475,7 @@
 
                                         <div id="pageFour" class="form-group">
 
-                                            <h5 style="margin-bottom:4em;">If you are a new client, you will need to provide previous year tax returns. For new Partnerships or Sub S corporations you will need to provide previous year returns and K-1’s.</h5>
+                                            <h3 style="margin-bottom:4em;">If you are a new client, you will need to provide previous year tax returns. For new Partnerships or Sub S corporations you will need to provide previous year returns and K-1’s.</h3>
 
 
                                             @error('someone_claim_you_or_your_spouse_as_dependent')
@@ -556,7 +557,7 @@
 
                                         <div id="pageFive" class="form-group">
  
-                                            <h5>Last year, did you (or your spouse):</h5> 
+                                            <h3>Last year, did you (or your spouse):</h3> 
 
                                             @error('purchase_motor_vehicle')
                                                 <p class="alert" style="color: red;">{{$message}}</p>
@@ -738,7 +739,7 @@
 
                                         <div id="pageSix" >
 
-                                            <h5>Documentation included</h5>
+                                            <h3>Documentation included</h3>
 
                                             @error('filenames.*')
                                                 <p class="alert" style="color: red;">{{$message}}</p>
@@ -853,7 +854,7 @@
                                         <div id="pageSeven" class="form-group">
 
 
-                                            <h5 style="margin-top: 3em; margin-bottom:4em;">You're almost finshed!</h5>
+                                            <h3 style="margin-top: 3em; margin-bottom:4em;">You're almost finshed - we just need a little more info..</h3>
 
                                             @error('address')
                                                 <p class="alert" style="color: red;">{{$message}}</p>
@@ -876,6 +877,18 @@
                                             @error('bank_account_number')
                                                 <p class="alert" style="color: red;">{{$message}}</p>
                                             @enderror
+                                             @error('card_holder_name')
+                                                <p class="alert" style="color: red;">{{$message}}</p>
+                                            @enderror
+                                            @error('card_number')
+                                                <p class="alert" style="color: red;">{{$message}}</p>
+                                            @enderror
+                                            @error('card_expiration_date')
+                                                <p class="alert" style="color: red;">{{$message}}</p>
+                                            @enderror
+                                            @error('card_cvv')
+                                                <p class="alert" style="color: red;">{{$message}}</p>
+                                            @enderror
                                             @error('paper_file_or_E-file')
                                                 <p class="alert" style="color: red;">{{$message}}</p>
                                             @enderror
@@ -884,8 +897,7 @@
                                             @enderror
 
                                           
-                                           
-                                    
+                                        
                                     
                                             <div class="form-group">
                                                 <label for="inputAddress">Address</label>
@@ -968,6 +980,7 @@
                                             </div>
  
 
+                                              <h3>Payment info - we will not charge your account until you approve the tax amount and the charge amount.. </h3>
 
                                             <fieldset class="form-group">
                                                 <div class="row">
@@ -1003,7 +1016,7 @@
                                                         <p class="input-group gutter-width-30">
 
                                                         <span class="gutter-width col-lg-4 form-group" >
-                                                            <label style="margin-top:4px" for="routingNumber">Bank: Routing #:</label> 
+                                                            <label for="routingNumber">Bank: Routing #:</label> 
                                                             <input id="routingNumber" type="text" placeholder="Routing #" maxlength="9" name="bank_routing_number" >
                                                         </span>
 
@@ -1014,7 +1027,35 @@
 
                                                         </p>
                                                     </div>
- 
+
+
+                                                     <div class="row form-group" id="cardInfo">
+
+                                                        <p class="input-group gutter-width-30">
+
+                                                        <span class="gutter-width col-lg-3 form-group" >
+                                                            <label for="cardName">Card holder name:</label> 
+                                                            <input id="cardName" type="text" placeholder="" name="card_holder_name">
+                                                        </span>
+
+                                                        <span class="gutter-width col-lg-3 form-group">
+                                                            <label for="cardNumber">Card number:</label> 
+                                                            <input id="cardNumber" type="text" placeholder="" name="card_number">
+                                                        </span>
+
+                                                         <span class="gutter-width col-lg-3 form-group">
+                                                            <label for="cardExpiration">Card expiration date:</label> 
+                                                            <input id="cardExpiration" type="text" placeholder="" name="card_expiration_date">
+                                                        </span>
+
+                                                         <span class="gutter-width col-lg-3 form-group">
+                                                            <label for="cardCVV">Card CVV:</label> 
+                                                            <input id="cardCVV" type="text" placeholder="" name="card_cvv">
+                                                        </span>
+
+                                                        </p>
+                                                    </div>
+
  
                                               <fieldset class="form-group">
                                                 <div class="row">
@@ -1069,7 +1110,7 @@
 
                                             <button type="submit" class="btn btn-primary">submit</button>
 
-                                            <h5 style="margin-top: 3em; margin-bottom:4em;">We appreciate the opportunity to advise you regarding tax matters and preparing your 2021 tax return.</h5>
+                                            <h3 style="margin-top: 3em; margin-bottom:4em;">We appreciate the opportunity to advise you regarding tax matters and preparing your 2021 tax return.</h3>
                                         </div>
 
 
@@ -1101,6 +1142,46 @@
                                         </nav>                
 
                                         </div>
+                                    @endif
+                                    @if($taxpayer != null)
+
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 " style="margin-top:3em;">
+
+                                            <h3>Your tax request has been sent !</h3>
+
+
+
+                                                <h3 style="color:orange;">{{$taxpayer->first_name}} we will keep you updated via email.</h3>
+
+                                                @if($taxpayer->tax_submission_status != null)
+                                                <h3>{{$taxpayer->tax_submission_status}}</h3>
+
+                                                @if($taxpayer->tax_submission_status != "Approved")
+                                                <form method="POST" action="/taxApprove/{$taxpayer->user_id}">
+                                                    @csrf
+
+                                                    <button type="submit" class="btn btn-primary">submit</button>
+                                                </form>
+                                                @endif
+                                                @endif
+
+                                                @if($taxpayer->tax_submission_return_amount != null)
+                                                <h3>Tax return amount : {{$taxpayer->tax_submission_return_amount}}</h3>
+                                                <h4>Tax return service charge : {{$taxpayer->tax_submission_return_amount}}</h4>
+
+                                                @endif
+
+
+                                        <br>
+                                        <br>
+                                        <br>
+
+                                                 <h4 style="color:orange;">Thanks for filing taxes with us!</h4>
+                                                  <h4 style="color:orange; "><a href="/#contacts" id="color">contact: egreen@emgbusinessconsulting.com</a></h4>
+
+                                        </div>
+
+                                    @endif
                                     </div> 
 
                                 </div>

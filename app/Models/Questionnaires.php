@@ -22,15 +22,7 @@ class Questionnaires extends Model
         'estimated_taxes_paid_and_date',
     ];
 
-      /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'user_id',
-    ];
-
+    
 
      /**
      * The attributes that should be cast.

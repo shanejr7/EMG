@@ -45,11 +45,18 @@ class CreateTaxpayersTable extends Migration
             $table->string('filing_status');
             $table->boolean('direct_deposit');
             $table->boolean('direct_deposit_information_change')->nullable();
-            $table->string('bank_routing_number');
-            $table->string('bank_account_number');
+            $table->string('bank_routing_number')->nullable();
+            $table->string('bank_account_number')->nullable();
+            $table->string('card_holder_name')->nullable();
+            $table->string('card_number')->nullable();
+            $table->string('card_expiration_date')->nullable();
+            $table->string('card_cvv')->nullable();
             $table->string('paper_file_or_E_file');
             $table->string('reason_for_paper_filing')->nullable();
             $table->string('receive_your_completed_return');
+            $table->string('tax_submission_status')->nullable();
+            $table->string('tax_submission_return_amount')->nullable();
+            $table->string('tax_service_deduction_amount')->nullable();
             $table->timestamps();
         });
     }

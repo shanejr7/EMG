@@ -26,18 +26,30 @@ Route::get('/', function () {
 })->middleware('guest');
 
 
-// TAX DASHBOARD REQUEST ROUTE
-Route::get('/dashboard', [PortalController::class,'createDashboard'])->middleware('auth');
-Route::get('/account', [PortalController::class,'createAccount'])->middleware('auth');
-Route::get('/ClientPortal', [PortalController::class,'createClientPortal'])->middleware('auth');
-Route::get('/TaxPortal', [PortalController::class,'createTaxPortal'])->middleware('auth');
+// ADMIN PAGE <admin>
+// Route::get('/admin',[PortalController::class,'createAdmin'])->middleware('admin');
+// Route::get('/admin',[PortalController::class,'createAdmin']);
+Route::get('/adminAccount',[PortalController::class,'viewAccount'])->middleware('admin');
+Route::get('/adminClients',[PortalController::class,'viewClients'])->middleware('admin');
+Route::get('/adminTaxes',[PortalController::class,'viewTaxSubmission'])->middleware('admin');
+
+//ADMIN RESPONSE ROUTE <admin>
+Route::post('/submitReturn/{attribute}', [PortalController::class,'submitTaxRequest'])->middleware('admin');
 
 
-// TAX DASHBOARD RESPONSE ROUTE
-Route::delete('/remove-notification/{notification}', [PortalController::class,'removeUserNotification'])->middleware('auth');
-Route::post('/account-update/{attribute}', [PortalController::class,'accountUpdateSubmission'])->middleware('auth');
-Route::post('/client-business-information', [PortalController::class,'clientFormSubmission'])->middleware('auth');
-Route::post('/tax-submission', [PortalController::class,'taxFormSubmission'])->middleware('auth');
+// TAX DASHBOARD REQUEST ROUTE <403>
+Route::get('/dashboard', [PortalController::class,'createDashboard']);
+Route::get('/account', [PortalController::class,'createAccount']);
+Route::get('/ClientPortal', [PortalController::class,'createClientPortal']);
+Route::get('/TaxPortal', [PortalController::class,'createTaxPortal']);
+
+
+// TAX DASHBOARD RESPONSE ROUTE <403>
+Route::delete('/remove-notification/{notification}', [PortalController::class,'removeUserNotification']);
+Route::post('/account-update/{attribute}', [PortalController::class,'accountUpdateSubmission']);
+Route::post('/client-business-information', [PortalController::class,'clientFormSubmission']);
+Route::post('/tax-submission', [PortalController::class,'taxFormSubmission']);
+Route::post('/taxApprove/{attribute}', [PortalController::class,'aparroveTaxRequest']);
 
 
 

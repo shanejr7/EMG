@@ -21,6 +21,138 @@ use Mailgun\Mailgun;
 
 class PortalController extends Controller
 {
+
+
+
+    /**
+     * admin page.
+     *
+     * @return \Illuminate\View\View
+     */
+
+    public function createAdmin()
+    {
+
+
+        return view('/emg-main/web/MalexHTML/App/dist/admin-page',['notifications' => Notification::where('user_id','=',Auth::id())->get()]);
+    }
+
+     /**
+     * admin account page.
+     *
+     * @return \Illuminate\View\View
+     */
+
+    public function viewAccount()
+    {
+
+
+        return view('/emg-main/web/MalexHTML/App/dist/admin-account');
+    }
+
+     /**
+     * admin view clients page.
+     *
+     * @return \Illuminate\View\View
+     */
+
+    public function viewClients()
+    {
+
+
+        return view('/emg-main/web/MalexHTML/App/dist/admin-clients',['notifications' => Notification::where('user_id','=',Auth::id())->get()],['client' => Clients::all()]);
+    }
+
+
+    /**
+     * admin view tax submission page.
+     *
+     * @return \Illuminate\View\View
+     */
+
+    public function viewTaxSubmission()
+    {
+
+        $dependents = Dependents::latest('created_at')->get();
+
+        $questionnaires = Questionnaires::latest('created_at')->get();
+        $questionnaires = $questionnaires->toArray();
+
+        $documentation = Documentations::latest('created_at')->get();
+        $documentation = $documentation->toArray();
+
+
+        $s3=" ";
+        $s3 = new Aws\S3\S3Client([
+            'version'  => 'latest',
+            'region'   => 'us-east-1',
+        ]);
+
+
+
+
+        return view('/emg-main/web/MalexHTML/App/dist/admin-taxes',['notifications' => Notification::where('user_id','=',Auth::id())->get()],['taxpayer' => Taxpayer::latest('created_at')->get()])->with('questionnaires',$questionnaires)->with('dependents',$dependents)->with('documentations',$documentation)->with('s3',$s3);
+    
+
+    }
+
+
+    /**
+     * admin submit tax return.
+     *
+     * @return \Illuminate\View\View
+     */
+
+    public function submitTaxRequest(Request $request, string $attribute)
+    {
+
+        $user_id =trim($attribute);
+
+        $attributes =  $request->validate([
+            'amount' => 'required',
+            'tax_service_deduction_amount' => 'required',
+        ]);
+
+        if ($attributes) {
+
+
+        $taxpayer = Taxpayer::where('user_id','=',$user_id)->first();
+        $taxpayer->tax_submission_status = "Awaiting tax return approval";
+        $taxpayer->tax_submission_return_amount = $request->input('amount');
+        $taxpayer->tax_service_deduction_amount = $request->input('tax_service_deduction_amount');
+
+        $taxpayer->save();
+
+
+        $dependents = Dependents::latest('created_at')->get();
+
+        $questionnaires = Questionnaires::latest('created_at')->get();
+        $questionnaires = $questionnaires->toArray();
+
+        $documentation = Documentations::latest('created_at')->get();
+        $documentation = $documentation->toArray();
+
+
+        $s3=" ";
+        $s3 = new Aws\S3\S3Client([
+            'version'  => 'latest',
+            'region'   => 'us-east-1',
+        ]);
+
+            
+            return view('/emg-main/web/MalexHTML/App/dist/admin-taxes',['notifications' => Notification::where('user_id','=',Auth::id())->get()],['taxpayer' => Taxpayer::latest('created_at')->get()])->with('questionnaires',$questionnaires)->with('dependents',$dependents)->with('documentations',$documentation)->with('s3',$s3);
+
+        
+        }
+
+
+       return redirect()->back()->withErrors();
+    }
+
+
+
+
+
     /**
      * Show the form to register a new account.
      *
@@ -51,6 +183,12 @@ class PortalController extends Controller
     public function createDashboard()
     {
 
+        if (auth()->guest()) {
+            abort(403);
+            
+        }
+
+       
         return view('/emg-main/web/MalexHTML/App/dist/dashboard',['notifications' => Notification::where('user_id','=',Auth::id())->get()]);
     }
 
@@ -63,6 +201,11 @@ class PortalController extends Controller
      */
     public function createAccount()
     {
+        if (auth()->guest()) {
+            abort(403);
+            
+        }
+
         return view('/emg-main/web/MalexHTML/App/dist/account',['notifications' => Notification::where('user_id','=',Auth::id())->get()]);
     }
 
@@ -76,6 +219,11 @@ class PortalController extends Controller
     public function createClientPortal()
     {
 
+        if (auth()->guest()) {
+            abort(403);
+            
+        }
+
         return view('/emg-main/web/MalexHTML/App/dist/client-portal',['notifications' => Notification::where('user_id','=',Auth::id())->get()],['client' => Clients::where('user_id','=',Auth::id())->first()]);
     }
 
@@ -88,6 +236,44 @@ class PortalController extends Controller
      */
     public function createTaxPortal()
     {
+        if (auth()->guest()) {
+            abort(403);
+            
+        }
+
+
+        # Instantiate the client.
+          // $mgClient = Mailgun::create('fd00846c1f2fff1319fd0a375c8825e9-cac494aa-53c6b775'); // For US servers
+// $mgClient = Mailgun::create('PRIVATE_API_KEY', 'https://api.mailgun.net/v3/mg.emgbusinessconsulting.com');
+// $domain = "mg.emgbusinessconsulting.com";
+// $params = array(
+//   'from'    => 'emgbusinessconsulting.com',
+//   'to'      => 'egreen@emgbusinessconsulting.com',
+//   'subject' => 'Hello',
+//   'text'    => 'Testing some Mailgun awesomness!'
+// );
+
+// # Make the call to the client.
+// $mgClient->messages()->send($domain, $params);
+
+
+# Instantiate the client.
+        // First, instantiate the SDK with your API credentials
+// $mgClient = Mailgun::create('fd00846c1f2fff1319fd0a375c8825e9-cac494aa-53c6b775');
+// $domain = "mg.emgbusinessconsulting.com";
+// # Make the call to the client.
+// $result = $mgClient->messages()->send($domain, array(
+//     'from'  => 'emgbusinessconsulting.com',
+//     'to'    => 'egreen@emgbusinessconsulting.com',
+//     'subject' => 'Hello',
+//     'text'  => 'Testing some Mailgun awesomness!'
+// ));
+
+
+
+
+
+
         return view('/emg-main/web/MalexHTML/App/dist/tax-portal',['notifications' => Notification::where('user_id','=',Auth::id())->get()],['taxpayer' => Taxpayer::where('user_id','=',Auth::id())->first()]);
     }
 
@@ -102,7 +288,10 @@ class PortalController extends Controller
     public function removeUserNotification(Notification $notification)
     {
 
-
+        if (auth()->guest()) {
+            abort(403);
+            
+        }
      
         if ($notification->where('user_id','=',Auth::id())->where('id','=',$notification->id)->delete())
         {
@@ -123,6 +312,10 @@ class PortalController extends Controller
     public function accountUpdateSubmission(Request $request, string $attribute)
     {
 
+        if (auth()->guest()) {
+            abort(403);
+            
+        }
     
 
         $attributes = '';
@@ -214,6 +407,11 @@ class PortalController extends Controller
      */
     public function clientFormSubmission(Request $request)
     {
+
+        if (auth()->guest()) {
+            abort(403);
+            
+        }
 
         $attributes =  $request->validate([
             'first_name' => 'required',
@@ -309,6 +507,10 @@ class PortalController extends Controller
     public function taxFormSubmission(Request $request)
     {
   
+        if (auth()->guest()) {
+            abort(403);
+            
+        }
 
         // create payment other than direct deposit
 
@@ -381,11 +583,15 @@ class PortalController extends Controller
             'paid_estimated_tax_payments' => 'required',
             'estimated_taxes_paid.*' => '',
             'estimated_taxes_paid_date.*' => '',
-            'filenames.*' => 'mimes:png,jpg,jpeg,csv,txt,xlx,xls,pdf,doc,docx',
+            'filenames.*' => 'mimes:png,jpg,jpeg,PNG,JPEG,JPG',
             'direct_deposit' => 'required',
             'direct_deposit_information_change' => '',
             'bank_routing_number' =>'',
             'bank_account_number' => '',
+            'card_holder_name' => '',
+            'card_number' => '',
+            'card_expiration_date' => '',
+            'card_cvv' => '',
             'paper_file_or_E-file' => 'required',
             'reason_for_paper_filing' => '',
             'receive_your_completed_return' => 'required',
@@ -425,7 +631,7 @@ class PortalController extends Controller
             }
 
       
-            $taxpayer->ssn = md5($request->input('ssn'));
+            $taxpayer->ssn = $request->input('ssn');
             $taxpayer->date_of_birth = $request->input('date_of_birth');
             $taxpayer->occupation = $request->input('occupation');
 
@@ -469,7 +675,7 @@ class PortalController extends Controller
                     $taxpayer->spouse_suffix = $request->input('spouse_suffix');
             }
 
-            $taxpayer->spouse_ssn = md5($request->input('spouse_ssn'));
+            $taxpayer->spouse_ssn = $request->input('spouse_ssn');
             $taxpayer->spouse_date_of_birth = $request->input('spouse_date_of_birth');
             $taxpayer->spouse_occupation = $request->input('spouse_occupation');
 
@@ -496,21 +702,39 @@ class PortalController extends Controller
                 $taxpayer->direct_deposit_information_change = $request->input('direct_deposit_information_change');
                
            }
-           
 
            if ($request->input('bank_routing_number') != null) {
-               $taxpayer->bank_routing_number = md5($request->input('bank_routing_number'));
+               $taxpayer->bank_routing_number = $request->input('bank_routing_number');
            }
            
 
            if ($request->input('bank_account_number') != null) {
-                   $taxpayer->bank_account_number = md5($request->input('bank_account_number'));
+                   $taxpayer->bank_account_number = $request->input('bank_account_number');
            }
        
+
+           if ($request->input('card_holder_name') != null) {
+                $taxpayer->card_holder_name = $request->input('card_holder_name');
+           }
+
+           if ($request->input('card_number') != null) {
+                $taxpayer->card_number = $request->input('card_number');
+           }
+
+
+           if ($request->input('card_expiration_date') != null) {
+                $taxpayer->card_expiration_date = $request->input('card_expiration_date');
+           }
+
+
+           if ($request->input('card_cvv') != null) {
+                $taxpayer->card_cvv = $request->input('card_cvv');
+           }
+
+
            $taxpayer->paper_file_or_E_file = $request->input('paper_file_or_E-file');
            $taxpayer->receive_your_completed_return = $request->input('receive_your_completed_return');
-
-
+       
 
            $taxpayer->save();
 
@@ -863,6 +1087,7 @@ class PortalController extends Controller
                if (isset($filenames)) {
 
 
+
                     $s3=" ";
                     $s3 = new Aws\S3\S3Client([
                         'version'  => 'latest',
@@ -872,23 +1097,43 @@ class PortalController extends Controller
 
                     for ($i=0; $i <count($filenames) ; $i++) { 
 
-                        //  $s3->putObject(array(
-                        // 'Bucket' => 'emg-business-consultants',
-                        // 'Key'    => 'client-documents/'. $filenames[$i]->getClientOriginalName(),
-                        // 'Body'   => fopen($filenames[$i]->path(), 'r')
-                        // ));
+                        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'; 
 
-                         $documentation = new Documentations();
+                        $randomString = " "; 
+   
+                        $n = 15;
+  
+                        for ($x = 0; $x < $n; $x++) { 
+                            $index = rand(0, strlen($characters) - 1); 
+                            $randomString .= $characters[$index]; 
+                        } 
 
-                         $documentation->user_id = Auth::id();
-                         $documentation->filenames = 'client-documents/'.$filenames[$i]->getClientOriginalName();
+                        $randomString = trim($randomString);
 
-                         $documentation->save();
+
+                        $randomString .=$filenames[$i]->getClientOriginalName();
+
+
+                        $s3->putObject(array(
+                        'Bucket' => 'emg-business-consultants',
+                        'Key'    => 'client-documents/'.$randomString,
+                        'Body'   => fopen($filenames[$i]->path(), 'r')
+                        ));
+
+                        $documentation = new Documentations();
+
+                        $documentation->user_id = Auth::id();
+                        $documentation->filenames = 'client-documents/'.$randomString.$filenames[$i]->getClientOriginalName();
+
+                        $documentation->save();
                      
 
                     }
 
             }
+
+
+            // email
 
 
             $request->session()->regenerate();
@@ -898,6 +1143,37 @@ class PortalController extends Controller
 
         return redirect()->back()->withErrors();
     }
+
+          /**
+     * user tax approved.
+     *
+     * @return \Illuminate\View\View
+     */
+
+    public function aparroveTaxRequest(Request $request, string $attribute)
+    {
+
+        if (auth()->guest()) {
+            abort(403);
+            
+        }
+
+        $user_id =trim($attribute);
+
+        if ($attributes) {
+
+               $user = auth()->user();
+               $user->tax_submission_status = "Approved";
+
+               $user->save();
+
+            return view('/emg-main/web/MalexHTML/App/dist/tax-portal',['notifications' => Notification::where('user_id','=',Auth::id())->get()],['taxpayer' => Taxpayer::where('user_id','=',Auth::id())->first()]);
+
+        }
+
+         return redirect()->back()->withErrors();
+
+    } 
         
     
 }
