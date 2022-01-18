@@ -28,13 +28,13 @@ Route::get('/', function () {
 
 // ADMIN PAGE <admin>
 // Route::get('/admin',[PortalController::class,'createAdmin'])->middleware('admin');
-Route::get('/adminNotifications',[PortalController::class,'createAdmin']);
-Route::get('/adminAccount',[PortalController::class,'viewAccount']);
-Route::get('/adminClients',[PortalController::class,'viewClients']);
-Route::get('/adminTaxes',[PortalController::class,'viewTaxSubmission'])->name('adminTaxes');
+Route::get('/adminNotifications',[PortalController::class,'createAdmin'])->middleware('admin');
+Route::get('/adminAccount',[PortalController::class,'viewAccount'])->middleware('admin');
+Route::get('/adminClients',[PortalController::class,'viewClients'])->middleware('admin');
+Route::get('/adminTaxes',[PortalController::class,'viewTaxSubmission'])->name('adminTaxes')->middleware('admin');
 
 //ADMIN RESPONSE ROUTE <admin>
-Route::post('/submitReturn', [PortalController::class,'submitTaxRequest']);
+Route::post('/submitReturn', [PortalController::class,'submitTaxRequest'])->middleware('admin');
 
 
 // TAX DASHBOARD REQUEST ROUTE <403>
