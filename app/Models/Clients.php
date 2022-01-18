@@ -31,19 +31,10 @@ class Clients extends Model
         'business_issues',
         'business_goal_and_timeframe',
         'business_services_desired_startup',
+        'business_services_desired_tax_preparation',
         'business_services_desired_planning_marketing',
         'business_services_desired_web_development_design',
         'business_services_desired_web_seo',
-    ];
-
-
-     /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'user_id',
     ];
 
 
@@ -57,5 +48,8 @@ class Clients extends Model
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];
+
+    protected $primaryKey = 'user_id';
+
 
 }

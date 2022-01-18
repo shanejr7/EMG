@@ -106,9 +106,9 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
 
-                      <!--   <li class="nav-item btn btn-primary" >
-                            <a class="nav-link" style="width: 12em; background-color: transparent; border-style: none;" id="home-tab"  href="/admin" role="tab" aria-controls="home" aria-selected="true">Notifications <span class="badge badge-dark">{{count($notifications)}}</span></a>
-                        </li> -->
+                        <li class="nav-item btn btn-primary" >
+                            <a class="nav-link" style="width: 12em; background-color: transparent; border-style: none;" id="home-tab"  href="/adminNotifications" role="tab" aria-controls="home" aria-selected="true">Notifications <span class="badge badge-dark">{{count($notifications)}}</span></a>
+                        </li>
 
                         <li class="nav-item btn btn-primary">
                             <a class="nav-link" style="width: 12em; background-color: transparent; border-style: none;" id="profile-tab"  href="/adminAccount" role="tab" aria-controls="profile" aria-selected="false">Account</a>
@@ -142,59 +142,51 @@
 
                                     <div class="tab-pane active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
-
-                                        @error('email')
-                                        <p class="alert" style="color: red;">{{$message}}</p>
-                                        @enderror
-                                         @error('name')
-                                        <p class="alert" style="color: red;">{{$message}}</p>
-                                        @enderror
-
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 "style="margin-top:1.34em;">
                                    
-                                           @if(sizeof($client) >0)
-                                           @foreach($client as $client)
-                                        <h2 class="text-center" style="color:orange"><span style="color: black;">Client Business Portfolio:</span> Shane M Johnson</h2>
+                                           @if(isset($client))
+                                           @for ($i = 0; $i < sizeof($client); $i++)
+                                        <h2 class="text-center" style="color:orange"><span style="color: black;">Client Business Portfolio : </span>{{{$client[$i]->first_name}}} {{{$client[$i]->last_name}}}</h2>
                                         <blockquote  class="blockquote text-center">
                                             <h3 class="mb-0">Business type</h3>
-                                            <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">{{{$client->business_type}}}</footer>
+                                            <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">{{{$client[$i]->business_type}}}</footer>
                                         </blockquote>
                                         <blockquote class="blockquote text-center">
                                             <h3 class="mb-0">Business activity</h3>
-                                            <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">{{{$client->business_activity}}} </footer>
+                                            <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">{{{$client[$i]->business_activity}}} </footer>
                                         </blockquote>
                                         <blockquote class="blockquote text-center">
                                             <h3 class="mb-0">Business services</h3>
-                                            <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">{{{$client->business_services}}}</footer>
+                                            <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">{{{$client[$i]->business_services}}}</footer>
                                         </blockquote>
                                         <blockquote class="blockquote text-center">
                                             <h3 class="mb-0">Business solutions</h3>
-                                            <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">{{{$client->business_solutions}}}</footer>
+                                            <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">{{{$client[$i]->business_solutions}}}</footer>
                                         </blockquote>
                                         <blockquote class="blockquote text-center">
                                             <h3 class="mb-0">Business identity</h3>
-                                            <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">      {{{$client->business_ideal_clients}}}</footer>
+                                            <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">      {{{$client[$i]->business_ideal_clients}}}</footer>
                                         </blockquote>
                                         <blockquote class="blockquote text-center">
                                             <h3 class="mb-0">Business environment</h3>
                                             <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">
-                                             {{{$client->business_environment}}}</footer>
+                                             {{{$client[$i]->business_environment}}}</footer>
                                         </blockquote>
                                         <blockquote class="blockquote text-center">
                                             <h3 class="mb-0">Business prevention</h3>
-                                            <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">         {{{$client->business_issues}}}</footer>
+                                            <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">         {{{$client[$i]->business_issues}}}</footer>
                                         </blockquote>
                                         <blockquote class="blockquote text-center">
                                             <h3 class="mb-0">Business milestones</h3>
-                                        <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">{{{$client->business_goal_and_timeframe }}}</footer>
+                                        <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">{{{$client[$i]->business_goal_and_timeframe }}}</footer>
                                         </blockquote>
 
 
-                                        @if($client->website_url)
+                                        @if($client[$i]->website_url)
                                         <nav class="nav">
 
                                             <a style="font-size: 35px;" class="nav-link active text-center" 
-                                            href="{{{$client->website_url}}}">Website url : {{{$client->website_url}}}</a>
+                                            href="{{{$client[$i]->website_url}}}">Website url : {{{$client[$i]->website_url}}}</a>
 
                                         </nav>
                                         @endif
@@ -202,7 +194,7 @@
                                         <h1>services desired: </h1>
 
                                       
-                                        @if($client->business_type)
+                                        @if($client[$i]->business_services_desired_startup)
                                         <p>  
                                                     <input type="checkbox" id="checkbox-input" name="business_services_desired_startup" checked disabled>
                                                     <label for="checkbox-input" id="color">Business Startup</label>
@@ -210,14 +202,7 @@
                                         @endif
 
 
-                                        @if(!$client->business_type)
-                                                
-                                        @endif
-
-                                  
-
-                                    
-                                            @if($client->business_type)
+                                        @if($client[$i]->business_services_desired_tax_preparation)
                                        <p class="form-check form-crop-ba">
                                                     <input type="checkbox" class="form-check-input" id="checkbox-input-2" name="business_services_desired_tax_preparation" checked disabled>
                                                     <label id="color" class="form-label-secondary" for="checkbox-input-2">Tax Preparation</label>
@@ -229,7 +214,7 @@
 
 
 
-                                         @if($client->business_services_desired_planning_marketing)
+                                         @if($client[$i]->business_services_desired_planning_marketing)
                                          <p class="form-check form-crop-ba">
                                                     <input type="checkbox" class="form-check-input" id="checkbox-input-3" name="business_services_desired_planning_marketing" checked disabled>
                                                     <label id="color" class="form-label-secondary" for="checkbox-input-3">Business Planning & Marketing</label>
@@ -239,7 +224,7 @@
                                      
 
 
-                                         @if($client->business_services_desired_web_development_design)
+                                         @if($client[$i]->business_services_desired_web_development_design)
                                               <p class="form-check form-crop-ba">
                                                     <input type="checkbox" class="form-check-input" id="checkbox-input-4" name="business_services_desired_web_development_design" checked disabled>
                                                     <label id="color" class="form-label-secondary" for="checkbox-input-4">Web Design & Development</label>
@@ -249,7 +234,7 @@
                                         
 
 
-                                         @if($client->business_services_desired_web_seo)
+                                         @if($client[$i]->business_services_desired_web_seo)
 
                                           <p class="form-check form-crop-ba">
                                                     <input type="checkbox" class="form-check-input" id="checkbox-input-5" name="business_services_desired_web_seo" checked disabled>
@@ -260,14 +245,15 @@
 
                                       
 
-                                          @endforeach      
+                                          @endfor     
                                
                                     @endif
 
-
-                                    @if(sizeof($client) == 0)
+                                    @if(isset($client))
+                                    @if(count($client) == 0)
                                     <h3 style="color:orange; margin-top: 8em;">There are no clients at the moment..</h3>
 
+                                    @endif
                                     @endif
                              
 

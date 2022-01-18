@@ -225,7 +225,7 @@
                                         <nav class="nav">
 
                                             <a style="font-size: 35px;" class="nav-link active text-center" 
-                                            href="{{{$client->website_url}}}">Website url : {{{$client->website_url}}}</a>
+                                            href="{{{$client->website_url}}}" target="_blank">Website url : {{{$client->website_url}}}</a>
 
                                         </nav>
                                         @endif
@@ -233,7 +233,7 @@
                                         <h1>services desired: </h1>
 
                                       
-                                        @if($client->business_type)
+                                        @if($client->business_services_desired_startup)
                                         <p>  
                                                     <input type="checkbox" id="checkbox-input" name="business_services_desired_startup" checked disabled>
                                                     <label for="checkbox-input" id="color">Business Startup</label>
@@ -241,14 +241,11 @@
                                         @endif
 
 
-                                        @if(!$client->business_type)
-                                                
-                                        @endif
 
                                   
 
                                     
-                                            @if($client->business_type)
+                                            @if($client->business_services_desired_tax_preparation)
                                        <p class="form-check form-crop-ba">
                                                     <input type="checkbox" class="form-check-input" id="checkbox-input-2" name="business_services_desired_tax_preparation" checked disabled>
                                                     <label id="color" class="form-label-secondary" for="checkbox-input-2">Tax Preparation</label>

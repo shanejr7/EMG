@@ -106,9 +106,9 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
 
-                     <!--    <li class="nav-item btn btn-primary" >
-                            <a class="nav-link" style="width: 12em; background-color: transparent; border-style: none;" id="home-tab"  href="/admin" role="tab" aria-controls="home" aria-selected="true">Notifications <span class="badge badge-dark">{{count($notifications)}}</span></a>
-                        </li> -->
+                        <li class="nav-item btn btn-primary" >
+                            <a class="nav-link" style="width: 12em; background-color: transparent; border-style: none;" id="home-tab"  href="/adminNotifications" role="tab" aria-controls="home" aria-selected="true">Notifications <span class="badge badge-dark">{{count($notifications)}}</span></a>
+                        </li>
 
                         <li class="nav-item btn btn-primary">
                             <a class="nav-link active" style="width: 12em; background-color: transparent; border-style: none;" id="profile-tab"  href="/adminAccount" role="tab" aria-controls="profile" aria-selected="false">Account</a>

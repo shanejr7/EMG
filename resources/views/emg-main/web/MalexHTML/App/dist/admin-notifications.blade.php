@@ -107,7 +107,7 @@
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
 
                         <li class="nav-item btn btn-primary" >
-                            <a class="nav-link active" style="width: 12em; background-color: transparent; border-style: none;" id="home-tab"  href="/admin" role="tab" aria-controls="home" aria-selected="true">Notifications <span class="badge badge-dark">{{count($notifications)}}</span></a>
+                            <a class="nav-link active" style="width: 12em; background-color: transparent; border-style: none;" id="home-tab"  href="/adminNotifications" role="tab" aria-controls="home" aria-selected="true">Notifications <span class="badge badge-dark">{{count($notifications)}}</span></a>
                         </li>
 
                         <li class="nav-item btn btn-primary">
@@ -146,11 +146,13 @@
 
                                        
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 "style="margin-top:1.34em;">
+                                            <h3 style="color:orange; margin-top: 8em;">Currently in development and coming soon..</h3>
                
-                                         @if(sizeof($notifications) == 0)
+                                        @if(isset($notifications))
+                                        @if(sizeof($notifications) < 0)
                                         <h3 style="color:orange; margin-top: 8em;">There are no tax submissions at the moment..</h3>
-
-                                           @endif
+                                        @endif
+                                        @endif
                              
 
                                         </div>

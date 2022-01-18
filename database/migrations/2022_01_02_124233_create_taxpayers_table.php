@@ -14,7 +14,8 @@ class CreateTaxpayersTable extends Migration
     public function up()
     {
         Schema::create('taxpayers', function (Blueprint $table) {
-            $table->id('user_id');
+            $table->id()->unique();
+            $table->integer('user_id');
             $table->integer('tax_year');
             $table->string('date');
             $table->string('first_name');

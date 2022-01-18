@@ -1147,30 +1147,41 @@
 
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 " style="margin-top:3em;">
 
+                                            @if($taxpayer->tax_submission_status == null)
                                             <h3>Your tax request has been sent !</h3>
+                                            @endif
 
 
+                                                @if($taxpayer->tax_submission_status == null)
+                                                <h3 style="color:orange; margin-top: 3em;">{{$taxpayer->first_name}} we will keep you updated via email.</h3>
+                                                @endif
 
-                                                <h3 style="color:orange;">{{$taxpayer->first_name}} we will keep you updated via email.</h3>
-
-                                                @if($taxpayer->tax_submission_status != null)
-                                                <h3>{{$taxpayer->tax_submission_status}}</h3>
+                                                @if($taxpayer->tax_submission_status == "Awaiting tax return approval")
+                                                <h3 style="color:black;">{{$taxpayer->first_name}} we have your refund amount ready.</h3>
+                                                <h3 style="color:orange">{{$taxpayer->tax_submission_status}}..</h3>
 
                                                 @if($taxpayer->tax_submission_status != "Approved")
-                                                <form method="POST" action="/taxApprove/{$taxpayer->user_id}">
+
+                                                @if($taxpayer->tax_submission_return_amount != null)
+                                                <h3 id="color">Tax return amount : {{$taxpayer->tax_submission_return_amount}}</h3>
+                                                <h3 id="color">Service charge : {{$taxpayer->tax_service_deduction_amount}}</h3>
+                                                @endif
+
+                                                <form method="POST" action="/taxApprove">
                                                     @csrf
 
-                                                    <button type="submit" class="btn btn-primary">submit</button>
+                                                    <button type="submit" class="btn btn-primary">request tax return funds</button>
                                                 </form>
                                                 @endif
                                                 @endif
 
-                                                @if($taxpayer->tax_submission_return_amount != null)
-                                                <h3>Tax return amount : {{$taxpayer->tax_submission_return_amount}}</h3>
-                                                <h4>Tax return service charge : {{$taxpayer->tax_submission_return_amount}}</h4>
+                                                @if($taxpayer->tax_submission_status == "Approved")
+                                                <h3 style="color:black;">{{$taxpayer->first_name}} your refund amount is being sent.</h3>
+
+                                                <h3 id="color">Tax return amount : {{$taxpayer->tax_submission_return_amount}}</h3>
+                                                <h3 id="color">Service charge : {{$taxpayer->tax_service_deduction_amount}}</h3>
 
                                                 @endif
-
 
                                         <br>
                                         <br>

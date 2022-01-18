@@ -83,7 +83,4 @@ class Taxpayer extends Model
     ];
 
 
-    public $incrementing = false;
-    protected $primaryKey = 'user_id';
-
 }

@@ -34,7 +34,7 @@ class PortalController extends Controller
     {
 
 
-        return view('/emg-main/web/MalexHTML/App/dist/admin-page',['notifications' => Notification::where('user_id','=',Auth::id())->get()]);
+        return view('/emg-main/web/MalexHTML/App/dist/admin-notifications',['notifications' => Notification::where('user_id','=',Auth::id())->get()]);
     }
 
      /**
@@ -47,7 +47,7 @@ class PortalController extends Controller
     {
 
 
-        return view('/emg-main/web/MalexHTML/App/dist/admin-account');
+        return view('/emg-main/web/MalexHTML/App/dist/admin-account',['notifications' => Notification::where('user_id','=',Auth::id())->get()]);
     }
 
      /**
@@ -103,17 +103,19 @@ class PortalController extends Controller
      * @return \Illuminate\View\View
      */
 
-    public function submitTaxRequest(Request $request, string $attribute)
+    public function submitTaxRequest(Request $request)
     {
 
-        $user_id =trim($attribute);
 
         $attributes =  $request->validate([
             'amount' => 'required',
             'tax_service_deduction_amount' => 'required',
+            'user_id' => 'required'
         ]);
 
         if ($attributes) {
+
+        $user_id = $request->input('user_id');
 
 
         $taxpayer = Taxpayer::where('user_id','=',$user_id)->first();
@@ -124,23 +126,8 @@ class PortalController extends Controller
         $taxpayer->save();
 
 
-        $dependents = Dependents::latest('created_at')->get();
-
-        $questionnaires = Questionnaires::latest('created_at')->get();
-        $questionnaires = $questionnaires->toArray();
-
-        $documentation = Documentations::latest('created_at')->get();
-        $documentation = $documentation->toArray();
-
-
-        $s3=" ";
-        $s3 = new Aws\S3\S3Client([
-            'version'  => 'latest',
-            'region'   => 'us-east-1',
-        ]);
-
-            
-            return view('/emg-main/web/MalexHTML/App/dist/admin-taxes',['notifications' => Notification::where('user_id','=',Auth::id())->get()],['taxpayer' => Taxpayer::latest('created_at')->get()])->with('questionnaires',$questionnaires)->with('dependents',$dependents)->with('documentations',$documentation)->with('s3',$s3);
+            return redirect()->route('adminTaxes');
+        
 
         
         }
@@ -428,6 +415,7 @@ class PortalController extends Controller
             'business_goal_and_timeframe' =>'required',
             'website_url' =>'',
             'business_services_desired_startup' => '',
+            'business_services_desired_tax_preparation' =>'',
             'business_services_desired_planning_marketing' =>'',
             'business_services_desired_web_development_design' =>'',
             'business_services_desired_web_seo' => '',
@@ -447,7 +435,7 @@ class PortalController extends Controller
                   $client->middle_name = $request->input('middle_name');
             }
 
-            $client->last_name;
+            $client->last_name = $request->input('last_name');;
 
             if ($request->input('suffix') != null) {
                  $client->suffix = $request->input('suffix');
@@ -458,7 +446,7 @@ class PortalController extends Controller
                      $client->website_url = $request->input('website_url');
             }
         
-            $client->business_type = $request->input('business_typess');
+            $client->business_type = $request->input('business_type');
             $client->business_activity = $request->input('business_activity');
             $client->business_services = $request->input('business_services');
             $client->business_solutions = $request->input('business_solutions');
@@ -468,11 +456,23 @@ class PortalController extends Controller
             $client->business_goal_and_timeframe = $request->input('business_goal_and_timeframe');
 
 
-            $client->business_services_desired_startup->nullable();
 
-             if ($request->input('business_services_desired_startup') != null) {
+
+            if ($request->input('business_services_desired_startup') != null) {
                 
-                $client->business_services_desired_planning_marketing= $request->input('business_services_desired_startup') ;
+                $client->business_services_desired_startup = $request->input('business_services_desired_startup') ;
+            }
+
+
+
+            if ($request->input('business_services_desired_tax_preparation') != null) {
+                
+                $client->business_services_desired_tax_preparation = $request->input('business_services_desired_tax_preparation') ;
+            }
+
+            if ($request->input('business_services_desired_planning_marketing') != null) {
+                
+                $client->business_services_desired_planning_marketing = $request->input('business_services_desired_planning_marketing') ;
             }
 
       
@@ -485,7 +485,9 @@ class PortalController extends Controller
                 $client->business_services_desired_web_seo = $request->input('business_services_desired_web_seo');
             }
 
-      
+
+            
+            $client->save();
 
             $request->session()->regenerate();
 
@@ -610,7 +612,6 @@ class PortalController extends Controller
             $taxpayer = new Taxpayer();
 
       
-
             $taxpayer->user_id = Auth::id();
 
             $taxpayer->email_address = Auth::user()->email;
@@ -1150,7 +1151,7 @@ class PortalController extends Controller
      * @return \Illuminate\View\View
      */
 
-    public function aparroveTaxRequest(Request $request, string $attribute)
+    public function approveTaxRequest(Request $request)
     {
 
         if (auth()->guest()) {
@@ -1158,16 +1159,18 @@ class PortalController extends Controller
             
         }
 
-        $user_id =trim($attribute);
+        $user_id = Auth::id();
+        $attribute = $user_id;
 
-        if ($attributes) {
 
-               $user = auth()->user();
-               $user->tax_submission_status = "Approved";
+        if ($attribute) {
 
-               $user->save();
+            $taxpayer = Taxpayer::where('user_id','=',$user_id)->first();
+            $taxpayer->tax_submission_status = "Approved";
 
-            return view('/emg-main/web/MalexHTML/App/dist/tax-portal',['notifications' => Notification::where('user_id','=',Auth::id())->get()],['taxpayer' => Taxpayer::where('user_id','=',Auth::id())->first()]);
+            $taxpayer->save();
+
+            return redirect()->route('TaxPortal');
 
         }
 

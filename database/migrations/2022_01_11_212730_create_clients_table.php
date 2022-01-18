@@ -29,6 +29,7 @@ class CreateClientsTable extends Migration
             $table->string('business_issues');
             $table->string('business_goal_and_timeframe');
             $table->boolean('business_services_desired_startup')->nullable();
+            $table->boolean('business_services_desired_tax_preparation')->nullable();
             $table->boolean('business_services_desired_planning_marketing')->nullable();
             $table->boolean('business_services_desired_web_development_design')->nullable();
             $table->boolean('business_services_desired_web_seo')->nullable();

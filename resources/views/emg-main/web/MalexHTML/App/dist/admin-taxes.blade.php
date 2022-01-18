@@ -106,9 +106,9 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
 
-                       <!--  <li class="nav-item btn btn-primary" >
-                            <a class="nav-link" style="width: 12em; background-color: transparent; border-style: none;" id="home-tab"  href="/admin" role="tab" aria-controls="home" aria-selected="true">Notifications <span class="badge badge-dark">{{count($notifications)}}</span></a>
-                        </li> -->
+                        <li class="nav-item btn btn-primary" >
+                            <a class="nav-link" style="width: 12em; background-color: transparent; border-style: none;" id="home-tab"  href="/adminNotifications" role="tab" aria-controls="home" aria-selected="true">Notifications <span class="badge badge-dark">{{count($notifications)}}</span></a>
+                        </li>
 
                         <li class="nav-item btn btn-primary">
                             <a class="nav-link" style="width: 12em; background-color: transparent; border-style: none;" id="profile-tab"  href="/adminAccount" role="tab" aria-controls="profile" aria-selected="false">Account</a>
@@ -142,14 +142,6 @@
 
                                     <div class="tab-pane active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
-
-                                        @error('email')
-                                        <p class="alert" style="color: red;">{{$message}}</p>
-                                        @enderror
-                                         @error('name')
-                                        <p class="alert" style="color: red;">{{$message}}</p>
-                                        @enderror
-
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 "style="margin-top:1.34em;">
                                         @if(isset($taxpayer) && sizeof($taxpayer) > 0)
                                           @foreach ($taxpayer as $taxpayers)
@@ -170,8 +162,11 @@
                                                 <tbody>
                                                 <tr>
                                                 <th scope="row">{{$taxpayers->user_id}}</th>
-                                                @if($taxpayers->submission_status == null)
+                                                @if($taxpayers->tax_submission_status == null)
                                                 <td style="color:orange">New submission</td>
+                                                @endif
+                                                @if($taxpayers->tax_submission_status != null)
+                                                <td style="color:orange">{{$taxpayers->tax_submission_status}}</td>
                                                 @endif
                                                 <td>{{$taxpayers->tax_year}}</td>
                                                 <td>{{$taxpayers->date}}</td>
@@ -609,10 +604,10 @@
                                                 </table>
 
                                                 @if($taxpayers->tax_submission_return_amount == null)
-                                                <form method="POST" action="/submitReturn/{{$taxpayers->user_id}}">
+                                                <form method="POST" action="/submitReturn">
                                                     
                                                     @csrf
-
+                                                    <input type="hidden" name="user_id" value="{{$taxpayers->user_id}}">
                                                     <p class="input-group gutter-width-30">
                                                     <span class="gutter-width">
                                                         <input type="text" placeholder="Tax return amount" name="amount" required>
