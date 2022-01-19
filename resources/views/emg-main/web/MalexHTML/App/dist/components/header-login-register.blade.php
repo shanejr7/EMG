@@ -4,7 +4,7 @@
                     <div class="header-left align-self-center">
                         <div class="header-logo">
                             <a class="logo logo-primary" title="Logo" href="/">
-                                <h3 class="large title">EMG Business Consulting</h3>
+                                <h2 class="large title">EMG Business Consulting LLC</h2>
                                 <!-- <img src="assets/img/logo/IMG_1326.jpg" style="transform: scale(5);" alt="Logo"> -->
                             </a>
                         </div>

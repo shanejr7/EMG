@@ -54,7 +54,7 @@
                     <div class="header-left align-self-center">
                      <div class="header-logo">
                  
-                                <h3 class="large title">EMG Business Consulting</h3>
+                                <h3 class="large title">EMG Business Consulting LLC</h3>
                            
                         </div>
                     </div>
@@ -1145,15 +1145,15 @@
                                     @endif
                                     @if($taxpayer != null)
 
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 " style="margin-top:3em;">
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center" style="margin-top:3em;">
 
                                             @if($taxpayer->tax_submission_status == null)
-                                            <h3>Your tax request has been sent !</h3>
+                                            <h3 >Your tax request has been sent !</h3>
                                             @endif
 
 
                                                 @if($taxpayer->tax_submission_status == null)
-                                                <h3 style="color:orange; margin-top: 3em;">{{$taxpayer->first_name}} we will keep you updated via email.</h3>
+                                                <h3  style="color:orange; margin-top: 3em;">{{$taxpayer->first_name}} we will keep you updated via email.</h3>
                                                 @endif
 
                                                 @if($taxpayer->tax_submission_status == "Awaiting tax return approval")
@@ -1176,7 +1176,7 @@
                                                 @endif
 
                                                 @if($taxpayer->tax_submission_status == "Approved")
-                                                <h3 style="color:black;">{{$taxpayer->first_name}} your refund amount is being sent.</h3>
+                                                <h3 class="text-center" style="color:black;">{{$taxpayer->first_name}} your refund amount is being sent.</h3>
 
                                                 <h3 id="color">Tax return amount : {{$taxpayer->tax_submission_return_amount}}</h3>
                                                 <h3 id="color">Service charge : {{$taxpayer->tax_service_deduction_amount}}</h3>

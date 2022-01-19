@@ -40,7 +40,7 @@
                     <div class="header-left align-self-center">
                      <div class="header-logo">
                  
-                                <h3 class="large title">EMG Business Consulting</h3>
+                                <h3 class="large title">EMG Business Consulting LLC</h3>
                            
                         </div>
                     </div>

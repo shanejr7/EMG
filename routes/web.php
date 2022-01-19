@@ -28,9 +28,9 @@ Route::get('/', function () {
 
 // ADMIN PAGE <admin>
 // Route::get('/admin',[PortalController::class,'createAdmin'])->middleware('admin');
-Route::get('/adminNotifications',[PortalController::class,'createAdmin'])->middleware('admin');
-Route::get('/adminAccount',[PortalController::class,'viewAccount'])->middleware('admin');
-Route::get('/adminClients',[PortalController::class,'viewClients'])->middleware('admin');
+Route::get('/adminNotifications',[PortalController::class,'createAdmin'])->name('adminNotifications')->middleware('admin');
+Route::get('/adminAccount',[PortalController::class,'viewAccount'])->name('adminAccount')->middleware('admin');
+Route::get('/adminClients',[PortalController::class,'viewClients'])->name('adminClients')->middleware('admin');
 Route::get('/adminTaxes',[PortalController::class,'viewTaxSubmission'])->name('adminTaxes')->middleware('admin');
 
 //ADMIN RESPONSE ROUTE <admin>

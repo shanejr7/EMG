@@ -175,8 +175,46 @@ class PortalController extends Controller
             
         }
 
+
+                  // $mgClient = Mailgun::create('fd00846c1f2fff1319fd0a375c8825e9-cac494aa-53c6b775'); // For US servers
+// $mgClient = Mailgun::create('PRIVATE_API_KEY', 'https://api.mailgun.net/v3/mg.emgbusinessconsulting.com');
+// $domain = "mg.emgbusinessconsulting.com";
+// $params = array(
+//   'from'    => 'emgbusinessconsulting.com',
+//   'to'      => 'shane.jr7@icloud.com',
+//   'subject' => 'Hello',
+//   'text'    => 'Testing some Mailgun awesomness!'
+// );
+
+// # Make the call to the client.
+// $mgClient->messages()->send($domain, $params);
+
+
+# Instantiate the client.
+        // First, instantiate the SDK with your API credentials
+// $mgClient = Mailgun::create('fd00846c1f2fff1319fd0a375c8825e9-cac494aa-53c6b775');
+// $domain = "mg.emgbusinessconsulting.com";
+// # Make the call to the client.
+// $result = $mgClient->messages()->send($domain, array(
+//     'from'  => 'emgbusinessconsulting.com',
+//     'to'    => 'egreen@emgbusinessconsulting.com',
+//     'subject' => 'Hello',
+//     'text'  => 'Testing some Mailgun awesomness!'
+// ));
+              
+
+       if (auth()->user()->is_admin != true) {
+            return view('/emg-main/web/MalexHTML/App/dist/dashboard',['notifications' => Notification::where('user_id','=',Auth::id())->get()]);
+       }
+
+       if (auth()->user()->is_admin == true) {
+
+            return redirect()->route('adminNotifications');
+        
+       }
+
+       return redirect()->back()->withErrors();
        
-        return view('/emg-main/web/MalexHTML/App/dist/dashboard',['notifications' => Notification::where('user_id','=',Auth::id())->get()]);
     }
 
 
@@ -210,6 +248,7 @@ class PortalController extends Controller
             abort(403);
             
         }
+
 
         return view('/emg-main/web/MalexHTML/App/dist/client-portal',['notifications' => Notification::where('user_id','=',Auth::id())->get()],['client' => Clients::where('user_id','=',Auth::id())->first()]);
     }

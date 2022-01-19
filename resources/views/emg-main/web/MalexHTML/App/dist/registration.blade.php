@@ -40,7 +40,7 @@
                     <section id="page-title" class="page-title text-center">
                         <div class="wrapper">
                             <div class="title"  style="margin-bottom: 4em;margin-top:2;">
-                                <h1 class="large" id="color">Create new account</h1>
+                                <h2 class="large" id="color">Create new account</h2>
                                 {{ $errors->login->first('email') }}
                             </div>
 
