@@ -610,11 +610,11 @@
                                                     <input type="hidden" name="user_id" value="{{$taxpayers->user_id}}">
                                                     <p class="input-group gutter-width-30">
                                                     <span class="gutter-width">
-                                                        <input type="text" placeholder="Tax return amount" name="amount" required>
+                                                        <input type="text" placeholder="Tax refund amount" name="amount" required>
                                                     </span>
 
                                                      <span class="gutter-width">
-                                                        <input type="text" placeholder="Tax return deduction amount" name="tax_service_deduction_amount" required>
+                                                        <input type="text" placeholder="Filing fee" name="tax_service_deduction_amount" required>
                                                     </span>
                                                 
                                                     </p>

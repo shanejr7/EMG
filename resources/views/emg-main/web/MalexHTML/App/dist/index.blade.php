@@ -29,6 +29,10 @@
                 background-image: url('assets/img/demo/18_img.png');
             }
 
+            #about-us .width-img {
+                background-image: url('assets/img/placeholder/skyline.jpg');
+            }
+
         </style>
     </head>
     <body class="home header-absolute-true header-fixed-true">
@@ -48,40 +52,49 @@
             <div class="wrapper">
 
                 <div class="header-content d-flex justify-content-between">
-                    <div class="header-left align-self-center">
+                    <div class="header-left align-self-center ">
 
-                        <div class="header-logo ">
+                        <div class="header-logo header-false">
+
+                             <nav class="menu-primary">
+                                   <ul class="nav">
+                              <li class="nav-item">
+                                            <a style=" font-size: 19px;" href="/registration">Create New Account</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a style=" font-size: 19px;" href="/login">Login</a>
+                                        </li>
+                                    </ul>
+                                </nav>
                              
-                            <a class="logo logo-primary adv-dark transform-scale-h" title="Logo" href="/">
+                         <!--    <a class="logo logo-primary adv-dark transform-scale-h" title="Logo" href="/">
                                 <h3 >EMG</h3>
                             </a>
-
-                            <a class="logo logo-secondary adv-light transform-scale-h" title="Logo" href="/">
-                                 <p class="large title" style="font-weight: bold; font-size: 25px;">Business Consulting Agency</p>
+ -->
+                            <!-- <a class="logo logo-secondary adv-light transform-scale-h" title="Logo" href="/"> -->
+                                 <!-- <p class="large title" style="font-weight: bold; font-size: 25px;">Business Consulting Agency</p> -->
                                 <!-- <img src="assets/img/logo/IMG_1326.svg" alt="Logo"> -->
-                            </a>
+                            <!-- </a> -->
                         </div>
                     </div>
 
                     <div class="header-right d-flex justify-content-end">
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center ">
                             <div class="menu">
                                 <nav class="menu-primary">
                                     <ul class="nav">
-                                        <li class="nav-item">
-                                            <a style="font-size: 19px;" href="/registration">Create New Account</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a style="font-size: 19px;" href="/login">Login</a>
-                                        </li>
                                         
                                         <li class="nav-item">
                                             <a title="Services" href="#services">What We Do</a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a title="About Us" href="#about-us">Who We Are</a>
+                                            <a title="Who we are" href="#who-we-are">Who We Are</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a title="About Us" href="#about-us">About Us</a>
                                         </li>
 
                                         <li class="nav-item">
@@ -110,7 +123,7 @@
 
         <main id="main" class="site-main content-no-spacing">
             <div class="content">
-                <div class="clearfix">
+                <div class="clearfix ">
                     <section id="page-title" class="block with-img with-service-items" >
                         <div class="wrapper d-flex flex-column justify-content-center">
                             <div class="page-title-body page-title-body-space-left">
@@ -118,13 +131,14 @@
                                     <h1 class="large">Business <br>Consulting Agency</h1>
                                 </div> -->
 
-                              <!--   <div class="description spacer p-bottom-xl">
+                          <!--       <div class="description spacer p-top-lg">
                                     <p>"Meeting your business needs through chnage and innovation for a sucesful transformation"</p>
                                 </div> -->
 
-                             <!--    <div class="spacer p-top-lg">
-                                    <a href="about-us.html" class="btn btn-outline-tertiary">Learn More</a>
-                                </div> -->
+                                <div class="spacer p-top-lg col-lg-12 text-center" style="margin-top:13em;">
+                                      <h5 style="font-weight:bolder;" class="customTitle">"Meeting your business needs through change and innovation for a successful transformation"</h5>
+                                    <!-- <a href="about-us.html" class="btn btn-outline-tertiary">Learn More</a> -->
+                                </div>
                             </div>
 
                             <div class="page-title-footer full-width">
@@ -166,7 +180,7 @@
                                         </div> -->
 
                                         <h4 class="service-t-head">Strategic Marketing</h4>
-                                        <ul>   
+                                        <ul style="font-size:20px">   
                                             <li>Management</li>   
                                             <li>Business Planning</li>           
                                             <li>Finances</li>
@@ -194,7 +208,7 @@
 
                                         <h4 class="service-t-head">Tax Assistance</h4>
                                             
-                                            <ul>
+                                            <ul style="font-size:20px">
                                                 <li>Individual Taxes</li>
                                                 <li>Business Taxes</li>
                                                 <li>Tax Planning</li>
@@ -227,7 +241,7 @@
                                         <h4 class="service-t-head" >Business Operations</h4>
 
                                       <!--   <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
-                                        <ul>
+                                        <ul style="font-size:20px">
                                             <li>Operational Processes</li>
 
                                             <li>Web Design & Development</li>
@@ -244,12 +258,29 @@
                         </div>
                     </div><!-- #services -->
 
-                    <section id="about-us" class="block  p-top-xl">
+
+
+                    <section id="" class=" p-top-xl" style="margin-bottom:4em">
+                        <div class="wrapper bg-white" style="border:solid; border-color: orange; border-width: 10px; border-right: 0; border-top: 0; border-left: 0;">
+
+
+                            <div class="text-center" style="margin-top:7em; margin-bottom: 7em; padding-top: 7em;">
+
+                                <h2 class="font-italic block" style="font:sans-serif;">"Skilled and proficient business consultants helping to meet your profit and business goals"</h2>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section id="who-we-are" class=" p-top-xl" >
                         <div class="wrapper">
 
-                            <div class="text-center" style="margin-top:4em; margin-bottom: 8em;">
-                                <h3 class="font-italic block">"Skilled and proficient business consultants helping to meet your profit and business goals"</h3>
+                          <!--   <div class="text-center" style="margin-top:7em; margin-bottom: 7em;">
+                                <h2 class="font-italic block"  >"Skilled and proficient business consultants helping to meet your profit and business goals"</h2>
+
                             </div>
+                            <hr style="margin-bottom:7em"> -->
 
 
                             <div class="title">
@@ -258,7 +289,7 @@
                             </div>
                               <h2 class="text-center">Business Consultants</h2>
 
-                            <div class="row gutter-width-md with-pb-md">
+                            <div class="row gutter-width-md with-pb-md" style="margin-top: 5em;">
                                 <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6">
                                     <div class="description-2">
                                     <!--     <h2>Business Consultants</h2> -->
@@ -269,12 +300,12 @@
 
                                 <div class="col-sm-12 col-md-4 col-lg-6 col-xl-6" style="border-style: dotted; border-color:orange; border-top:0; border-bottom: 0;">
                                     
-                                    <div class=" spacer p-top-lg" style="color: black; font-size: 15px; font-weight: bold;">
-                                        <p>Our professionals will stand at the heart of the matter, and provide the proper support to our clients, as they accomplish the desired objectives, by leveraging the company’s talent, techniques and technology.</p>
+                                    <div class=" spacer ">
+                                        <p  style="color: black; font-size: 23px; font-weight: bold;font: sans-serif;">Our professionals will stand at the heart of the matter, and provide the proper support to our clients, as they accomplish the desired objectives, by leveraging the company’s talent, techniques and technology.</p>
                                     </div>
 
-                                    <div class="spacer p-top-lg" style="color: black; font-size: 15px; font-weight: bold;">
-                                        <p>Upon meeting with our clients, it is our job to implement an appropriate proposal within a reasonable timeframe, as we coach them through to each desired milestone.</p>
+                                    <div class=" spacer p-top-lg">
+                                        <p style="color: black; font-size: 23px; font-weight: bold;font: sans-serif;">Upon meeting with our clients, it is our job to implement an appropriate proposal within a reasonable timeframe, as we coach them through to each desired milestone.</p>
                                     </div>
                                 </div>
                             </div>
@@ -300,7 +331,7 @@
                                 </div>
                             </div> -->
                         </div>
-                    </section><!-- #about-us -->
+                    </section><!-- #who-we-are-->
 
                <!--      <div id="img" class="block spacer p-top-lg wrapper-normal">
                         <div class="wrapper">
@@ -315,6 +346,83 @@
                     </div>  -->
 
                     <!-- #img -->
+
+
+
+                    <section id="about-us" class="block spacer p-top-lg bg-white before-block" style="margin-top: 4em;">
+                        <div class="wrapper">
+
+                            <div class="row" >
+
+                                <div class="title text-center col-lg-12" style=" height: 9em; opacity: 0.9;">
+                                    <h1 class="text-primary text-center text-uppercase ">About Us</h1>
+                                  
+                                </div>
+
+
+
+                                    <div class="row">
+                                        
+
+                                        <div class="col-lg-4 text-center" style="font-size: 30px; font-weight: bolder; margin-bottom: 2em; font:sans-serif;" id="color">
+
+                                            <ul>
+                                                <li>Business Resources</li>
+                                                <li>Business Planning</li>
+                                                <li>Business Formation (LLC’S, Non-Profits, etc.)</li>
+                                                <li>Web Design & Development</li>
+                                             </ul>
+                                            
+                                        </div>
+
+
+
+                                         <div class="col-lg-4 text-center" style="font-size: 30px; font-weight: bolder; margin-bottom:2em; font:sans-serif" id="color">
+
+                                            <ul>
+                                        
+                                                <li>Business Operations</li>
+                                                <li>Notary Republic</li>
+                                                <li>Management</li>
+                                                <li>Marketing</li>
+                                                <li>Operation Processes</li>
+                                                <li>Human Resources</li>
+                                                <li>Payroll</li>
+                                            </ul>
+                                            
+                                        </div>
+ 
+
+
+
+                                         <div class="col-lg-4 text-center" style="font-size: 30px; font-weight: bolder; font:sans-serif" id="color">
+
+                                            <ul>
+                                                <li>Tax Services</li>
+                                                <li>Tax Planning</li>
+                                                <li>Federal & State Tax Returns</li>
+                                                <li>Financial Literacy</li>
+                                                <li>Basic Tax Advice</li>
+                                                
+                                            </ul>
+                                            
+                                        </div>
+
+ 
+ 
+ 
+ 
+ 
+                                       
+
+
+
+                                    </div>
+                            </div>
+                        </div>
+                    </section>
+
+
 
                     <section id="how-it-works" class="block spacer p-top-lg bg-white before-block">
                         <div class="wrapper">

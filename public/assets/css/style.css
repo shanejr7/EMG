@@ -25432,6 +25432,19 @@ html.swipebox-html.swipebox-touch {
     z-index: 1040;
 }
 
+
+@media(max-width: 770px){
+    .header-false {
+        display: none;
+    }
+
+}
+
+.header-fixed-false.header-fixed header {
+    position: static;
+    z-index: 1040;
+}
+
 @media (max-width: 600px) {
     .header-fixed-true.header-fixed header {
         top: 0;
@@ -25707,8 +25720,43 @@ main.content-no-spacing #page-content {
         margin-left: 0;
     }
 }
+@media (max-width:400px) {
+    .customTitle{
+        margin-top: 4em;
+    }
+}
+@media (max-width:400px) {
+    #page-title.with-img{
+          position: relative;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: calc(100vh + 3.526rem);
+    min-height: 200px;
+    max-height: 700px;
+    color: #ffffff;
+       
 
-#page-title.with-img {
+    }
+}
+
+@media (min-width:400px) {
+    #page-title.with-img{
+        position: relative;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: calc(100vh + 3.526rem);
+    min-height: 200px;
+    max-height: 500px;
+    color: #ffffff;
+       
+
+    }
+}
+/*#page-title.with-img {
     position: relative;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -25716,9 +25764,9 @@ main.content-no-spacing #page-content {
     background-size: cover;
     height: calc(100vh + 3.526rem);
     min-height: 200px;
-    max-height: 350px;
+    max-height: 500px;
     color: #ffffff;
-}
+}*/
 
 #page-title.with-img .wrapper, #page-title.with-img #swipebox-container {
     height: 100%;
@@ -26991,6 +27039,7 @@ body:not(.elementor-page) #page-content .content img {
     background-position: center 5.263rem;
     background-repeat: no-repeat;
 }
+
 
 [class*='-element'][class*='-contacts'] {
     height: 100%;

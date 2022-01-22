@@ -185,7 +185,8 @@
 
 
 @if(isset($client))
-                                        <h2 class="text-center" style="color:orange"><span style="color: black;">Client Business Portfolio:</span> Shane M Johnson</h2>
+                                        <h2 class="text-center" style="color:orange"><span style="color: black;">Client Business Portfolio:</span>
+                                        {{$client->first_name}} {{$client->last_name}} </h2>
                                         <blockquote  class="blockquote text-center">
                                             <h3 class="mb-0">Business type</h3>
                                             <footer class="blockquote-footer" id="color" style="font-size: 25px; font-weight: bolder;">{{{$client->business_type}}}</footer>

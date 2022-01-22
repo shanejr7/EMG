@@ -1163,14 +1163,14 @@
                                                 @if($taxpayer->tax_submission_status != "Approved")
 
                                                 @if($taxpayer->tax_submission_return_amount != null)
-                                                <h3 id="color">Tax return amount : {{$taxpayer->tax_submission_return_amount}}</h3>
-                                                <h3 id="color">Service charge : {{$taxpayer->tax_service_deduction_amount}}</h3>
+                                                <h3 id="color">Tax refund amount : {{$taxpayer->tax_submission_return_amount}}</h3>
+                                                <h3 id="color">Filing fee : {{$taxpayer->tax_service_deduction_amount}}</h3>
                                                 @endif
 
                                                 <form method="POST" action="/taxApprove">
                                                     @csrf
 
-                                                    <button type="submit" class="btn btn-primary">request tax return funds</button>
+                                                    <button type="submit" class="btn btn-primary">request tax refund</button>
                                                 </form>
                                                 @endif
                                                 @endif
@@ -1178,8 +1178,8 @@
                                                 @if($taxpayer->tax_submission_status == "Approved")
                                                 <h3 class="text-center" style="color:black;">{{$taxpayer->first_name}} your refund amount is being sent.</h3>
 
-                                                <h3 id="color">Tax return amount : {{$taxpayer->tax_submission_return_amount}}</h3>
-                                                <h3 id="color">Service charge : {{$taxpayer->tax_service_deduction_amount}}</h3>
+                                                <h3 id="color">Tax refund amount : {{$taxpayer->tax_submission_return_amount}}</h3>
+                                                <h3 id="color">Filing fee : {{$taxpayer->tax_service_deduction_amount}}</h3>
 
                                                 @endif
 
