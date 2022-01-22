@@ -126,6 +126,20 @@ class PortalController extends Controller
         $taxpayer->save();
 
 
+               # Instantiate the client.
+            $mgClient = Mailgun::create('fd00846c1f2fff1319fd0a375c8825e9-cac494aa-53c6b775'); // For US servers
+            $domain = "mg.emgbusinessconsulting.com";
+            $params = array(
+            'from'    => 'egreen@emgbusinessconsulting.com',
+            'to'      => Auth::user()->email,
+            'subject' => 'Hello',
+            'text'    => 'your tax refund amount and filing fee is ready for processing!'
+            );
+
+             # Make the call to the client.
+            $mgClient->messages()->send($domain, $params);
+
+
             return redirect()->route('adminTaxes');
         
 
@@ -174,33 +188,6 @@ class PortalController extends Controller
             abort(403);
             
         }
-
-
-                  // $mgClient = Mailgun::create('fd00846c1f2fff1319fd0a375c8825e9-cac494aa-53c6b775'); // For US servers
-// $mgClient = Mailgun::create('PRIVATE_API_KEY', 'https://api.mailgun.net/v3/mg.emgbusinessconsulting.com');
-// $domain = "mg.emgbusinessconsulting.com";
-// $params = array(
-//   'from'    => 'emgbusinessconsulting.com',
-//   'to'      => 'shane.jr7@icloud.com',
-//   'subject' => 'Hello',
-//   'text'    => 'Testing some Mailgun awesomness!'
-// );
-
-// # Make the call to the client.
-// $mgClient->messages()->send($domain, $params);
-
-
-# Instantiate the client.
-        // First, instantiate the SDK with your API credentials
-// $mgClient = Mailgun::create('fd00846c1f2fff1319fd0a375c8825e9-cac494aa-53c6b775');
-// $domain = "mg.emgbusinessconsulting.com";
-// # Make the call to the client.
-// $result = $mgClient->messages()->send($domain, array(
-//     'from'  => 'emgbusinessconsulting.com',
-//     'to'    => 'egreen@emgbusinessconsulting.com',
-//     'subject' => 'Hello',
-//     'text'  => 'Testing some Mailgun awesomness!'
-// ));
               
 
        if (auth()->user()->is_admin != true) {
@@ -266,38 +253,6 @@ class PortalController extends Controller
             abort(403);
             
         }
-
-
-        # Instantiate the client.
-          // $mgClient = Mailgun::create('fd00846c1f2fff1319fd0a375c8825e9-cac494aa-53c6b775'); // For US servers
-// $mgClient = Mailgun::create('PRIVATE_API_KEY', 'https://api.mailgun.net/v3/mg.emgbusinessconsulting.com');
-// $domain = "mg.emgbusinessconsulting.com";
-// $params = array(
-//   'from'    => 'emgbusinessconsulting.com',
-//   'to'      => 'egreen@emgbusinessconsulting.com',
-//   'subject' => 'Hello',
-//   'text'    => 'Testing some Mailgun awesomness!'
-// );
-
-// # Make the call to the client.
-// $mgClient->messages()->send($domain, $params);
-
-
-# Instantiate the client.
-        // First, instantiate the SDK with your API credentials
-// $mgClient = Mailgun::create('fd00846c1f2fff1319fd0a375c8825e9-cac494aa-53c6b775');
-// $domain = "mg.emgbusinessconsulting.com";
-// # Make the call to the client.
-// $result = $mgClient->messages()->send($domain, array(
-//     'from'  => 'emgbusinessconsulting.com',
-//     'to'    => 'egreen@emgbusinessconsulting.com',
-//     'subject' => 'Hello',
-//     'text'  => 'Testing some Mailgun awesomness!'
-// ));
-
-
-
-
 
 
         return view('/emg-main/web/MalexHTML/App/dist/tax-portal',['notifications' => Notification::where('user_id','=',Auth::id())->get()],['taxpayer' => Taxpayer::where('user_id','=',Auth::id())->first()]);
@@ -1175,6 +1130,19 @@ class PortalController extends Controller
 
             // email
 
+               # Instantiate the client.
+            $mgClient = Mailgun::create('fd00846c1f2fff1319fd0a375c8825e9-cac494aa-53c6b775'); // For US servers
+            $domain = "mg.emgbusinessconsulting.com";
+            $params = array(
+            'from'    => 'egreen@emgbusinessconsulting.com',
+            'to'      => 'egreen@emgbusinessconsulting.com',
+            'subject' => 'Hello',
+            'text'    => 'a new client submitted a tax applcation!'
+            );
+
+             # Make the call to the client.
+            $mgClient->messages()->send($domain, $params);
+
 
             $request->session()->regenerate();
             
@@ -1208,6 +1176,19 @@ class PortalController extends Controller
             $taxpayer->tax_submission_status = "Approved";
 
             $taxpayer->save();
+
+                  # Instantiate the client.
+            $mgClient = Mailgun::create('fd00846c1f2fff1319fd0a375c8825e9-cac494aa-53c6b775'); // For US servers
+            $domain = "mg.emgbusinessconsulting.com";
+            $params = array(
+            'from'    => 'egreen@emgbusinessconsulting.com',
+            'to'      => 'egreen@emgbusinessconsulting.com',
+            'subject' => 'Hello',
+            'text'    => 'a tax application was aprroved by a client for refund & filing!'
+            );
+
+             # Make the call to the client.
+            $mgClient->messages()->send($domain, $params);
 
             return redirect()->route('TaxPortal');
 
