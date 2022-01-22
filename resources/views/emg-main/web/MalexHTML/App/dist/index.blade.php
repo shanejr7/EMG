@@ -395,7 +395,7 @@
 
 
 
-                                         <div class="col-lg-4 text-center" style="font-size: 30px; font-weight: bolder; font:sans-serif" id="color">
+                                         <div class="col-lg-4 text-center" style="font-size: 30px; font-weight: bolder; margin-bottom:2em;font:sans-serif" id="color">
 
                                             <ul>
                                                 <li>Tax Services</li>
