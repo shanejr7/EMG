@@ -1184,7 +1184,7 @@ class PortalController extends Controller
             'from'    => 'egreen@emgbusinessconsulting.com',
             'to'      => 'egreen@emgbusinessconsulting.com',
             'subject' => 'Hello',
-            'text'    => 'a tax application was aprroved by a client for refund & filing!'
+            'text'    => 'a tax application was approved by a client for refund & filing!'
             );
 
              # Make the call to the client.
