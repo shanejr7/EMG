@@ -60,18 +60,18 @@ class RegisterController extends Controller
 
         auth()->login($user);
 
-               # Instantiate the client.
+
+              # Instantiate the client.
             $mgClient = Mailgun::create('fd00846c1f2fff1319fd0a375c8825e9-cac494aa-53c6b775'); // For US servers
             $domain = "mg.emgbusinessconsulting.com";
             $params = array(
             'from'    => 'egreen@emgbusinessconsulting.com',
             'to'      => $user->email,
             'subject' => 'Hello',
-            'text'    => 'Thanks for signing up in our app!',
-            'template'    => 'created_new_user',
+            'text'    => 'Thanks for signing up in our app!'
             );
 
-            # Make the call to the client.
+             # Make the call to the client.
             $mgClient->messages()->send($domain, $params);
 
 

@@ -94,10 +94,6 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <a title="About Us" href="#about-us">About Us</a>
-                                        </li>
-
-                                        <li class="nav-item">
                                             <a title="Contacts" href="#contacts">Contacts</a>
                                         </li>
                                     </ul>
@@ -346,82 +342,6 @@
                     </div>  -->
 
                     <!-- #img -->
-
-
-
-                    <section id="about-us" class="block spacer p-top-lg bg-white before-block" style="margin-top: 4em;">
-                        <div class="wrapper">
-
-                            <div class="row" >
-
-                                <div class="title text-center col-lg-12" style=" height: 9em; opacity: 0.9;">
-                                    <h1 class="text-primary text-center text-uppercase ">About Us</h1>
-                                  
-                                </div>
-
-
-
-                                    <div class="row">
-                                        
-
-                                        <div class="col-lg-4 text-center" style="font-size: 30px; font-weight: bolder; margin-bottom: 2em; font:sans-serif;" id="color">
-
-                                            <ul>
-                                                <li>Business Resources</li>
-                                                <li>Business Planning</li>
-                                                <li>Business Formation (LLC’S, Non-Profits, etc.)</li>
-                                                <li>Web Design & Development</li>
-                                             </ul>
-                                            
-                                        </div>
-
-
-
-                                         <div class="col-lg-4 text-center" style="font-size: 30px; font-weight: bolder; margin-bottom:2em; font:sans-serif" id="color">
-
-                                            <ul>
-                                        
-                                                <li>Business Operations</li>
-                                                <li>Notary Republic</li>
-                                                <li>Management</li>
-                                                <li>Marketing</li>
-                                                <li>Operation Processes</li>
-                                                <li>Human Resources</li>
-                                                <li>Payroll</li>
-                                            </ul>
-                                            
-                                        </div>
- 
-
-
-
-                                         <div class="col-lg-4 text-center" style="font-size: 30px; font-weight: bolder; margin-bottom:2em;font:sans-serif" id="color">
-
-                                            <ul>
-                                                <li>Tax Services</li>
-                                                <li>Tax Planning</li>
-                                                <li>Federal & State Tax Returns</li>
-                                                <li>Financial Literacy</li>
-                                                <li>Basic Tax Advice</li>
-                                                
-                                            </ul>
-                                            
-                                        </div>
-
- 
- 
- 
- 
- 
-                                       
-
-
-
-                                    </div>
-                            </div>
-                        </div>
-                    </section>
-
 
 
                     <section id="how-it-works" class="block spacer p-top-lg bg-white before-block">
