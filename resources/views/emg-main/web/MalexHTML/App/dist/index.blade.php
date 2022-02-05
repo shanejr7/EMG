@@ -466,7 +466,7 @@
                                             </div>
 
                                             <div class="team-member-position">
-                                                <p>Software Developer</p>
+                                                <p>Software Engineer</p>
                                             </div>
                                         </div>
 
@@ -481,11 +481,11 @@
                                                 </p>
                                                 <p>Highly energetic in user experience design, interfaces and software development.</p>
                                                 <ul>
-                                                    <li id="color">Web Search Engine Optimization</li>
-                                                    <li id="color">Web Design & Development</li>
-                                                    <li id="color">Cloud Platforms</li>
                                                     <li id="color">API Software Services</li>
+                                                    <li id="color">Web Design & Development</li>
+                                                    <li id="color">Cloud Platforms Development</li>
                                                     <li id="color">Software Development</li>
+                                                    <li id="color">Research & Development</li>
                                                  
 
                                                 </ul>
