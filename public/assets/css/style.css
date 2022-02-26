@@ -25720,11 +25720,13 @@ main.content-no-spacing #page-content {
         margin-left: 0;
     }
 }
-@media (max-width:400px) {
+@media (max-width:600px) {
     .customTitle{
-        margin-top: 4em;
+        margin-top: 6em;
     }
 }
+
+
 @media (max-width:400px) {
     #page-title.with-img{
           position: relative;
@@ -25750,7 +25752,7 @@ main.content-no-spacing #page-content {
     background-size: cover;
     height: calc(100vh + 3.526rem);
     min-height: 200px;
-    max-height: 500px;
+    max-height: 400px;
     color: #ffffff;
        
 

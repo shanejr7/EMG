@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="assets/css/style.min.css">
-        <title>Home | EMG - Business Consulting Agency</title>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Home | EMG - Business Consulting Agency</title>
        <!--  <link rel="shortcut icon" href="assets/img/favicon/favicon-16x16.ico" type="image/x-icon">
         <link rel="icon" href="assets/img/favicon/favicon-16x16.ico" type="image/x-icon"> -->
 
@@ -56,73 +56,73 @@
 
                         <div class="header-logo header-false">
 
-                             <nav class="menu-primary">
-                                   <ul class="nav">
+                           <nav class="menu-primary">
+                             <ul class="nav">
                               <li class="nav-item">
-                                            <a style=" font-size: 19px;" href="/registration">Create New Account</a>
-                                        </li>
+                                <a style=" font-size: 19px;" href="/registration">Create New Account</a>
+                            </li>
 
-                                        <li class="nav-item">
-                                            <a style=" font-size: 19px;" href="/login">Login</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                             
+                            <li class="nav-item">
+                                <a style=" font-size: 19px;" href="/login">Login</a>
+                            </li>
+                        </ul>
+                    </nav>
+
                          <!--    <a class="logo logo-primary adv-dark transform-scale-h" title="Logo" href="/">
                                 <h3 >EMG</h3>
                             </a>
- -->
-                            <!-- <a class="logo logo-secondary adv-light transform-scale-h" title="Logo" href="/"> -->
-                                 <!-- <p class="large title" style="font-weight: bold; font-size: 25px;">Business Consulting Agency</p> -->
-                                <!-- <img src="assets/img/logo/IMG_1326.svg" alt="Logo"> -->
-                            <!-- </a> -->
+                        -->
+                        <!-- <a class="logo logo-secondary adv-light transform-scale-h" title="Logo" href="/"> -->
+                           <!-- <p class="large title" style="font-weight: bold; font-size: 25px;">Business Consulting Agency</p> -->
+                           <!-- <img src="assets/img/logo/IMG_1326.svg" alt="Logo"> -->
+                           <!-- </a> -->
+                       </div>
+                   </div>
+
+                   <div class="header-right d-flex justify-content-end">
+                    <div class="d-flex align-items-center ">
+                        <div class="menu">
+                            <nav class="menu-primary">
+                                <ul class="nav">
+
+                                    <li class="nav-item">
+                                        <a title="Services" href="#services">What We Do</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a title="Who we are" href="#who-we-are">Who We Are</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a title="Contacts" href="#contacts">Contacts</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
-                    </div>
-
-                    <div class="header-right d-flex justify-content-end">
-                        <div class="d-flex align-items-center ">
-                            <div class="menu">
-                                <nav class="menu-primary">
-                                    <ul class="nav">
-                                        
-                                        <li class="nav-item">
-                                            <a title="Services" href="#services">What We Do</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a title="Who we are" href="#who-we-are">Who We Are</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a title="Contacts" href="#contacts">Contacts</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
 
                            <!--  <div class="search-toggle adv-light">
                                 <button type="button" class="btn btn-lg btn-outline-tertiary btn-round p-0 min-w-auto" data-toggle="modal" data-target="#search-modal"><i class="fas fa-search"></i></button>
                             </div>
- -->
-                            <div class="menu-toggle adv-light mr-0">
-                                <button type="button" class="btn btn-lg btn-outline-tertiary btn-round p-0 min-w-auto" data-toggle="modal" data-target="#menu-modal"><i class="fas fa-bars"></i></button>
-                            </div>
+                        -->
+                        <div class="menu-toggle adv-light mr-0">
+                            <button type="button" class="btn btn-lg btn-outline-tertiary btn-round p-0 min-w-auto" data-toggle="modal" data-target="#menu-modal"><i class="fas fa-bars"></i></button>
+                        </div>
 
-                            <div class="menu-toggle adv-dark">
-                                <button type="button" class="btn btn-lg btn-secondary btn-hover-main-secondary btn-round p-0 min-w-auto" data-toggle="modal" data-target="#menu-modal"><i class="fas fa-bars"></i></button>
-                            </div>
+                        <div class="menu-toggle adv-dark">
+                            <button type="button" class="btn btn-lg btn-secondary btn-hover-main-secondary btn-round p-0 min-w-auto" data-toggle="modal" data-target="#menu-modal"><i class="fas fa-bars"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
-        </header><!-- .site-header -->
+        </div>
+    </header><!-- .site-header -->
 
-        <main id="main" class="site-main content-no-spacing">
-            <div class="content">
-                <div class="clearfix ">
-                    <section id="page-title" class="block with-img with-service-items" >
-                        <div class="wrapper d-flex flex-column justify-content-center">
-                            <div class="page-title-body page-title-body-space-left">
+    <main id="main" class="site-main content-no-spacing">
+        <div class="content">
+            <div class="clearfix ">
+                <section id="page-title" class="block with-img with-service-items" >
+                    <div class="wrapper d-flex flex-column justify-content-center">
+                        <div class="page-title-body page-title-body-space-left">
                             <!--     <div class="title">
                                     <h1 class="large">Business <br>Consulting Agency</h1>
                                 </div> -->
@@ -131,24 +131,24 @@
                                     <p>"Meeting your business needs through chnage and innovation for a sucesful transformation"</p>
                                 </div> -->
 
-                                <div class="spacer p-top-lg col-lg-12 text-center" style="margin-top:13em;">
-                                      <h5 style="font-weight:bolder;" class="customTitle">"Meeting your business needs through change and innovation for a successful transformation"</h5>
-                                    <!-- <a href="about-us.html" class="btn btn-outline-tertiary">Learn More</a> -->
-                                </div>
-                            </div>
+                                <div class="spacer p-top-lg col-lg-12 text-center" style="margin-top:15em; margin-bottom: 7em;">
+                                  <h5 style="font-weight:bolder;" class="customTitle">"Meeting your business needs through change and innovation for a successful transformation"</h5>
+                                  <!-- <a href="about-us.html" class="btn btn-outline-tertiary">Learn More</a> -->
+                              </div>
+                          </div>
 
-                            <div class="page-title-footer full-width">
-                                <div class="d-flex justify-content-between">
-                                    <a href="#services" class="scroll-to-id scroll-animation">
-                                        <i class="malex-icon-long-arrow-down i-large-2"></i>
-                                    </a>
+                          <div class="page-title-footer full-width">
+                            <div class="d-flex justify-content-between">
+                                <a href="#services" class="scroll-to-id scroll-animation">
+                                    <i class="malex-icon-long-arrow-down i-large-2"></i>
+                                </a>
 
-                                    <div class="align-self-end">
-                                        <nav class="languages">
-                                            <ul class="nav">
-                                                <li class="lang-item current-lang">
-                                                    <a title="En" href="/">En</a>
-                                                </li>
+                                <div class="align-self-end">
+                                    <nav class="languages">
+                                        <ul class="nav">
+                                            <li class="lang-item current-lang">
+                                                <a title="En" href="/">En</a>
+                                            </li>
 
                                             <!--     <li class="lang-item">
                                                     <a title="Ru" href="https://wwww.google.com">Ru</a>
@@ -161,26 +161,38 @@
                              <!-- <div class="spacer p-top-lg">
                                     <a href="#services" class="btn btn-outline-tertiary">Learn More</a>
                                 </div> -->
-                        </div>
+                            </div>
 
-                        <div class="page-title-bg-color"></div>
-                    </section><!-- #page-title -->
+                            <div class="page-title-bg-color"></div>
+                        </section><!-- #page-title -->
 
-                    <div id="services" class="block">
-                        <div class="wrapper">
-                            <div class="row gutter-width-md with-pb-md service-items">
-                                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" >
-                                    <div class="service" style="border:solid; border-color: orange; border-width: 10px; border-right: 0; border-top: 0;">
+                        <div id="services" class="block">
+                            <div class="wrapper">
+                                <div class="row gutter-width-md with-pb-md service-items">
+                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" >
+                                        <div class="service" style="border:solid; border-color: orange; border-width: 10px; border-right: 0; border-top: 0;">
                                         <!-- <div class="service-icon">
                                             <i class="malex-icon-strategy-1" id="color"></i>
                                         </div> -->
 
                                         <h4 class="service-t-head">Strategic Marketing</h4>
-                                        <ul style="font-size:20px">   
-                                            <li>Management</li>   
+                                        <ul style="font-size:17px">   
+                                           <!--  <li>Management</li>   
                                             <li>Business Planning</li>           
-                                            <li>Finances</li>
+                                            <li>Finances</li> -->
+                                            <li>Business Resources</li>
+                                            <li>Business Planning</li>
+                                            <li>Business Formation (LLC’S, Non-Profits, etc.)</li>
+                                            <li>Marketing</li>
+                                            <li>Notary Republic</li>
+
+
                                         </ul>
+
+
+
+
+
 
                                         <!-- <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
 
@@ -202,15 +214,24 @@
                                                 <a href="/login">Online Tax Submission</a>
                                             </button> -->
 
-                                        <h4 class="service-t-head">Tax Assistance</h4>
+                                            <h4 class="service-t-head">Tax Assistance</h4>
                                             
-                                            <ul style="font-size:20px">
-                                                <li>Individual Taxes</li>
+                                            <ul style="font-size:17px">
+                                             <!--    <li>Individual Taxes</li>
                                                 <li>Business Taxes</li>
+                                                <li>Tax Planning</li> -->
+                                                <li>Tax Services</li>
                                                 <li>Tax Planning</li>
+                                                <li>Federal & State Tax Returns</li>
+                                                <li>Financial Literacy</li>
+                                                <li>Basic Tax Advice</li>
                                             </ul>
 
-                                      
+
+
+
+
+
                                       <!--   <ul>
                                             <li>Leadership</li>
                                             <li>Process Improvement</li>
@@ -236,12 +257,18 @@
 
                                         <h4 class="service-t-head" >Business Operations</h4>
 
-                                      <!--   <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
-                                        <ul style="font-size:20px">
-                                            <li>Operational Processes</li>
+                                        <!--   <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p> -->
+                                        <ul style="font-size:17px">
+                                         <!--    <li>Operational Processes</li>
 
+                                            <li>Web Design & Development</li> -->
+                                            <li>Business Operations</li>   
+                                            <li>Operation Processes</li>           
+                                            <li>Human Resources</li>
+                                            <li>Payroll</li>
                                             <li>Web Design & Development</li>
-                                         </ul>
+
+                                        </ul>
                                   <!--       <div class="service-btn">
                                             <a title="Read more" class="btn btn-sm btn-link btn-icon-hover p-0 border-0 min-w-auto link-no-space text-uppercase" href="service-inside.html">
                                                 <i class="malex-icon-arrow-right i-large"></i>
@@ -283,19 +310,19 @@
                                 <h1 class="text-primary text-center text-uppercase" >Who We Are</h1>
 
                             </div>
-                              <h2 class="text-center">Business Consultants</h2>
+                            <h2 class="text-center">Business Consultants</h2>
 
                             <div class="row gutter-width-md with-pb-md" style="margin-top: 5em;">
                                 <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6">
                                     <div class="description-2">
-                                    <!--     <h2>Business Consultants</h2> -->
+                                        <!--     <h2>Business Consultants</h2> -->
                                         <img class="text-center" style="width:100%" src="assets/img/logo/IMG_0017.jpg" alt="team">
                                     </div>
 
                                 </div>
 
                                 <div class="col-sm-12 col-md-4 col-lg-6 col-xl-6" style="border-style: dotted; border-color:orange; border-top:0; border-bottom: 0;">
-                                    
+
                                     <div class=" spacer ">
                                         <p  style="color: black; font-size: 23px; font-weight: bold;font: sans-serif;">Our professionals will stand at the heart of the matter, and provide the proper support to our clients, as they accomplish the desired objectives, by leveraging the company’s talent, techniques and technology.</p>
                                     </div>
@@ -350,154 +377,154 @@
                                 <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
                                     <div class="process pl-0">
                                         <div class="process-content">
-                                           <!--  <h6 class="process-small-t-head">How it Works?</h6> -->
+                                         <!--  <h6 class="process-small-t-head">How it Works?</h6> -->
 
-                                            <div class="process-description">
-                                                <h2>We Guarantee a Stable & Steady Work Process</h2>
-                                            </div>
+                                         <div class="process-description">
+                                            <h2>We Guarantee a Stable & Steady Work Process</h2>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                    <div class="process process-color-1">
-                                        <div class="process-content">
-                                            <h4 class="process-t-head">Restructuring Improvement</h4>
-                                                <p class="process-description">Advisory</p>
-                                                <p class="process-description">Management</p>
-                                              
-                                        </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                <div class="process process-color-1">
+                                    <div class="process-content">
+                                        <h4 class="process-t-head">Restructuring Improvement</h4>
+                                        <p class="process-description">Advisory</p>
+                                        <p class="process-description">Management</p>
 
-                                        <div class="process-number">01</div>
                                     </div>
+
+                                    <div class="process-number">01</div>
                                 </div>
+                            </div>
 
-                                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                    <div class="process process-color-2">
-                                        <div class="process-content">
-                                            <h4 class="process-t-head">Performance</h4>
-                                            <p class="process-description">Process improvement</p>
-                                            <p>Team efficiency</p>
-                                        </div>
-
-                                        <div class="process-number">02</div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                <div class="process process-color-2">
+                                    <div class="process-content">
+                                        <h4 class="process-t-head">Performance</h4>
+                                        <p class="process-description">Process improvement</p>
+                                        <p>Team efficiency</p>
                                     </div>
+
+                                    <div class="process-number">02</div>
                                 </div>
+                            </div>
 
-                                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                    <div class="process process-color-3">
-                                        <div class="process-content">
-                                            <h4 class="process-t-head">Business Growth</h4>
-                                            <p class="process-description">Research & evaluation</p>
-                                              <p class="process-description">Marketing strategy</p>
-                                            <p>Cost optimazation</p>
-                                        </div>
-
-                                        <div class="process-number">03</div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                <div class="process process-color-3">
+                                    <div class="process-content">
+                                        <h4 class="process-t-head">Business Growth</h4>
+                                        <p class="process-description">Research & evaluation</p>
+                                        <p class="process-description">Marketing strategy</p>
+                                        <p>Cost optimazation</p>
                                     </div>
+
+                                    <div class="process-number">03</div>
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                </section>
 
-                    <!-- #how-it-works -->
+                <!-- #how-it-works -->
 
-                    <section id="team-members" class="block bg-white-before spacer p-top-xl p-bottom-xl">
-                        <div class="wrapper">
-                            <div class="title">
-                                <h4 class="text-primary text-uppercase">Meet our team</h4>
-                            </div>
+                <section id="team-members" class="block bg-white-before spacer p-top-xl p-bottom-xl">
+                    <div class="wrapper">
+                        <div class="title">
+                            <h4 class="text-primary text-uppercase">Meet our team</h4>
+                        </div>
 
-                            <div class="title-opacity">
-                                <div class="title-opacity-text">Team</div>
-                            </div>
+                        <div class="title-opacity">
+                            <div class="title-opacity-text">Team</div>
+                        </div>
 
-                            <div class="description-2">
-                                <h2>Consulting Professionals</h2>
-                            </div>
+                        <div class="description-2">
+                            <h2>Consulting Professionals</h2>
+                        </div>
 
-                            <div class="row gutter-width-md with-pb-md spacer p-top-lg">
+                        <div class="row gutter-width-md with-pb-md spacer p-top-lg">
 
-                                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                   
-                                    <div class="team-member">
-                                        <div class="team-member-top">
-                                            <div class="img object-fit">
-                                                <div class="object-fit-cover">
-                                                    <img src="assets/img/logo/IMG_0018.jpg" alt="Ewendapha Green">
-                                                </div>
-                                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
 
-                                            <div class="team-member-position">
-                                                <p>Business Consultant</p>
+                                <div class="team-member">
+                                    <div class="team-member-top">
+                                        <div class="img object-fit">
+                                            <div class="object-fit-cover">
+                                                <img src="assets/img/logo/IMG_0018.jpg" alt="Ewendapha Green">
                                             </div>
                                         </div>
 
-                                    </div>
-                                </div>
-
-                                    <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                                            <div class="team-member-description">
-                                                 <h4 class="team-member-t-head">Ewendapha Green, MBA</h4>
-                                                <p style="font-weight: bold; color: orange;">Experienced Businesss Consultant.
-                                                 <a id="color" target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/ewendapha-green-mba-a9508715">(<i class="fab fa-linkedin-in"></i>)</a>
-                                                </p>
-                                                <p>Business coaching professional specializing in business techniques for improvements in growth. Implementing talent & experience to reach your desired milestones.
-                                                </p>
-                                                <ul>
-                                                    <li id="color">Business startups</li>
-                                                    <li id="color">Process improvement</li>
-                                                    <li id="color">Management & Planning</li>
-                                                    <li id="color">Cost optimization</li>
-                                                     <li id="color">Business services (Tax Preperation Payroll and Notary services, etc.)</li>
-                                                </ul>
-                                            </div>
-                                    </div>
-
-                                
-
-                                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                    <div class="team-member">
-                                        <div class="team-member-top">
-                                            <div class="img object-fit">
-                                                <div class="object-fit-cover">
-                                                    <img src="assets/img/logo/IMG_0029.jpg" alt="Shane Johnson">
-                                                </div>
-                                            </div>
-
-                                            <div class="team-member-position">
-                                                <p>Software Engineer</p>
-                                            </div>
+                                        <div class="team-member-position">
+                                            <p>Business Consultant</p>
                                         </div>
-
-
                                     </div>
+
                                 </div>
+                            </div>
 
-                                  <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                                            <div class="team-member-description">
-                                                <h4 class="team-member-t-head">Shane Johnson, BSCS </h4>
-                                                <p style="font-weight: bold; color: orange;">Experienced Developer & Designer. <a id="color" target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/shane-johnson-jr-506990115/?challengeId=AQHkvHTqJ_hOcAAAAX3UIsP4ASJA33HkGIN171iFcQUwbUnmCLpmm-yN-XoMTPnT_RluWU5EQCJqS8FMIUUeWsoRMcX_rr-RtQ&submissionId=cbe4296a-2f3e-c216-3e18-10ea0596dd72">(<i class="fab fa-linkedin-in"></i>)</a>
-                                                </p>
-                                                <p>Highly energetic in user experience design, interfaces and software development.</p>
-                                                <ul>
-                                                    <li id="color">API Software Services</li>
-                                                    <li id="color">Web Design & Development</li>
-                                                    <li id="color">Cloud Platforms Development</li>
-                                                    <li id="color">Software Development</li>
-                                                    <li id="color">Research & Development</li>
-                                                 
-
-                                                </ul>
-                                             
-                                            </div>
-                                    </div>
-
-                     
+                            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                                <div class="team-member-description">
+                                   <h4 class="team-member-t-head">Ewendapha Green, MBA</h4>
+                                   <p style="font-weight: bold; color: orange;">Experienced Businesss Consultant.
+                                       <a id="color" target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/ewendapha-green-mba-a9508715">(<i class="fab fa-linkedin-in"></i>)</a>
+                                   </p>
+                                   <p>Business coaching professional specializing in business techniques for improvements in growth. Implementing talent & experience to reach your desired milestones.
+                                   </p>
+                                   <ul>
+                                    <li id="color">Business startups</li>
+                                    <li id="color">Process improvement</li>
+                                    <li id="color">Management & Planning</li>
+                                    <li id="color">Cost optimization</li>
+                                    <li id="color">Business services (Tax Preperation Payroll and Notary services, etc.)</li>
+                                </ul>
                             </div>
                         </div>
-                    </section>
-                    <!-- #team-members -->
+
+
+
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <div class="team-member">
+                                <div class="team-member-top">
+                                    <div class="img object-fit">
+                                        <div class="object-fit-cover">
+                                            <img src="assets/img/logo/IMG_0029.jpg" alt="Shane Johnson">
+                                        </div>
+                                    </div>
+
+                                    <div class="team-member-position">
+                                        <p>Software Engineer</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                            <div class="team-member-description">
+                                <h4 class="team-member-t-head">Shane Johnson, BSCS </h4>
+                                <p style="font-weight: bold; color: orange;">Experienced Developer & Designer. <a id="color" target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/shane-johnson-jr-506990115/?challengeId=AQHkvHTqJ_hOcAAAAX3UIsP4ASJA33HkGIN171iFcQUwbUnmCLpmm-yN-XoMTPnT_RluWU5EQCJqS8FMIUUeWsoRMcX_rr-RtQ&submissionId=cbe4296a-2f3e-c216-3e18-10ea0596dd72">(<i class="fab fa-linkedin-in"></i>)</a>
+                                </p>
+                                <p>Highly energetic in user experience design, interfaces and software development.</p>
+                                <ul>
+                                    <li id="color">API Software Services</li>
+                                    <li id="color">Web Design & Development</li>
+                                    <li id="color">Cloud Platforms Development</li>
+                                    <li id="color">Software Development</li>
+                                    <li id="color">Research & Development</li>
+
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- #team-members -->
 
                  <!--    <section id="price-plans" class="block spacer p-top-xl">
                         <div class="wrapper">
@@ -960,14 +987,14 @@
                                    <!--  <div class="title">
                                         <h3 class="pb-0">You Can Email Us At</h3>
                                     </div>
- -->
+                                -->
                                    <!--  <div class="description-lg spacer p-top-lg">
                                         <p>
                                             <button type="submit" class="btn btn-outline-secondary">emg823@gmail.com</button>
                                         </p>
                                     </div>
- -->
-                                    <div class="spacer p-top-lg">
+                                -->
+                                <div class="spacer p-top-lg">
                                     <!--     <form method="post" action="form.php" id="cf-1" class="contact-form">
                                             <div class="form-group form-group-xs">
                                                 <input name="cf-1-name" type="text" class="form-control form-control-lg bg-gray-light" id="cf-1-name" placeholder="Name" required="required">
@@ -1003,4 +1030,4 @@
         <!-- JS -->
         <script src="assets/js/main.min.js"></script>
     </body>
-</html>
+    </html>
